@@ -85,7 +85,7 @@ Inheritance diagram for tvm::relax::CallNode:</div>
 <div class="dynheader">
 Collaboration diagram for tvm::relax::CallNode:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classtvm_1_1relax_1_1CallNode__coll__graph.svg" width="1678" height="2308"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classtvm_1_1relax_1_1CallNode__coll__graph.svg" width="1704" height="2308"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <table class="memberdecls">
@@ -147,9 +147,9 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:acc4abc68e40f495501818e0364ceeef7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtvm_1_1Attrs.html">Attrs</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtvm_1_1relax_1_1CallNode.html#acc4abc68e40f495501818e0364ceeef7">attrs</a></td></tr>
 <tr class="memdesc:acc4abc68e40f495501818e0364ceeef7"><td class="mdescLeft">&#160;</td><td class="mdescRight">The additional attributes.  <a href="#acc4abc68e40f495501818e0364ceeef7">More...</a><br /></td></tr>
 <tr class="separator:acc4abc68e40f495501818e0364ceeef7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e2d37d2f3c9f682bbfb1d9be071132f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtvm_1_1runtime_1_1Array.html">tvm::Array</a>&lt; <a class="el" href="classtvm_1_1Type.html">Type</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtvm_1_1relax_1_1CallNode.html#a4e2d37d2f3c9f682bbfb1d9be071132f">type_args</a></td></tr>
-<tr class="memdesc:a4e2d37d2f3c9f682bbfb1d9be071132f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The type arguments passed to polymorphic(template) function.  <a href="#a4e2d37d2f3c9f682bbfb1d9be071132f">More...</a><br /></td></tr>
-<tr class="separator:a4e2d37d2f3c9f682bbfb1d9be071132f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9e1b10473e691cf752e6eebab2ef2e8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtvm_1_1runtime_1_1Array.html">Array</a>&lt; <a class="el" href="classtvm_1_1relax_1_1StructInfo.html">StructInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtvm_1_1relax_1_1CallNode.html#af9e1b10473e691cf752e6eebab2ef2e8">sinfo_args</a></td></tr>
+<tr class="memdesc:af9e1b10473e691cf752e6eebab2ef2e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">The structure info arguments of a <a class="el" href="classtvm_1_1relax_1_1CallNode.html" title="Call corresponds to callable invocation. Corresponds to operation in computational graph terminology...">CallNode</a>. sinfo_args is designed to be non-empty only for intrinsic op (e.g., call_tir, call_builtin, etc.) and calls to ExternFuncs, with the main usage of structure info inference.  <a href="#af9e1b10473e691cf752e6eebab2ef2e8">More...</a><br /></td></tr>
+<tr class="separator:af9e1b10473e691cf752e6eebab2ef2e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_classtvm_1_1RelayExprNode"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classtvm_1_1RelayExprNode')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classtvm_1_1RelayExprNode.html">tvm::RelayExprNode</a></td></tr>
 <tr class="memitem:ae30ca49a8b84288fbc21d5f312f02929 inherit pub_attribs_classtvm_1_1RelayExprNode"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtvm_1_1Type.html">Type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtvm_1_1RelayExprNode.html#ae30ca49a8b84288fbc21d5f312f02929">checked_type_</a> = <a class="el" href="classtvm_1_1Type.html">Type</a>(nullptr)</td></tr>
 <tr class="memdesc:ae30ca49a8b84288fbc21d5f312f02929 inherit pub_attribs_classtvm_1_1RelayExprNode"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores the result of type inference(type checking).  <a href="classtvm_1_1RelayExprNode.html#ae30ca49a8b84288fbc21d5f312f02929">More...</a><br /></td></tr>
@@ -439,21 +439,20 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a4e2d37d2f3c9f682bbfb1d9be071132f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4e2d37d2f3c9f682bbfb1d9be071132f">&#9670;&nbsp;</a></span>type_args</h2>
+<a id="af9e1b10473e691cf752e6eebab2ef2e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9e1b10473e691cf752e6eebab2ef2e8">&#9670;&nbsp;</a></span>sinfo_args</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classtvm_1_1runtime_1_1Array.html">tvm::Array</a>&lt;<a class="el" href="classtvm_1_1Type.html">Type</a>&gt; tvm::relax::CallNode::type_args</td>
+          <td class="memname"><a class="el" href="classtvm_1_1runtime_1_1Array.html">Array</a>&lt;<a class="el" href="classtvm_1_1relax_1_1StructInfo.html">StructInfo</a>&gt; tvm::relax::CallNode::sinfo_args</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>The type arguments passed to polymorphic(template) function. </p>
-<p>This is the advance feature that is only used when the function is polymorphic. It is safe to be ignored in most cases. For example, in the following code, the type_args of addone call is [int].</p>
-<div class="fragment"><div class="line"><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div><div class="line">T addone(T a) { <span class="keywordflow">return</span> a + 1; }</div><div class="line"></div><div class="line"><span class="keywordtype">void</span> main() {</div><div class="line">  <span class="keywordtype">int</span> x = addone&lt;int&gt;(10);</div><div class="line">}</div></div><!-- fragment --> 
+<p>The structure info arguments of a <a class="el" href="classtvm_1_1relax_1_1CallNode.html" title="Call corresponds to callable invocation. Corresponds to operation in computational graph terminology...">CallNode</a>. sinfo_args is designed to be non-empty only for intrinsic op (e.g., call_tir, call_builtin, etc.) and calls to ExternFuncs, with the main usage of structure info inference. </p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>

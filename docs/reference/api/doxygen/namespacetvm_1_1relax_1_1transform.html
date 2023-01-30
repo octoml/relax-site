@@ -136,6 +136,9 @@ Functions</h2></td></tr>
 <tr class="memitem:acf58c99725592eec17209de32974d893"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacetvm_1_1relax_1_1transform.html#aa3d28b2e48b6d5708052909943dd3282">Pass</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetvm_1_1relax_1_1transform.html#acf58c99725592eec17209de32974d893">FuseOpsByPattern</a> (const <a class="el" href="classtvm_1_1runtime_1_1Array.html">tvm::Array</a>&lt; <a class="el" href="classtvm_1_1runtime_1_1String.html">runtime::String</a> &gt; &amp;pattern_names, const <a class="el" href="classtvm_1_1runtime_1_1Array.html">tvm::Array</a>&lt; <a class="el" href="classtvm_1_1relax_1_1DFPattern.html">DFPattern</a> &gt; &amp;patterns)</td></tr>
 <tr class="memdesc:acf58c99725592eec17209de32974d893"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply pattern matching to each function in the given module, and group matched expressions into a new function. The end result is similar to FuseOps, but fusion is driven completely by the provided patterns.  <a href="#acf58c99725592eec17209de32974d893">More...</a><br /></td></tr>
 <tr class="separator:acf58c99725592eec17209de32974d893"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07a27562367f610b894144546ae0cda8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacetvm_1_1relax_1_1transform.html#aa3d28b2e48b6d5708052909943dd3282">Pass</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetvm_1_1relax_1_1transform.html#a07a27562367f610b894144546ae0cda8">MergeCompositeFunctions</a> ()</td></tr>
+<tr class="memdesc:a07a27562367f610b894144546ae0cda8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Group one or multiple composite functions created by FuseOpsByPattern into a new function. The new function will be annotated with kCodegen and GlobalSymbol attributes, and it is intented to be offloaded to an external backend.  <a href="#a07a27562367f610b894144546ae0cda8">More...</a><br /></td></tr>
+<tr class="separator:a07a27562367f610b894144546ae0cda8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3feb81c5b5d9b4b907f3e2c72b0ac2d3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacetvm_1_1relax_1_1transform.html#aa3d28b2e48b6d5708052909943dd3282">Pass</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetvm_1_1relax_1_1transform.html#a3feb81c5b5d9b4b907f3e2c72b0ac2d3">FuseTIR</a> ()</td></tr>
 <tr class="memdesc:a3feb81c5b5d9b4b907f3e2c72b0ac2d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fuse relax sub-function into a larger TIR function if possible. this pass works together with FuseOps to perform operator fusion.  <a href="#a3feb81c5b5d9b4b907f3e2c72b0ac2d3">More...</a><br /></td></tr>
 <tr class="separator:a3feb81c5b5d9b4b907f3e2c72b0ac2d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -614,6 +617,27 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Perform lambda lifting to lift functions from nested into global. </p>
+<dl class="section return"><dt>Returns</dt><dd>The Pass. </dd></dl>
+
+</div>
+</div>
+<a id="a07a27562367f610b894144546ae0cda8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07a27562367f610b894144546ae0cda8">&#9670;&nbsp;</a></span>MergeCompositeFunctions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacetvm_1_1relax_1_1transform.html#aa3d28b2e48b6d5708052909943dd3282">Pass</a> tvm::relax::transform::MergeCompositeFunctions </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Group one or multiple composite functions created by FuseOpsByPattern into a new function. The new function will be annotated with kCodegen and GlobalSymbol attributes, and it is intented to be offloaded to an external backend. </p>
+<p>Even if there is only one composite function, or a backend does not benefit from receiving larger subgraphs, this pass is required to run for offloading (BYOC) since a composite function needs to be wrapped by an outer function that are annotated with "Codegen" and "global_symbol" attributes.</p>
 <dl class="section return"><dt>Returns</dt><dd>The Pass. </dd></dl>
 
 </div>
