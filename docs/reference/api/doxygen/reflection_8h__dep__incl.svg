@@ -333,9 +333,9 @@
 <path fill="none" stroke="#191970" d="M993.0958,-685.5837C1194.5376,-673.4735 1677.7496,-644.4241 1857.2945,-633.6304"/>
 <polygon fill="#191970" stroke="#191970" points="992.6189,-682.1059 982.847,-686.1998 993.039,-689.0933 992.6189,-682.1059"/>
 </g>
-<!-- Node246 -->
+<!-- Node245 -->
 <g id="node39" class="node">
-<title>Node246</title>
+<title>Node245</title>
 <g id="a_node39"><a xlink:href="exec__builder_8h.html" target="_top" xlink:title="include/tvm/relax/exec\l_builder.h">
 <polygon fill="#ffffff" stroke="#000000" points="2434,-335.5 2434,-365.5 2562,-365.5 2562,-335.5 2434,-335.5"/>
 <text text-anchor="start" x="2442" y="-353.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">include/tvm/relax/exec</text>
@@ -343,15 +343,15 @@
 </a>
 </g>
 </g>
-<!-- Node43&#45;&gt;Node246 -->
+<!-- Node43&#45;&gt;Node245 -->
 <g id="edge123" class="edge">
-<title>Node43&#45;&gt;Node246</title>
+<title>Node43&#45;&gt;Node245</title>
 <path fill="none" stroke="#191970" d="M992.834,-689.0797C1361.0198,-680.7753 2738.1234,-645.2965 2800,-578 2817.3094,-559.1744 2800.3267,-494.656 2785,-480 2718.775,-416.6731 2662.0948,-488.5069 2582,-444 2547.857,-425.0275 2520.3927,-386.8741 2506.9601,-365.6388"/>
 <polygon fill="#191970" stroke="#191970" points="992.6769,-685.5823 982.758,-689.3059 992.834,-692.5805 992.6769,-685.5823"/>
 </g>
-<!-- Node266 -->
+<!-- Node265 -->
 <g id="node50" class="node">
-<title>Node266</title>
+<title>Node265</title>
 <g id="a_node50"><a xlink:href="instruction_8h.html" target="_top" xlink:title="include/tvm/tir/schedule\l/instruction.h">
 <polygon fill="#ffffff" stroke="#ff0000" points="3168,-614.5 3168,-644.5 3302,-644.5 3302,-614.5 3168,-614.5"/>
 <text text-anchor="start" x="3176" y="-632.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">include/tvm/tir/schedule</text>
@@ -359,9 +359,9 @@
 </a>
 </g>
 </g>
-<!-- Node43&#45;&gt;Node266 -->
+<!-- Node43&#45;&gt;Node265 -->
 <g id="edge124" class="edge">
-<title>Node43&#45;&gt;Node266</title>
+<title>Node43&#45;&gt;Node265</title>
 <path fill="none" stroke="#191970" d="M992.6811,-690.0623C1384.5843,-685.843 2936.8957,-667.8257 3154,-645 3158.5565,-644.5209 3163.2396,-643.9195 3167.9463,-643.2336"/>
 <polygon fill="#191970" stroke="#191970" points="992.4934,-686.564 982.5315,-690.1712 992.5686,-693.5636 992.4934,-686.564"/>
 </g>
@@ -961,9 +961,9 @@
 <path fill="none" stroke="#191970" d="M1908.7515,-612.6144C1886.328,-588.7706 1850,-542.8368 1850,-495.5 1850,-495.5 1850,-495.5 1850,-350.5 1850,-295.9431 1905.7734,-253.066 1940.6318,-231.5956"/>
 <polygon fill="#191970" stroke="#191970" points="1906.2735,-615.0867 1915.7503,-619.8239 1911.2961,-610.2108 1906.2735,-615.0867"/>
 </g>
-<!-- Node249 -->
+<!-- Node248 -->
 <g id="node43" class="node">
-<title>Node249</title>
+<title>Node248</title>
 <g id="a_node43"><a xlink:href="doc_8h.html" target="_top" xlink:title="include/tvm/script\l/printer/doc.h">
 <polygon fill="#ffffff" stroke="#000000" points="1680,-335.5 1680,-365.5 1784,-365.5 1784,-335.5 1680,-335.5"/>
 <text text-anchor="start" x="1688" y="-353.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">include/tvm/script</text>
@@ -971,9 +971,9 @@
 </a>
 </g>
 </g>
-<!-- Node202&#45;&gt;Node249 -->
+<!-- Node202&#45;&gt;Node248 -->
 <g id="edge115" class="edge">
-<title>Node202&#45;&gt;Node249</title>
+<title>Node202&#45;&gt;Node248</title>
 <path fill="none" stroke="#191970" d="M1864.1472,-617.0696C1840.51,-609.4346 1815.1457,-597.2649 1798,-578 1744.0964,-517.4341 1774.0571,-479.4279 1750,-402 1746.178,-389.699 1741.3368,-375.9332 1737.638,-365.7305"/>
 <polygon fill="#191970" stroke="#191970" points="1863.2084,-620.442 1873.7929,-619.9738 1865.2266,-613.7393 1863.2084,-620.442"/>
 </g>
@@ -1009,54 +1009,54 @@
 <path fill="none" stroke="#191970" d="M1899.7969,-614.3231C1866.1366,-592.6371 1812,-549.3834 1812,-495.5 1812,-495.5 1812,-495.5 1812,-350.5 1812,-305.5445 1789.7861,-255.9879 1777.2908,-231.6684"/>
 <polygon fill="#191970" stroke="#191970" points="1898.3471,-617.5433 1908.6859,-619.8586 1902.0474,-611.6013 1898.3471,-617.5433"/>
 </g>
-<!-- Node261 -->
+<!-- Node260 -->
 <g id="node46" class="node">
-<title>Node261</title>
+<title>Node260</title>
 <g id="a_node46"><a xlink:href="ir_2span_8h.html" target="_top" xlink:title="Span information for debugging purposes. ">
 <polygon fill="#ffffff" stroke="#ff0000" points="2654.5,-553 2654.5,-572 2773.5,-572 2773.5,-553 2654.5,-553"/>
 <text text-anchor="middle" x="2714" y="-560" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">include/tvm/ir/span.h</text>
 </a>
 </g>
 </g>
-<!-- Node202&#45;&gt;Node261 -->
+<!-- Node202&#45;&gt;Node260 -->
 <g id="edge94" class="edge">
-<title>Node202&#45;&gt;Node261</title>
+<title>Node202&#45;&gt;Node260</title>
 <path fill="none" stroke="#191970" d="M2004.5956,-627.7099C2137.2581,-623.8319 2413.7722,-612.0573 2645,-578 2655.2032,-576.4972 2666.1395,-574.3118 2676.2293,-572.0535"/>
 <polygon fill="#191970" stroke="#191970" points="2004.4195,-624.2134 1994.5234,-627.9972 2004.6192,-631.2106 2004.4195,-624.2134"/>
 </g>
-<!-- Node262 -->
+<!-- Node261 -->
 <g id="node47" class="node">
-<title>Node262</title>
+<title>Node261</title>
 <g id="a_node47"><a xlink:href="ir_2type_8h.html" target="_top" xlink:title="IR/AST nodes for the unified type system in TVM. ">
 <polygon fill="#ffffff" stroke="#ff0000" points="2502,-486 2502,-505 2620,-505 2620,-486 2502,-486"/>
 <text text-anchor="middle" x="2561" y="-493" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">include/tvm/ir/type.h</text>
 </a>
 </g>
 </g>
-<!-- Node202&#45;&gt;Node262 -->
+<!-- Node202&#45;&gt;Node261 -->
 <g id="edge106" class="edge">
-<title>Node202&#45;&gt;Node262</title>
+<title>Node202&#45;&gt;Node261</title>
 <path fill="none" stroke="#191970" d="M1980.1305,-617.4439C2013.4295,-608.8886 2056.3963,-595.7611 2092,-578 2113.0821,-567.4831 2113.0557,-555.5738 2135,-547 2200.4855,-521.4142 2400.9868,-505.5611 2501.8093,-498.9977"/>
 <polygon fill="#191970" stroke="#191970" points="1978.9742,-614.1254 1970.1255,-619.9522 1980.6765,-620.9152 1978.9742,-614.1254"/>
 </g>
-<!-- Node253 -->
+<!-- Node252 -->
 <g id="node48" class="node">
-<title>Node253</title>
+<title>Node252</title>
 <g id="a_node48"><a xlink:href="relay_2base_8h.html" target="_top" xlink:title="Base classes for the Relay IR. ">
 <polygon fill="#ffffff" stroke="#ff0000" points="2638.5,-486 2638.5,-505 2775.5,-505 2775.5,-486 2638.5,-486"/>
 <text text-anchor="middle" x="2707" y="-493" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">include/tvm/relay/base.h</text>
 </a>
 </g>
 </g>
-<!-- Node202&#45;&gt;Node253 -->
+<!-- Node202&#45;&gt;Node252 -->
 <g id="edge111" class="edge">
-<title>Node202&#45;&gt;Node253</title>
+<title>Node202&#45;&gt;Node252</title>
 <path fill="none" stroke="#191970" d="M2004.8817,-627.6576C2211.8766,-622.4405 2756.5429,-606.0948 2783,-578 2807.5656,-551.9139 2757.5564,-520.7069 2727.4831,-505.2165"/>
 <polygon fill="#191970" stroke="#191970" points="2004.6005,-624.1635 1994.6911,-627.9123 2004.7755,-631.1613 2004.6005,-624.1635"/>
 </g>
-<!-- Node265 -->
+<!-- Node264 -->
 <g id="node49" class="node">
-<title>Node265</title>
+<title>Node264</title>
 <g id="a_node49"><a xlink:href="ir__docsifier__functor_8h.html" target="_top" xlink:title="include/tvm/script\l/printer/ir_docsifier\l_functor.h">
 <polygon fill="#ffffff" stroke="#000000" points="1600,-402.5 1600,-443.5 1708,-443.5 1708,-402.5 1600,-402.5"/>
 <text text-anchor="start" x="1608" y="-431.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">include/tvm/script</text>
@@ -1065,9 +1065,9 @@
 </a>
 </g>
 </g>
-<!-- Node202&#45;&gt;Node265 -->
+<!-- Node202&#45;&gt;Node264 -->
 <g id="edge117" class="edge">
-<title>Node202&#45;&gt;Node265</title>
+<title>Node202&#45;&gt;Node264</title>
 <path fill="none" stroke="#191970" d="M1853.9617,-618.2014C1803.6292,-609.0502 1741.9975,-594.9234 1722,-578 1680.2781,-542.6918 1663.2866,-476.8674 1657.1139,-443.5096"/>
 <polygon fill="#191970" stroke="#191970" points="1853.4031,-621.6569 1863.8619,-619.9646 1854.6305,-614.7653 1853.4031,-621.6569"/>
 </g>
@@ -1113,9 +1113,9 @@
 <path fill="none" stroke="#191970" d="M2063.4756,-411.157C2124.2438,-396.8991 2225.1066,-373.2339 2281.1957,-360.0738"/>
 <polygon fill="#191970" stroke="#191970" points="2062.6502,-407.7555 2053.7141,-413.4473 2064.2492,-414.5705 2062.6502,-407.7555"/>
 </g>
-<!-- Node216&#45;&gt;Node246 -->
+<!-- Node216&#45;&gt;Node245 -->
 <g id="edge83" class="edge">
-<title>Node216&#45;&gt;Node246</title>
+<title>Node216&#45;&gt;Node245</title>
 <path fill="none" stroke="#191970" d="M2081.4549,-412.7671C2175.2434,-398.7471 2342.4474,-373.7527 2433.8988,-360.0821"/>
 <polygon fill="#191970" stroke="#191970" points="2080.875,-409.3148 2071.5023,-414.2548 2081.9099,-416.2378 2080.875,-409.3148"/>
 </g>
@@ -1137,9 +1137,9 @@
 <path fill="none" stroke="#191970" d="M2026.8506,-404.8102C2034.1021,-394.1279 2042.2377,-380.0077 2046,-366 2057.3691,-323.6712 2057.5001,-305.613 2035,-268 2025.8868,-252.7656 2010.4204,-240.4272 1996.6424,-231.6505"/>
 <polygon fill="#191970" stroke="#191970" points="2023.8048,-403.0526 2020.8379,-413.2235 2029.4999,-407.1227 2023.8048,-403.0526"/>
 </g>
-<!-- Node216&#45;&gt;Node249 -->
+<!-- Node216&#45;&gt;Node248 -->
 <g id="edge90" class="edge">
-<title>Node216&#45;&gt;Node249</title>
+<title>Node216&#45;&gt;Node248</title>
 <path fill="none" stroke="#191970" d="M1966.0271,-410.8806C1915.7913,-397.9195 1836.33,-377.4179 1784.1784,-363.9624"/>
 <polygon fill="#191970" stroke="#191970" points="1965.4179,-414.338 1975.9752,-413.4473 1967.1667,-407.56 1965.4179,-414.338"/>
 </g>
@@ -1155,9 +1155,9 @@
 <path fill="none" stroke="#191970" d="M1968,-258.0249C1968,-249.128 1968,-239.4287 1968,-231.6432"/>
 <polygon fill="#191970" stroke="#191970" points="1964.5001,-258.2966 1968,-268.2967 1971.5001,-258.2967 1964.5001,-258.2966"/>
 </g>
-<!-- Node249&#45;&gt;Node210 -->
+<!-- Node248&#45;&gt;Node210 -->
 <g id="edge91" class="edge">
-<title>Node249&#45;&gt;Node210</title>
+<title>Node248&#45;&gt;Node210</title>
 <path fill="none" stroke="#191970" d="M1729.7449,-325.3179C1728.941,-316.3414 1728.061,-306.5143 1727.3561,-298.6432"/>
 <polygon fill="#191970" stroke="#191970" points="1726.2604,-325.6487 1730.6385,-335.2967 1733.2325,-325.0243 1726.2604,-325.6487"/>
 </g>
@@ -1167,75 +1167,75 @@
 <path fill="none" stroke="#191970" d="M1741.2275,-259.7735C1747.2334,-250.4154 1753.9551,-239.9421 1759.2812,-231.6432"/>
 <polygon fill="#191970" stroke="#191970" points="1738.2131,-257.9903 1735.7574,-268.2967 1744.1042,-261.7712 1738.2131,-257.9903"/>
 </g>
-<!-- Node261&#45;&gt;Node49 -->
+<!-- Node260&#45;&gt;Node49 -->
 <g id="edge102" class="edge">
-<title>Node261&#45;&gt;Node49</title>
+<title>Node260&#45;&gt;Node49</title>
 <path fill="none" stroke="#191970" d="M2662.0305,-550.6497C2597.2498,-535.841 2494.7392,-512.2693 2493,-511 2487.7963,-507.2022 2387.5741,-335.8709 2362.5998,-293.0974"/>
 <polygon fill="#191970" stroke="#191970" points="2661.5538,-554.1309 2672.0823,-552.9464 2663.1131,-547.3067 2661.5538,-554.1309"/>
 </g>
-<!-- Node261&#45;&gt;Node63 -->
+<!-- Node260&#45;&gt;Node63 -->
 <g id="edge103" class="edge">
-<title>Node261&#45;&gt;Node63</title>
+<title>Node260&#45;&gt;Node63</title>
 <path fill="none" stroke="#191970" d="M2739.0376,-547.613C2753.5034,-538.2524 2771.4587,-525.2698 2785,-511 2798.2165,-497.0724 2872.402,-384.0311 2879,-366 2896.0825,-319.3164 2898.2742,-259.5778 2898.2688,-231.8781"/>
 <polygon fill="#191970" stroke="#191970" points="2737.1519,-544.6643 2730.5521,-552.9524 2740.88,-550.5889 2737.1519,-544.6643"/>
 </g>
-<!-- Node261&#45;&gt;Node216 -->
+<!-- Node260&#45;&gt;Node216 -->
 <g id="edge95" class="edge">
-<title>Node261&#45;&gt;Node216</title>
+<title>Node260&#45;&gt;Node216</title>
 <path fill="none" stroke="#191970" d="M2664.0433,-550.7855C2657.6501,-549.4315 2651.1818,-548.1323 2645,-547 2533.2815,-526.5371 2503.6443,-531.8637 2392,-511 2265.1769,-487.2998 2116.6251,-449.979 2049.3647,-432.555"/>
 <polygon fill="#191970" stroke="#191970" points="2663.4607,-554.2405 2673.9757,-552.9424 2664.9463,-547.4 2663.4607,-554.2405"/>
 </g>
-<!-- Node261&#45;&gt;Node262 -->
+<!-- Node260&#45;&gt;Node261 -->
 <g id="edge96" class="edge">
-<title>Node261&#45;&gt;Node262</title>
+<title>Node260&#45;&gt;Node261</title>
 <path fill="none" stroke="#191970" d="M2682.5833,-548.7424C2652.8511,-535.7224 2608.9934,-516.5167 2582.8805,-505.0817"/>
 <polygon fill="#191970" stroke="#191970" points="2681.5146,-552.0952 2692.0788,-552.9005 2684.3226,-545.6831 2681.5146,-552.0952"/>
 </g>
-<!-- Node261&#45;&gt;Node253 -->
+<!-- Node260&#45;&gt;Node252 -->
 <g id="edge104" class="edge">
-<title>Node261&#45;&gt;Node253</title>
+<title>Node260&#45;&gt;Node252</title>
 <path fill="none" stroke="#191970" d="M2711.9217,-542.6079C2710.6268,-530.214 2709.0192,-514.8263 2708.0011,-505.0817"/>
 <polygon fill="#191970" stroke="#191970" points="2708.4768,-543.3184 2712.9971,-552.9005 2715.4389,-542.5909 2708.4768,-543.3184"/>
 </g>
-<!-- Node262&#45;&gt;Node45 -->
+<!-- Node261&#45;&gt;Node45 -->
 <g id="edge99" class="edge">
-<title>Node262&#45;&gt;Node45</title>
+<title>Node261&#45;&gt;Node45</title>
 <path fill="none" stroke="#191970" d="M2580.0389,-479.0676C2594.2651,-466.7891 2613.5654,-450.1311 2627.426,-438.168"/>
 <polygon fill="#191970" stroke="#191970" points="2577.612,-476.5388 2572.3286,-485.7223 2582.1858,-481.838 2577.612,-476.5388"/>
 </g>
-<!-- Node262&#45;&gt;Node160 -->
+<!-- Node261&#45;&gt;Node160 -->
 <g id="edge100" class="edge">
-<title>Node262&#45;&gt;Node160</title>
+<title>Node261&#45;&gt;Node160</title>
 <path fill="none" stroke="#191970" d="M2561.6019,-475.8705C2563.0431,-455.8732 2567.6463,-424.6643 2582,-402 2593.7421,-383.4593 2614.5946,-368.8732 2629.7249,-360.0271"/>
 <polygon fill="#191970" stroke="#191970" points="2558.1019,-475.782 2561.0767,-485.9506 2565.0924,-476.1463 2558.1019,-475.782"/>
 </g>
-<!-- Node262&#45;&gt;Node162 -->
+<!-- Node261&#45;&gt;Node162 -->
 <g id="edge101" class="edge">
-<title>Node262&#45;&gt;Node162</title>
+<title>Node261&#45;&gt;Node162</title>
 <path fill="none" stroke="#191970" d="M2614.1254,-483.3114C2643.5447,-475.059 2679.9307,-462.2847 2709,-444 2746.5973,-420.3511 2780.6192,-378.8499 2794.8933,-360.1349"/>
 <polygon fill="#191970" stroke="#191970" points="2613.172,-479.9435 2604.4362,-485.9381 2615.0036,-486.6996 2613.172,-479.9435"/>
 </g>
-<!-- Node262&#45;&gt;Node203 -->
+<!-- Node261&#45;&gt;Node203 -->
 <g id="edge97" class="edge">
-<title>Node262&#45;&gt;Node203</title>
+<title>Node261&#45;&gt;Node203</title>
 <path fill="none" stroke="#191970" d="M2536.6336,-480.717C2487.6572,-451.0033 2378.4873,-384.7705 2337.7392,-360.0489"/>
 <polygon fill="#191970" stroke="#191970" points="2534.9535,-483.7915 2545.3185,-485.9861 2538.5844,-477.8068 2534.9535,-483.7915"/>
 </g>
-<!-- Node262&#45;&gt;Node216 -->
+<!-- Node261&#45;&gt;Node216 -->
 <g id="edge98" class="edge">
-<title>Node262&#45;&gt;Node216</title>
+<title>Node261&#45;&gt;Node216</title>
 <path fill="none" stroke="#191970" d="M2491.6081,-486.3195C2382.6344,-471.9024 2173.326,-444.211 2071.5051,-430.7402"/>
 <polygon fill="#191970" stroke="#191970" points="2491.461,-489.8305 2501.8337,-487.6723 2492.3792,-482.8909 2491.461,-489.8305"/>
 </g>
-<!-- Node253&#45;&gt;Node162 -->
+<!-- Node252&#45;&gt;Node162 -->
 <g id="edge105" class="edge">
-<title>Node253&#45;&gt;Node162</title>
+<title>Node252&#45;&gt;Node162</title>
 <path fill="none" stroke="#191970" d="M2737.1559,-480.9525C2752.1806,-472.2297 2769.3648,-459.756 2780,-444 2797.913,-417.462 2801.3315,-378.1373 2801.9212,-360.1335"/>
 <polygon fill="#191970" stroke="#191970" points="2735.2378,-478.0128 2728.1578,-485.8948 2738.6077,-484.1482 2735.2378,-478.0128"/>
 </g>
-<!-- Node265&#45;&gt;Node210 -->
+<!-- Node264&#45;&gt;Node210 -->
 <g id="edge118" class="edge">
-<title>Node265&#45;&gt;Node210</title>
+<title>Node264&#45;&gt;Node210</title>
 <path fill="none" stroke="#191970" d="M1639.0097,-393.0787C1632.293,-375.2007 1627.8978,-352.6171 1638,-335 1647.5102,-318.4154 1664.6582,-306.6581 1681.3071,-298.6069"/>
 <polygon fill="#191970" stroke="#191970" points="1635.8387,-394.5692 1642.9027,-402.4654 1642.3047,-391.8874 1635.8387,-394.5692"/>
 </g>

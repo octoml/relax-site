@@ -36,7 +36,6 @@ var searchData=
   ['repeat',['repeat',['../classtvm_1_1auto__scheduler_1_1ProgramRunnerNode.html#a8d5523fcffda00fccd916fbebb4be00a',1,'tvm::auto_scheduler::ProgramRunnerNode']]],
   ['repeats',['repeats',['../structtvm_1_1relay_1_1RepeatAttrs.html#ade3005a90c1ff77a1f583c4a7ba898e0',1,'tvm::relay::RepeatAttrs']]],
   ['reps',['reps',['../structtvm_1_1relay_1_1TileAttrs.html#acac0351f86c23beb264227981424022e',1,'tvm::relay::TileAttrs']]],
-  ['require_5fctx',['require_ctx',['../structtvm_1_1relax_1_1BuiltinFuncAttrs.html#a034636884ca45edaa6936a74ed62a3b5',1,'tvm::relax::BuiltinFuncAttrs']]],
   ['require_5ftype',['require_type',['../classtvm_1_1relay_1_1DFPatternCallbackNode.html#acf0cbf5a96eb4c9000b770b7adbd9d32',1,'tvm::relay::DFPatternCallbackNode']]],
   ['required',['required',['../classtvm_1_1transform_1_1PassInfoNode.html#abc4fdfbc0e6db41ae6296d7b2816b534',1,'tvm::transform::PassInfoNode']]],
   ['required_5fpass',['required_pass',['../classtvm_1_1transform_1_1PassContextNode.html#a029074685b6cfcc0431098697f2bc927',1,'tvm::transform::PassContextNode']]],

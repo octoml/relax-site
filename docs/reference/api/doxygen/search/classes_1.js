@@ -73,6 +73,5 @@ var searchData=
   ['builderresult',['BuilderResult',['../classtvm_1_1meta__schedule_1_1BuilderResult.html',1,'tvm::meta_schedule']]],
   ['builderresultnode',['BuilderResultNode',['../classtvm_1_1meta__schedule_1_1BuilderResultNode.html',1,'tvm::meta_schedule']]],
   ['buildresult',['BuildResult',['../classtvm_1_1auto__scheduler_1_1BuildResult.html',1,'tvm::auto_scheduler']]],
-  ['buildresultnode',['BuildResultNode',['../classtvm_1_1auto__scheduler_1_1BuildResultNode.html',1,'tvm::auto_scheduler']]],
-  ['builtinfuncattrs',['BuiltinFuncAttrs',['../structtvm_1_1relax_1_1BuiltinFuncAttrs.html',1,'tvm::relax']]]
+  ['buildresultnode',['BuildResultNode',['../classtvm_1_1auto__scheduler_1_1BuildResultNode.html',1,'tvm::auto_scheduler']]]
 ];

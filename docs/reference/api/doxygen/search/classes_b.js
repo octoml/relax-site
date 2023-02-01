@@ -30,7 +30,7 @@ var searchData=
   ['matchcast',['MatchCast',['../classtvm_1_1relax_1_1MatchCast.html',1,'tvm::relax']]],
   ['matchcastnode',['MatchCastNode',['../classtvm_1_1relax_1_1MatchCastNode.html',1,'tvm::relax']]],
   ['matchnode',['MatchNode',['../classtvm_1_1relay_1_1MatchNode.html',1,'tvm::relay']]],
-  ['matmulattrs',['MatmulAttrs',['../structtvm_1_1relay_1_1MatmulAttrs.html',1,'tvm::relay::MatmulAttrs'],['../structtvm_1_1relax_1_1MatmulAttrs.html',1,'tvm::relax::MatmulAttrs']]],
+  ['matmulattrs',['MatmulAttrs',['../structtvm_1_1relax_1_1MatmulAttrs.html',1,'tvm::relax::MatmulAttrs'],['../structtvm_1_1relay_1_1MatmulAttrs.html',1,'tvm::relay::MatmulAttrs']]],
   ['matrixsetdiagattrs',['MatrixSetDiagAttrs',['../structtvm_1_1relay_1_1MatrixSetDiagAttrs.html',1,'tvm::relay']]],
   ['max',['Max',['../classtvm_1_1tir_1_1Max.html',1,'tvm::tir']]],
   ['maxnode',['MaxNode',['../classtvm_1_1tir_1_1MaxNode.html',1,'tvm::tir']]],

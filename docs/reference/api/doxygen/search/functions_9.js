@@ -72,7 +72,7 @@ var searchData=
   ['int32x4',['Int32x4',['../namespacetvm_1_1script_1_1ir__builder_1_1tir.html#a1d7bdb8458778293ced5af6ad9378283',1,'tvm::script::ir_builder::tir']]],
   ['int32x64',['Int32x64',['../namespacetvm_1_1script_1_1ir__builder_1_1tir.html#a57b983ed9d4d5000d0372e64e526f9e0',1,'tvm::script::ir_builder::tir']]],
   ['int32x8',['Int32x8',['../namespacetvm_1_1script_1_1ir__builder_1_1tir.html#ae89c85eabf166d4efddff53988ff57b5',1,'tvm::script::ir_builder::tir']]],
-  ['int64',['Int64',['../namespacetvm_1_1script_1_1ir__builder_1_1tir.html#a7e3533536d109d1a5dd037c356ac2662',1,'tvm::script::ir_builder::tir']]],
+  ['int64',['Int64',['../classtvm_1_1relax_1_1PrimValue.html#a81f14eeb71ee6d09e40a209e2daa2ecc',1,'tvm::relax::PrimValue::Int64()'],['../namespacetvm_1_1script_1_1ir__builder_1_1tir.html#a7e3533536d109d1a5dd037c356ac2662',1,'tvm::script::ir_builder::tir::Int64()']]],
   ['int64x16',['Int64x16',['../namespacetvm_1_1script_1_1ir__builder_1_1tir.html#a3c2d6fdb8690f5593c1d43b0cdf43d4e',1,'tvm::script::ir_builder::tir']]],
   ['int64x32',['Int64x32',['../namespacetvm_1_1script_1_1ir__builder_1_1tir.html#a7e047daab47ebe417cdda5e3209607af',1,'tvm::script::ir_builder::tir']]],
   ['int64x4',['Int64x4',['../namespacetvm_1_1script_1_1ir__builder_1_1tir.html#aa84d61b0037299683391cfb1792064f9',1,'tvm::script::ir_builder::tir']]],

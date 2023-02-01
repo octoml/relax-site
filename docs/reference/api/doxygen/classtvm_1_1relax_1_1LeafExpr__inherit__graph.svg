@@ -70,23 +70,24 @@
 <g id="node7" class="node">
 <title>Node6</title>
 <g id="a_node7"><a xlink:href="classtvm_1_1relax_1_1PrimValue.html" target="_top" xlink:title="Managed reference to PrimValueNode. ">
-<polygon fill="#ffffff" stroke="#000000" points="344,-155 344,-256 498,-256 498,-155 344,-155"/>
-<text text-anchor="middle" x="421" y="-244" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">tvm::relax::PrimValue</text>
-<polyline fill="none" stroke="#000000" points="344,-237 498,-237 "/>
-<text text-anchor="middle" x="421" y="-225" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000"> </text>
-<polyline fill="none" stroke="#000000" points="344,-218 498,-218 "/>
-<text text-anchor="start" x="352" y="-206" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">+ PrimValue()</text>
-<text text-anchor="start" x="352" y="-195" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">+ TVM_DEFINE_OBJECT_REF</text>
-<text text-anchor="start" x="352" y="-184" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_METHODS()</text>
-<text text-anchor="start" x="352" y="-173" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">+ TVM_DEFINE_OBJECT_REF</text>
-<text text-anchor="start" x="352" y="-162" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_COW_METHOD()</text>
+<polygon fill="#ffffff" stroke="#000000" points="344,-149.5 344,-261.5 498,-261.5 498,-149.5 344,-149.5"/>
+<text text-anchor="middle" x="421" y="-249.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">tvm::relax::PrimValue</text>
+<polyline fill="none" stroke="#000000" points="344,-242.5 498,-242.5 "/>
+<text text-anchor="middle" x="421" y="-230.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000"> </text>
+<polyline fill="none" stroke="#000000" points="344,-223.5 498,-223.5 "/>
+<text text-anchor="start" x="352" y="-211.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">+ PrimValue()</text>
+<text text-anchor="start" x="352" y="-200.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">+ TVM_DEFINE_OBJECT_REF</text>
+<text text-anchor="start" x="352" y="-189.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_METHODS()</text>
+<text text-anchor="start" x="352" y="-178.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">+ TVM_DEFINE_OBJECT_REF</text>
+<text text-anchor="start" x="352" y="-167.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_COW_METHOD()</text>
+<text text-anchor="start" x="352" y="-156.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">+ Int64()</text>
 </a>
 </g>
 </g>
 <!-- Node0&#45;&gt;Node6 -->
 <g id="edge6" class="edge">
 <title>Node0&#45;&gt;Node6</title>
-<path fill="none" stroke="#191970" d="M478.2417,-290.0313C470.9304,-279.2344 462.9999,-267.5231 455.4376,-256.3555"/>
+<path fill="none" stroke="#191970" d="M478.2145,-289.9912C472.0692,-280.9162 465.4875,-271.1966 459.0553,-261.698"/>
 <polygon fill="none" stroke="#191970" points="475.4484,-292.1486 483.9536,-298.4663 481.2446,-288.2237 475.4484,-292.1486"/>
 </g>
 <!-- Node7 -->
