@@ -31,6 +31,7 @@ var searchData=
   ['registry',['registry',['../structTVMMutableFuncRegistry.html#acc1fcd6554c627c1bf3b3c00e1120e9b',1,'TVMMutableFuncRegistry::registry()'],['../structTVMModule.html#a6db21005b9e983207b341e65af4c4ab7',1,'TVMModule::registry()']]],
   ['reject',['reject',['../classtvm_1_1relax_1_1NotPatternNode.html#a1619244d06204b06ab1bdb104dc707f6',1,'tvm::relax::NotPatternNode']]],
   ['relations',['relations',['../classtvm_1_1arith_1_1IntConstraintsNode.html#a078c29fba655311710227460312e78b5',1,'tvm::arith::IntConstraintsNode::relations()'],['../classtvm_1_1te_1_1StageNode.html#ad1c0f8dc1f0f406a2abcd05fdad8fad5',1,'tvm::te::StageNode::relations()']]],
+  ['relax_5fprefix',['relax_prefix',['../classtvm_1_1PrinterConfigNode.html#ab16ceb4c8fb205dbd8493273cedd5326',1,'tvm::PrinterConfigNode']]],
   ['remaining_5ftasks_5f',['remaining_tasks_',['../classtvm_1_1meta__schedule_1_1TaskSchedulerNode.html#a11935a9326ac14e4e0c41fbb38c9fccf',1,'tvm::meta_schedule::TaskSchedulerNode']]],
   ['renderer',['renderer',['../classtvm_1_1DiagnosticRendererNode.html#a8cb2c50460583e5eeee486cf044adfbe',1,'tvm::DiagnosticRendererNode::renderer()'],['../classtvm_1_1DiagnosticContextNode.html#aea5532b73702d459a53ee0c358607284',1,'tvm::DiagnosticContextNode::renderer()']]],
   ['repeat',['repeat',['../classtvm_1_1auto__scheduler_1_1ProgramRunnerNode.html#a8d5523fcffda00fccd916fbebb4be00a',1,'tvm::auto_scheduler::ProgramRunnerNode']]],
@@ -73,6 +74,5 @@ var searchData=
   ['run_5ferror_5fcount',['run_error_count',['../classtvm_1_1meta__schedule_1_1TaskRecordNode.html#a1482e1c157ec7e4d5e472125a692721a',1,'tvm::meta_schedule::TaskRecordNode']]],
   ['run_5fsecs',['run_secs',['../classtvm_1_1meta__schedule_1_1TuningRecordNode.html#a00aeeedbe4d1d6008224d98c62739581',1,'tvm::meta_schedule::TuningRecordNode::run_secs()'],['../classtvm_1_1meta__schedule_1_1RunnerResultNode.html#a23d5a15c8d72c17c59ec4e7f2d3fabf3',1,'tvm::meta_schedule::RunnerResultNode::run_secs()'],['../classtvm_1_1relax_1_1TuningRecordNode.html#af38a14e452ec7553448859ae8af18781',1,'tvm::relax::TuningRecordNode::run_secs()']]],
   ['runner',['runner',['../classtvm_1_1auto__scheduler_1_1TuningOptionsNode.html#a355d86b2c38f0827ae1b158753d1daa2',1,'tvm::auto_scheduler::TuningOptionsNode::runner()'],['../classtvm_1_1auto__scheduler_1_1ProgramMeasurerNode.html#a0f7a4a84637fd0309b52f61b65bee158',1,'tvm::auto_scheduler::ProgramMeasurerNode::runner()']]],
-  ['runner_5ffutures',['runner_futures',['../classtvm_1_1meta__schedule_1_1TaskRecordNode.html#ad60e5f61144b13d33841c2364e2c611b',1,'tvm::meta_schedule::TaskRecordNode']]],
-  ['runtime_5fdevice_5findex',['runtime_device_index',['../structtvm_1_1relax_1_1AllocTensorAttrs.html#a22244c6b05cf87f86b433e68a14ee722',1,'tvm::relax::AllocTensorAttrs::runtime_device_index()'],['../structtvm_1_1relax_1_1VMAllocStorageAttrs.html#a53a107714796d7702d4604f730230fa9',1,'tvm::relax::VMAllocStorageAttrs::runtime_device_index()']]]
+  ['runner_5ffutures',['runner_futures',['../classtvm_1_1meta__schedule_1_1TaskRecordNode.html#ad60e5f61144b13d33841c2364e2c611b',1,'tvm::meta_schedule::TaskRecordNode']]]
 ];

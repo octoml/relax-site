@@ -83,7 +83,7 @@ $(function() {
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for utils.h:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="relax_2utils_8h__incl.svg" width="4912" height="1216"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="relax_2utils_8h__incl.svg" width="5086" height="1216"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -120,9 +120,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ade67ebcba4b40c0e0c38c0ddd3279131"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetvm_1_1relax.html#ade67ebcba4b40c0e0c38c0ddd3279131">tvm::relax::IsLeafOrTuple</a> (const Expr &amp;expr)</td></tr>
 <tr class="memdesc:ade67ebcba4b40c0e0c38c0ddd3279131"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the given expression is a "leaf" node or tuple node for normalization purposes.  <a href="namespacetvm_1_1relax.html#ade67ebcba4b40c0e0c38c0ddd3279131">More...</a><br /></td></tr>
 <tr class="separator:ade67ebcba4b40c0e0c38c0ddd3279131"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a38fc6bb39c27e25365de9a69b38cd52e"><td class="memItemLeft" align="right" valign="top">Function&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetvm_1_1relax.html#a38fc6bb39c27e25365de9a69b38cd52e">tvm::relax::CopyWithNewParams</a> (Function func)</td></tr>
-<tr class="memdesc:a38fc6bb39c27e25365de9a69b38cd52e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy the given function. The parameters of the original function would be copied to satisfy the restriction in the well-formed check: any two functions cannot share the same parameter variable.  <a href="namespacetvm_1_1relax.html#a38fc6bb39c27e25365de9a69b38cd52e">More...</a><br /></td></tr>
-<tr class="separator:a38fc6bb39c27e25365de9a69b38cd52e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28e1446608b37ab892b51acd178ef4b1"><td class="memItemLeft" align="right" valign="top">Function&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetvm_1_1relax.html#a28e1446608b37ab892b51acd178ef4b1">tvm::relax::CopyWithNewVars</a> (Function func)</td></tr>
+<tr class="memdesc:a28e1446608b37ab892b51acd178ef4b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy the given function. All variables that are bound inside the original function would be copied to satisfy the restriction in the well-formed check: Variables in Relax must be bound exactly once. This also ensures that both the function and its copy can be inserted into the same <a class="el" href="classtvm_1_1IRModule.html" title="Managed reference class to IRModuleNode. ">IRModule</a>, and be asserted on the structural equality agaisnt <a class="el" href="classtvm_1_1IRModule.html" title="Managed reference class to IRModuleNode. ">IRModule</a> created by TVMScript.  <a href="namespacetvm_1_1relax.html#a28e1446608b37ab892b51acd178ef4b1">More...</a><br /></td></tr>
+<tr class="separator:a28e1446608b37ab892b51acd178ef4b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Utility classes and functions for working with the Relax IR. </p>

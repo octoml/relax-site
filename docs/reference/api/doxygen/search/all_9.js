@@ -18,6 +18,7 @@ var searchData=
   ['haslowerbound',['HasLowerBound',['../classtvm_1_1arith_1_1IntSet.html#a43fe07f824564cd2c9aab6f06a5a79c9',1,'tvm::arith::IntSet']]],
   ['hasmeasurementrecord',['HasMeasurementRecord',['../classtvm_1_1relax_1_1DatabaseNode.html#a26031e229126e3810a37d78f93c9418b',1,'tvm::relax::DatabaseNode']]],
   ['hasnonzeroattr',['HasNonzeroAttr',['../classtvm_1_1DictAttrs.html#a45e524ce0f8ae389341ec37e468d887d',1,'tvm::DictAttrs::HasNonzeroAttr()'],['../classtvm_1_1BaseFuncNode.html#a1fbf773665334f7d109c7c4c12d40d76',1,'tvm::BaseFuncNode::HasNonzeroAttr()'],['../classtvm_1_1IRModuleNode.html#a0051e1b8ec1d99cbade4dfaa511b3bcd',1,'tvm::IRModuleNode::HasNonzeroAttr()']]],
+  ['hasreshapepattern',['HasReshapePattern',['../namespacetvm_1_1relax.html#a9a0625d588e3d480f49c80c7589fe5f6',1,'tvm::relax']]],
   ['hasshape',['HasShape',['../classtvm_1_1relax_1_1DFPattern.html#a16acd19f1cda9add85d03ce7afa06ad3',1,'tvm::relax::DFPattern::HasShape()'],['../classtvm_1_1relay_1_1DFPattern.html#aa799579dd1a1f78c110addf0bef48f5a',1,'tvm::relay::DFPattern::HasShape()']]],
   ['hastuningrecord',['HasTuningRecord',['../classtvm_1_1relax_1_1DatabaseNode.html#a4eee8676d554472d432857c98b5150cb',1,'tvm::relax::DatabaseNode']]],
   ['hastype',['HasType',['../classtvm_1_1relax_1_1DFPattern.html#a6bf034c3081dce53de73eafdcc30d549',1,'tvm::relax::DFPattern::HasType()'],['../classtvm_1_1relay_1_1DFPattern.html#a234aef0269ba34aaeb53ac87779f398b',1,'tvm::relay::DFPattern::HasType()']]],

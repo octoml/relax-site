@@ -738,27 +738,29 @@
 <g id="node8" class="node">
 <title>Node7</title>
 <g id="a_node8"><a xlink:href="classtvm_1_1tir_1_1PrimFuncNode.html" target="_top" xlink:title="Primitive functions that contains TIR statements. ">
-<polygon fill="#ffffff" stroke="#000000" points="681,-182.5 681,-327.5 890,-327.5 890,-182.5 681,-182.5"/>
-<text text-anchor="middle" x="785.5" y="-315.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">tvm::tir::PrimFuncNode</text>
-<polyline fill="none" stroke="#000000" points="681,-308.5 890,-308.5 "/>
-<text text-anchor="start" x="689" y="-296.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">+ params</text>
-<text text-anchor="start" x="689" y="-285.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">+ body</text>
-<text text-anchor="start" x="689" y="-274.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">+ ret_type</text>
-<text text-anchor="start" x="689" y="-263.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">+ buffer_map</text>
-<text text-anchor="start" x="689" y="-252.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">+ _type_key</text>
-<polyline fill="none" stroke="#000000" points="681,-245.5 890,-245.5 "/>
-<text text-anchor="start" x="689" y="-233.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">+ VisitAttrs()</text>
-<text text-anchor="start" x="689" y="-222.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">+ SEqualReduce()</text>
-<text text-anchor="start" x="689" y="-211.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">+ SHashReduce()</text>
-<text text-anchor="start" x="689" y="-200.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">+ func_type_annotation()</text>
-<text text-anchor="start" x="689" y="-189.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">+ TVM_DECLARE_FINAL_OBJECT_INFO()</text>
+<polygon fill="#ffffff" stroke="#000000" points="681,-171.5 681,-338.5 890,-338.5 890,-171.5 681,-171.5"/>
+<text text-anchor="middle" x="785.5" y="-326.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">tvm::tir::PrimFuncNode</text>
+<polyline fill="none" stroke="#000000" points="681,-319.5 890,-319.5 "/>
+<text text-anchor="start" x="689" y="-307.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">+ params</text>
+<text text-anchor="start" x="689" y="-296.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">+ body</text>
+<text text-anchor="start" x="689" y="-285.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">+ ret_type</text>
+<text text-anchor="start" x="689" y="-274.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">+ buffer_map</text>
+<text text-anchor="start" x="689" y="-263.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">+ _type_key</text>
+<polyline fill="none" stroke="#000000" points="681,-256.5 890,-256.5 "/>
+<text text-anchor="start" x="689" y="-244.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">+ VisitAttrs()</text>
+<text text-anchor="start" x="689" y="-233.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">+ SEqualReduce()</text>
+<text text-anchor="start" x="689" y="-222.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">+ SHashReduce()</text>
+<text text-anchor="start" x="689" y="-211.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">+ func_type_annotation()</text>
+<text text-anchor="start" x="689" y="-200.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">+ TVM_OBJECT_ENABLE_SCRIPT</text>
+<text text-anchor="start" x="689" y="-189.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_PRINTER()</text>
+<text text-anchor="start" x="689" y="-178.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">+ TVM_DECLARE_FINAL_OBJECT_INFO()</text>
 </a>
 </g>
 </g>
 <!-- Node3&#45;&gt;Node7 -->
 <g id="edge7" class="edge">
 <title>Node3&#45;&gt;Node7</title>
-<path fill="none" stroke="#191970" d="M516.3069,-402.0086C529.0784,-392.0374 542.721,-382.5888 556.5,-375 603.4126,-349.1629 623.731,-363.2172 671.5,-339 678.2975,-335.5539 685.1204,-331.7107 691.8628,-327.617"/>
+<path fill="none" stroke="#191970" d="M516.3069,-402.0086C529.0784,-392.0374 542.721,-382.5888 556.5,-375 603.4126,-349.1629 623.731,-363.2172 671.5,-339 674.5698,-337.4437 677.6448,-335.8064 680.7153,-334.1016"/>
 <polygon fill="none" stroke="#191970" points="514.0978,-399.2937 508.4739,-408.2727 518.4697,-404.7606 514.0978,-399.2937"/>
 </g>
 <!-- Node14 -->

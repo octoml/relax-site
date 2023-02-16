@@ -7,7 +7,7 @@ var searchData=
   ['measure_5fcallback_2eh',['measure_callback.h',['../measure__callback_8h.html',1,'']]],
   ['measure_5fcandidate_2eh',['measure_candidate.h',['../measure__candidate_8h.html',1,'']]],
   ['measure_5frecord_2eh',['measure_record.h',['../measure__record_8h.html',1,'']]],
-  ['memory_2eh',['memory.h',['../relax_2attrs_2memory_8h.html',1,'(Global Namespace)'],['../relay_2attrs_2memory_8h.html',1,'(Global Namespace)'],['../runtime_2memory_8h.html',1,'(Global Namespace)']]],
+  ['memory_2eh',['memory.h',['../relay_2attrs_2memory_8h.html',1,'(Global Namespace)'],['../runtime_2memory_8h.html',1,'(Global Namespace)']]],
   ['memory_5fmanager_2eh',['memory_manager.h',['../relax__vm_2memory__manager_8h.html',1,'(Global Namespace)'],['../vm_2memory__manager_8h.html',1,'(Global Namespace)']]],
   ['memory_5fpools_2eh',['memory_pools.h',['../memory__pools_8h.html',1,'']]],
   ['metadata_2eh',['metadata.h',['../metadata_8h.html',1,'']]],

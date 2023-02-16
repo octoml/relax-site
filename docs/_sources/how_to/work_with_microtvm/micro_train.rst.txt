@@ -22,10 +22,10 @@
 .. _sphx_glr_how_to_work_with_microtvm_micro_train.py:
 
 
-.. _microtvm-train-arduino:
+.. _tutorial-micro-train-arduino:
 
-Training Vision Models for microTVM on Arduino
-==============================================
+5. Training Vision Models for microTVM on Arduino
+=================================================
 **Author**: `Gavin Uberti <https://github.com/guberti>`_
 
 This tutorial shows how MobileNetV1 models can be trained
@@ -517,26 +517,30 @@ Once we have set these configuration parameters, we will call ``tvm.relay.build`
 Relay model into the MLF intermediate representation. From here, we just need to call
 ``tvm.micro.generate_project`` and pass in the Arduino template project to finish compilation.
 
-.. GENERATED FROM PYTHON SOURCE LINES 440-476
+.. GENERATED FROM PYTHON SOURCE LINES 440-480
 
 .. code-block:: default
 
 
     import shutil
-    import tflite
     import tvm
+    import tvm.micro.testing
 
     # Method to load model is different in TFLite 1 vs 2
     try:  # TFLite 2.1 and above
+        import tflite
+
         tflite_model = tflite.Model.GetRootAsModel(quantized_model, 0)
     except AttributeError:  # Fall back to TFLite 1.14 method
+        import tflite.Model
+
         tflite_model = tflite.Model.Model.GetRootAsModel(quantized_model, 0)
 
     # Convert to the Relay intermediate representation
     mod, params = tvm.relay.frontend.from_tflite(tflite_model)
 
     # Set configuration flags to improve performance
-    target = tvm.target.target.micro("nrf52840")
+    target = tvm.micro.testing.get_target("zephyr", "nrf5340dk_nrf5340_cpuapp")
     runtime = tvm.relay.backend.Runtime("crt")
     executor = tvm.relay.backend.Executor("aot", {"unpacked-api": True})
 
@@ -558,7 +562,7 @@ Relay model into the MLF intermediate representation. From here, we just need to
     )
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 477-518
+.. GENERATED FROM PYTHON SOURCE LINES 481-522
 
 Testing our Arduino Project
 ---------------------------
@@ -602,7 +606,7 @@ We can do both of these things with a few lines of Bash code:
       stream ~/tests/catan_64.png ~/tests/catan.raw
       bin2c -c -st ~/tests/catan.raw --name CATAN_IMAGE > ~/models/project/catan.c
 
-.. GENERATED FROM PYTHON SOURCE LINES 520-560
+.. GENERATED FROM PYTHON SOURCE LINES 524-564
 
 Writing our Arduino Script
 --------------------------
@@ -645,7 +649,7 @@ compile and flash commands underneath. We could also begin autotuning our model,
 subject for a different tutorial. To finish up, we'll verify no compiler errors are thrown
 by our project:
 
-.. GENERATED FROM PYTHON SOURCE LINES 560-565
+.. GENERATED FROM PYTHON SOURCE LINES 564-569
 
 .. code-block:: default
 
@@ -655,7 +659,7 @@ by our project:
     print("Compilation succeeded!")
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 571-578
+.. GENERATED FROM PYTHON SOURCE LINES 575-582
 
 Uploading to Our Device
 -----------------------
@@ -665,7 +669,7 @@ simple enough to do - we'll just turn our project into a `.zip` archive, and cal
 If you're running on Google Colab, you'll have to uncomment the last two lines to download the file
 after writing it.
 
-.. GENERATED FROM PYTHON SOURCE LINES 578-585
+.. GENERATED FROM PYTHON SOURCE LINES 582-589
 
 .. code-block:: default
 
@@ -677,7 +681,7 @@ after writing it.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 606-640
+.. GENERATED FROM PYTHON SOURCE LINES 610-644
 
 From here, we'll need to open it in the Arduino IDE. You'll have to download the IDE as well as
 the SDK for whichever board you are using. For certain boards like the Sony SPRESENSE, you may

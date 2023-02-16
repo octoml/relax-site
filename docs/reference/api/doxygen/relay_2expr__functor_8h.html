@@ -74,9 +74,9 @@ $(function() {
 
 <p>A more powerful visitor which enables defining arbitrary function signatures with type based dispatch on first argument.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;<a class="el" href="error_8h_source.html">tvm/ir/error.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="functor_8h_source.html">tvm/node/functor.h</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="functor_8h_source.html">tvm/node/functor.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="relay_2adt_8h_source.html">tvm/relay/adt.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="error_8h_source.html">tvm/relay/error.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="relay_2expr_8h_source.html">tvm/relay/expr.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="relay_2function_8h_source.html">tvm/relay/function.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="relay_2op_8h_source.html">tvm/relay/op.h</a>&gt;</code><br />
@@ -88,7 +88,7 @@ $(function() {
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for expr_functor.h:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="relay_2expr__functor_8h__incl.svg" width="4963" height="1231"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="relay_2expr__functor_8h__incl.svg" width="4747" height="1231"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div>
@@ -222,7 +222,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">vtable.template set_dispatch&lt;OP&gt;([](<span class="keyword">const</span> ObjectRef&amp; n, TSelf* <span class="keyword">self</span>, <span class="keyword">const</span> <a class="code" href="namespacetvm_1_1relax.html#a8f6ef3d9aaba0138f730a520d7ebbfb3">Expr</a>&amp; post) { \</div><div class="line">    return <span class="keyword">self</span>-&gt;Rewrite_(static_cast&lt;const OP*&gt;(n.get()), post);                          \</div><div class="line">  });</div><div class="ttc" id="namespacetvm_1_1relax_html_a8f6ef3d9aaba0138f730a520d7ebbfb3"><div class="ttname"><a href="namespacetvm_1_1relax.html#a8f6ef3d9aaba0138f730a520d7ebbfb3">tvm::relax::Expr</a></div><div class="ttdeci">RelayExpr Expr</div><div class="ttdef"><b>Definition:</b> expr.h:36</div></div>
+<b>Value:</b><div class="fragment"><div class="line">vtable.template set_dispatch&lt;OP&gt;([](<span class="keyword">const</span> ObjectRef&amp; n, TSelf* <span class="keyword">self</span>, <span class="keyword">const</span> <a class="code" href="namespacetvm_1_1relax.html#a8f6ef3d9aaba0138f730a520d7ebbfb3">Expr</a>&amp; post) { \</div><div class="line">    return <span class="keyword">self</span>-&gt;Rewrite_(static_cast&lt;const OP*&gt;(n.get()), post);                          \</div><div class="line">  });</div><div class="ttc" id="namespacetvm_1_1relax_html_a8f6ef3d9aaba0138f730a520d7ebbfb3"><div class="ttname"><a href="namespacetvm_1_1relax.html#a8f6ef3d9aaba0138f730a520d7ebbfb3">tvm::relax::Expr</a></div><div class="ttdeci">RelayExpr Expr</div><div class="ttdef"><b>Definition:</b> expr.h:35</div></div>
 </div><!-- fragment -->
 </div>
 </div>

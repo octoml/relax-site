@@ -2479,12 +2479,6 @@ constant.  If an integer, this is the index into the
 <tr class="row-even"><td><p><a class="reference internal" href="#tvm.tir.PrimFunc.specialize" title="tvm.tir.PrimFunc.specialize"><code class="xref py py-obj docutils literal notranslate"><span class="pre">specialize</span></code></a>(param_map)</p></td>
 <td><p>Specialize parameters of PrimFunc</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#tvm.tir.PrimFunc.script" title="tvm.tir.PrimFunc.script"><code class="xref py py-obj docutils literal notranslate"><span class="pre">script</span></code></a>([tir_prefix, show_meta])</p></td>
-<td><p>Print IRModule into TVMScript</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#tvm.tir.PrimFunc.show" title="tvm.tir.PrimFunc.show"><code class="xref py py-obj docutils literal notranslate"><span class="pre">show</span></code></a>([style, black_format])</p></td>
-<td><p>A sugar for print highlighted TVM script.</p></td>
-</tr>
 </tbody>
 </table>
 <dl class="py method">
@@ -2554,41 +2548,6 @@ constant.  If an integer, this is the index into the
 </dd>
 <dt class="field-even">Return type</dt>
 <dd class="field-even"><p><a class="reference internal" href="#tvm.tir.PrimFunc" title="tvm.tir.PrimFunc">PrimFunc</a></p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="tvm.tir.PrimFunc.script">
-<span class="sig-name descname"><span class="pre">script</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tir_prefix</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><span class="pre">str</span></a></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">'T'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">show_meta</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><span class="pre">bool</span></a></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><span class="pre">str</span></a></span></span><a class="headerlink" href="#tvm.tir.PrimFunc.script" title="Permalink to this definition">¶</a></dt>
-<dd><p>Print IRModule into TVMScript</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>tir_prefix</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a>) – The tir namespace prefix</p></li>
-<li><p><strong>show_meta</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><em>bool</em></a>) – Whether to show meta information</p></li>
-</ul>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><p><strong>script</strong> – The TVM Script of the PrimFunc</p>
-</dd>
-<dt class="field-odd">Return type</dt>
-<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)">str</a></p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="tvm.tir.PrimFunc.show">
-<span class="sig-name descname"><span class="pre">show</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">style</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">black_format</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><span class="pre">bool</span></a></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.11)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#tvm.tir.PrimFunc.show" title="Permalink to this definition">¶</a></dt>
-<dd><p>A sugar for print highlighted TVM script.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>style</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>, </em><em>optional</em>) – Pygmentize printing style, auto-detected if None.  See
-<cite>tvm.script.highlight.cprint</cite> for more details.</p></li>
-<li><p><strong>black_format</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><em>bool</em></a>) – If true (default), use the formatter Black to format the TVMScript</p></li>
-</ul>
 </dd>
 </dl>
 </dd></dl>
@@ -5691,8 +5650,8 @@ preserve the semantics of computation. Some example of schedules:
 <tr class="row-even"><td><p><a class="reference internal" href="#tvm.tir.Schedule.fork_seed" title="tvm.tir.Schedule.fork_seed"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fork_seed</span></code></a>()</p></td>
 <td><p>Returns a forked random state as seed for new schedules</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#tvm.tir.Schedule.show" title="tvm.tir.Schedule.show"><code class="xref py py-obj docutils literal notranslate"><span class="pre">show</span></code></a>(rand_var)</p></td>
-<td><p>Returns a string representation of the value that the random variable evaluates to</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#tvm.tir.Schedule.show" title="tvm.tir.Schedule.show"><code class="xref py py-obj docutils literal notranslate"><span class="pre">show</span></code></a>([style, black_format])</p></td>
+<td><p>A sugar for print highlighted TVM script.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="#tvm.tir.Schedule.get" title="tvm.tir.Schedule.get"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get</span></code></a>(rand_var_or_sref)</p></td>
 <td><p>Returns: - the corresponding Block that a BlockRV evaluates to; - the corresponding For that a LoopRV evaluates to; - the corresponding integer that a ExprRV evaluates to; - the corresponding Block that a block sref points to; - the corresponding For that a loop sref points to;</p></td>
@@ -5760,7 +5719,7 @@ preserve the semantics of computation. Some example of schedules:
 <tr class="row-odd"><td><p><a class="reference internal" href="#tvm.tir.Schedule.cache_inplace" title="tvm.tir.Schedule.cache_inplace"><code class="xref py py-obj docutils literal notranslate"><span class="pre">cache_inplace</span></code></a>(block, read_buffer_index, ...)</p></td>
 <td><p>Create blocks that reads &amp; write a buffer region into a cache block.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#tvm.tir.Schedule.cache_index" title="tvm.tir.Schedule.cache_index"><code class="xref py py-obj docutils literal notranslate"><span class="pre">cache_index</span></code></a>(block, buffer_index)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#tvm.tir.Schedule.cache_index" title="tvm.tir.Schedule.cache_index"><code class="xref py py-obj docutils literal notranslate"><span class="pre">cache_index</span></code></a>(block, storage_scope[, cse_thresh])</p></td>
 <td><p>Create a block to cache precomputed index for later use.</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="#tvm.tir.Schedule.reindex" title="tvm.tir.Schedule.reindex"><code class="xref py py-obj docutils literal notranslate"><span class="pre">reindex</span></code></a>(block, buffer)</p></td>
@@ -5908,17 +5867,15 @@ function to work on.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="tvm.tir.Schedule.show">
-<span class="sig-name descname"><span class="pre">show</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rand_var</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="ir.html#tvm.ir.PrimExpr" title="tvm.ir.expr.PrimExpr"><span class="pre">tvm.ir.expr.PrimExpr</span></a><span class="p"><span class="pre">,</span> </span><span class="pre">tvm.tir.schedule.schedule.BlockRV</span><span class="p"><span class="pre">,</span> </span><span class="pre">tvm.tir.schedule.schedule.LoopRV</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><span class="pre">str</span></a></span></span><a class="headerlink" href="#tvm.tir.Schedule.show" title="Permalink to this definition">¶</a></dt>
-<dd><p>Returns a string representation of the value that the random variable evaluates to</p>
+<span class="sig-name descname"><span class="pre">show</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">style</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">black_format</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><span class="pre">bool</span></a></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.11)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#tvm.tir.Schedule.show" title="Permalink to this definition">¶</a></dt>
+<dd><p>A sugar for print highlighted TVM script.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>rand_var</strong> (<em>Union</em><em>[</em><em>ExprRV</em><em>, </em><em>BlockRV</em><em>, </em><em>LoopRV</em><em>]</em>) – The random variable to be evaluated</p>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><p><strong>str_repr</strong> – The string representation</p>
-</dd>
-<dt class="field-odd">Return type</dt>
-<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)">str</a></p>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>style</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>, </em><em>optional</em>) – Pygmentize printing style, auto-detected if None.  See
+<cite>tvm.script.highlight.cprint</cite> for more details.</p></li>
+<li><p><strong>black_format</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><em>bool</em></a>) – If true (default), use the formatter Black to format the TVMScript</p></li>
+</ul>
 </dd>
 </dl>
 </dd></dl>
@@ -6731,14 +6688,16 @@ that is within the blocks read region.</p></li>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="tvm.tir.Schedule.cache_index">
-<span class="sig-name descname"><span class="pre">cache_index</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">block</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">tvm.tir.schedule.schedule.BlockRV</span><span class="p"><span class="pre">,</span> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">buffer_index</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><span class="pre">int</span></a><span class="p"><span class="pre">,</span> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span> </span><a class="reference internal" href="#tvm.tir.Buffer" title="tvm.tir.buffer.Buffer"><span class="pre">tvm.tir.buffer.Buffer</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">tvm.tir.schedule.schedule.BlockRV</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#tvm.tir.Schedule.cache_index" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">cache_index</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">block</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">tvm.tir.schedule.schedule.BlockRV</span><span class="p"><span class="pre">,</span> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">storage_scope</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">cse_thresh</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><span class="pre">int</span></a></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">tvm.tir.schedule.schedule.BlockRV</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#tvm.tir.Schedule.cache_index" title="Permalink to this definition">¶</a></dt>
 <dd><p>Create a block to cache precomputed index for later use.
 if there is no index computation, keep unchanged.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>block</strong> (<em>Union</em><em>[</em><em>BlockRV</em><em>, </em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>]</em>) – The target block operates on the target buffer.</p></li>
-<li><p><strong>buffer_index</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a>) – The index of the target buffer in block’s read region</p></li>
+<li><p><strong>storage_scope</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a>) – The storage scope of cached block.</p></li>
+<li><p><strong>cse_thresh</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a>) – The repeat threshold that determines a common sub expr,
+default 0 means cache all index computation.</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns</dt>
@@ -6763,7 +6722,7 @@ if there is no index computation, keep unchanged.</p>
 <p>Create the schedule and cache_index:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">sch</span> <span class="o">=</span> <span class="n">tir</span><span class="o">.</span><span class="n">Schedule</span><span class="p">(</span><span class="n">resize</span><span class="p">)</span>
 <span class="n">block_a</span> <span class="o">=</span> <span class="n">sch</span><span class="o">.</span><span class="n">get_block</span><span class="p">(</span><span class="s2">&quot;A&quot;</span><span class="p">)</span>
-<span class="n">sch</span><span class="o">.</span><span class="n">cache_index</span><span class="p">(</span><span class="n">block_a</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<span class="n">sch</span><span class="o">.</span><span class="n">cache_index</span><span class="p">(</span><span class="n">block_a</span><span class="p">,</span> <span class="s2">&quot;global&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">sch</span><span class="o">.</span><span class="n">mod</span><span class="p">[</span><span class="s2">&quot;main&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">script</span><span class="p">())</span>
 </pre></div>
 </div>
@@ -8333,127 +8292,124 @@ a positive bound overlap.</p>
 <tr class="row-odd"><td><p><a class="reference internal" href="#tvm.tir.transform.InjectVirtualThread" title="tvm.tir.transform.InjectVirtualThread"><code class="xref py py-obj docutils literal notranslate"><span class="pre">InjectVirtualThread</span></code></a>()</p></td>
 <td><p>Inject virtual thread loops.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#tvm.tir.transform.InstallDebugSpans" title="tvm.tir.transform.InstallDebugSpans"><code class="xref py py-obj docutils literal notranslate"><span class="pre">InstallDebugSpans</span></code></a>()</p></td>
-<td><p>Add line information from the TIR printer as spans on each statement and expression.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#tvm.tir.transform.InstrumentBoundCheckers" title="tvm.tir.transform.InstrumentBoundCheckers"><code class="xref py py-obj docutils literal notranslate"><span class="pre">InstrumentBoundCheckers</span></code></a>()</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#tvm.tir.transform.InstrumentBoundCheckers" title="tvm.tir.transform.InstrumentBoundCheckers"><code class="xref py py-obj docutils literal notranslate"><span class="pre">InstrumentBoundCheckers</span></code></a>()</p></td>
 <td><p>Instruments bound checkers.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#tvm.tir.transform.InstrumentProfileIntrinsics" title="tvm.tir.transform.InstrumentProfileIntrinsics"><code class="xref py py-obj docutils literal notranslate"><span class="pre">InstrumentProfileIntrinsics</span></code></a>()</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#tvm.tir.transform.InstrumentProfileIntrinsics" title="tvm.tir.transform.InstrumentProfileIntrinsics"><code class="xref py py-obj docutils literal notranslate"><span class="pre">InstrumentProfileIntrinsics</span></code></a>()</p></td>
 <td><p>Insert intrinsic calls to instrument function and loop level profiling.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#tvm.tir.transform.LegalizePackedCalls" title="tvm.tir.transform.LegalizePackedCalls"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LegalizePackedCalls</span></code></a>()</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#tvm.tir.transform.LegalizePackedCalls" title="tvm.tir.transform.LegalizePackedCalls"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LegalizePackedCalls</span></code></a>()</p></td>
 <td><p>Legalize packed calls to have its arguments wrapped in TVMValues</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#tvm.tir.transform.LiftAttrScope" title="tvm.tir.transform.LiftAttrScope"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LiftAttrScope</span></code></a>(attr_key)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#tvm.tir.transform.LiftAttrScope" title="tvm.tir.transform.LiftAttrScope"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LiftAttrScope</span></code></a>(attr_key)</p></td>
 <td><p>Lift common attrs with attr_key to outer scope.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#tvm.tir.transform.LoopPartition" title="tvm.tir.transform.LoopPartition"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LoopPartition</span></code></a>()</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#tvm.tir.transform.LoopPartition" title="tvm.tir.transform.LoopPartition"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LoopPartition</span></code></a>()</p></td>
 <td><p>Inject virtual thread loops.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#tvm.tir.transform.LowerCrossThreadReduction" title="tvm.tir.transform.LowerCrossThreadReduction"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LowerCrossThreadReduction</span></code></a>()</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#tvm.tir.transform.LowerCrossThreadReduction" title="tvm.tir.transform.LowerCrossThreadReduction"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LowerCrossThreadReduction</span></code></a>()</p></td>
 <td><p>Lower cross-thread reduction from thread bindings to intrinsic function calls.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#tvm.tir.transform.LowerCustomDatatypes" title="tvm.tir.transform.LowerCustomDatatypes"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LowerCustomDatatypes</span></code></a>()</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#tvm.tir.transform.LowerCustomDatatypes" title="tvm.tir.transform.LowerCustomDatatypes"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LowerCustomDatatypes</span></code></a>()</p></td>
 <td><p>Lower custom datatypes.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#tvm.tir.transform.LowerDeviceStorageAccessInfo" title="tvm.tir.transform.LowerDeviceStorageAccessInfo"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LowerDeviceStorageAccessInfo</span></code></a>()</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#tvm.tir.transform.LowerDeviceStorageAccessInfo" title="tvm.tir.transform.LowerDeviceStorageAccessInfo"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LowerDeviceStorageAccessInfo</span></code></a>()</p></td>
 <td><p>Lower attached storage access information on device.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#tvm.tir.transform.LowerInitBlock" title="tvm.tir.transform.LowerInitBlock"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LowerInitBlock</span></code></a>()</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#tvm.tir.transform.LowerInitBlock" title="tvm.tir.transform.LowerInitBlock"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LowerInitBlock</span></code></a>()</p></td>
 <td><p>Lower block init stmt into IfThenElse statements.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#tvm.tir.transform.LowerIntrin" title="tvm.tir.transform.LowerIntrin"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LowerIntrin</span></code></a>()</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#tvm.tir.transform.LowerIntrin" title="tvm.tir.transform.LowerIntrin"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LowerIntrin</span></code></a>()</p></td>
 <td><p>Lower target specific intrinsic calls.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#tvm.tir.transform.LowerMatchBuffer" title="tvm.tir.transform.LowerMatchBuffer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LowerMatchBuffer</span></code></a>()</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#tvm.tir.transform.LowerMatchBuffer" title="tvm.tir.transform.LowerMatchBuffer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LowerMatchBuffer</span></code></a>()</p></td>
 <td><p>Remove match buffers inside the block.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#tvm.tir.transform.LowerOpaqueBlock" title="tvm.tir.transform.LowerOpaqueBlock"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LowerOpaqueBlock</span></code></a>()</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#tvm.tir.transform.LowerOpaqueBlock" title="tvm.tir.transform.LowerOpaqueBlock"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LowerOpaqueBlock</span></code></a>()</p></td>
 <td><p>Remove the block to ensure that the TIR can not be scheduled again.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#tvm.tir.transform.LowerTVMBuiltin" title="tvm.tir.transform.LowerTVMBuiltin"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LowerTVMBuiltin</span></code></a>()</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#tvm.tir.transform.LowerTVMBuiltin" title="tvm.tir.transform.LowerTVMBuiltin"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LowerTVMBuiltin</span></code></a>()</p></td>
 <td><p>Lower tvm builtin intrinsics.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#tvm.tir.transform.LowerThreadAllreduce" title="tvm.tir.transform.LowerThreadAllreduce"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LowerThreadAllreduce</span></code></a>()</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#tvm.tir.transform.LowerThreadAllreduce" title="tvm.tir.transform.LowerThreadAllreduce"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LowerThreadAllreduce</span></code></a>()</p></td>
 <td><p>Lower cross thread alleduce.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#tvm.tir.transform.LowerWarpMemory" title="tvm.tir.transform.LowerWarpMemory"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LowerWarpMemory</span></code></a>()</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#tvm.tir.transform.LowerWarpMemory" title="tvm.tir.transform.LowerWarpMemory"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LowerWarpMemory</span></code></a>()</p></td>
 <td><p>Lower warp memory access to low-level device related function calls.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#tvm.tir.transform.MakePackedAPI" title="tvm.tir.transform.MakePackedAPI"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MakePackedAPI</span></code></a>()</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#tvm.tir.transform.MakePackedAPI" title="tvm.tir.transform.MakePackedAPI"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MakePackedAPI</span></code></a>()</p></td>
 <td><p>Transform the PrimFuncs in the module to a packed func API.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#tvm.tir.transform.MakeUnpackedAPI" title="tvm.tir.transform.MakeUnpackedAPI"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MakeUnpackedAPI</span></code></a>()</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#tvm.tir.transform.MakeUnpackedAPI" title="tvm.tir.transform.MakeUnpackedAPI"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MakeUnpackedAPI</span></code></a>()</p></td>
 <td><p>Transform the PrimFuncs in the module to a C API compatible with internal calls.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#tvm.tir.transform.ManifestSharedMemoryLocalStage" title="tvm.tir.transform.ManifestSharedMemoryLocalStage"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ManifestSharedMemoryLocalStage</span></code></a>()</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#tvm.tir.transform.ManifestSharedMemoryLocalStage" title="tvm.tir.transform.ManifestSharedMemoryLocalStage"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ManifestSharedMemoryLocalStage</span></code></a>()</p></td>
 <td><p>Add the explicit local stage for the shared memory access on GPU.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#tvm.tir.transform.MergeDynamicSharedMemoryAllocations" title="tvm.tir.transform.MergeDynamicSharedMemoryAllocations"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MergeDynamicSharedMemoryAllocations</span></code></a>()</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#tvm.tir.transform.MergeDynamicSharedMemoryAllocations" title="tvm.tir.transform.MergeDynamicSharedMemoryAllocations"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MergeDynamicSharedMemoryAllocations</span></code></a>()</p></td>
 <td><p>This pass merges multiple TIR-level dynamic shared memory allocations into one allocation.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#tvm.tir.transform.NarrowDataType" title="tvm.tir.transform.NarrowDataType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NarrowDataType</span></code></a>(target_bits)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#tvm.tir.transform.NarrowDataType" title="tvm.tir.transform.NarrowDataType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NarrowDataType</span></code></a>(target_bits)</p></td>
 <td><p>Narrow down PrimExpr datatype in stmt to target_bits.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#tvm.tir.transform.PlanAndUpdateBufferAllocationLocation" title="tvm.tir.transform.PlanAndUpdateBufferAllocationLocation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PlanAndUpdateBufferAllocationLocation</span></code></a>()</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#tvm.tir.transform.PlanAndUpdateBufferAllocationLocation" title="tvm.tir.transform.PlanAndUpdateBufferAllocationLocation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PlanAndUpdateBufferAllocationLocation</span></code></a>()</p></td>
 <td><p>Locate the buffer allocation to the exact position (usually is the lca of buffer access).</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#tvm.tir.transform.ReduceBranchingThroughOvercompute" title="tvm.tir.transform.ReduceBranchingThroughOvercompute"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ReduceBranchingThroughOvercompute</span></code></a>()</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#tvm.tir.transform.ReduceBranchingThroughOvercompute" title="tvm.tir.transform.ReduceBranchingThroughOvercompute"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ReduceBranchingThroughOvercompute</span></code></a>()</p></td>
 <td><p>Reduce branching by introducing overcompute</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#tvm.tir.transform.RemoveAssume" title="tvm.tir.transform.RemoveAssume"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RemoveAssume</span></code></a>()</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#tvm.tir.transform.RemoveAssume" title="tvm.tir.transform.RemoveAssume"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RemoveAssume</span></code></a>()</p></td>
 <td><p>Remove all instances of builtin::assume</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#tvm.tir.transform.RemoveNoOp" title="tvm.tir.transform.RemoveNoOp"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RemoveNoOp</span></code></a>()</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#tvm.tir.transform.RemoveNoOp" title="tvm.tir.transform.RemoveNoOp"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RemoveNoOp</span></code></a>()</p></td>
 <td><p>Remove No Op from the Stmt.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#tvm.tir.transform.RemoveStoreUndef" title="tvm.tir.transform.RemoveStoreUndef"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RemoveStoreUndef</span></code></a>()</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#tvm.tir.transform.RemoveStoreUndef" title="tvm.tir.transform.RemoveStoreUndef"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RemoveStoreUndef</span></code></a>()</p></td>
 <td><p>Remove stores of undefined values from the Stmt.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#tvm.tir.transform.RemoveWeightLayoutRewriteBlock" title="tvm.tir.transform.RemoveWeightLayoutRewriteBlock"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RemoveWeightLayoutRewriteBlock</span></code></a>([...])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#tvm.tir.transform.RemoveWeightLayoutRewriteBlock" title="tvm.tir.transform.RemoveWeightLayoutRewriteBlock"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RemoveWeightLayoutRewriteBlock</span></code></a>([...])</p></td>
 <td><p>Remove weight layout rewrite block before benchmarking during tuning stage.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#tvm.tir.transform.RenormalizeSplitPattern" title="tvm.tir.transform.RenormalizeSplitPattern"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RenormalizeSplitPattern</span></code></a>()</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#tvm.tir.transform.RenormalizeSplitPattern" title="tvm.tir.transform.RenormalizeSplitPattern"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RenormalizeSplitPattern</span></code></a>()</p></td>
 <td><p>Renormalize the split pattern from floordiv(floormod()) to floormod(floordiv())</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#tvm.tir.transform.RewriteUnsafeSelect" title="tvm.tir.transform.RewriteUnsafeSelect"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RewriteUnsafeSelect</span></code></a>()</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#tvm.tir.transform.RewriteUnsafeSelect" title="tvm.tir.transform.RewriteUnsafeSelect"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RewriteUnsafeSelect</span></code></a>()</p></td>
 <td><p>Detect and rewrite unsafe select that contains memory access.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#tvm.tir.transform.Simplify" title="tvm.tir.transform.Simplify"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Simplify</span></code></a>()</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#tvm.tir.transform.Simplify" title="tvm.tir.transform.Simplify"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Simplify</span></code></a>()</p></td>
 <td><p>Run arithmetic simplifications on the statements and expressions.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#tvm.tir.transform.SkipAssert" title="tvm.tir.transform.SkipAssert"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SkipAssert</span></code></a>()</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#tvm.tir.transform.SkipAssert" title="tvm.tir.transform.SkipAssert"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SkipAssert</span></code></a>()</p></td>
 <td><p>Skip assert stmt.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#tvm.tir.transform.SplitHostDevice" title="tvm.tir.transform.SplitHostDevice"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SplitHostDevice</span></code></a>()</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#tvm.tir.transform.SplitHostDevice" title="tvm.tir.transform.SplitHostDevice"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SplitHostDevice</span></code></a>()</p></td>
 <td><p>Split the function into a host function and device functions.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#tvm.tir.transform.StorageFlatten" title="tvm.tir.transform.StorageFlatten"><code class="xref py py-obj docutils literal notranslate"><span class="pre">StorageFlatten</span></code></a>(cache_line_size[, ...])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#tvm.tir.transform.StorageFlatten" title="tvm.tir.transform.StorageFlatten"><code class="xref py py-obj docutils literal notranslate"><span class="pre">StorageFlatten</span></code></a>(cache_line_size[, ...])</p></td>
 <td><p>Flatten the multi-dimensional read/write to 1D.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#tvm.tir.transform.StorageRewrite" title="tvm.tir.transform.StorageRewrite"><code class="xref py py-obj docutils literal notranslate"><span class="pre">StorageRewrite</span></code></a>()</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#tvm.tir.transform.StorageRewrite" title="tvm.tir.transform.StorageRewrite"><code class="xref py py-obj docutils literal notranslate"><span class="pre">StorageRewrite</span></code></a>()</p></td>
 <td><p>Rewrite storage allocation pattern.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#tvm.tir.transform.TextureFlatten" title="tvm.tir.transform.TextureFlatten"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TextureFlatten</span></code></a>()</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#tvm.tir.transform.TextureFlatten" title="tvm.tir.transform.TextureFlatten"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TextureFlatten</span></code></a>()</p></td>
 <td><p>Flatten the multi-dimensional read/write to 2D.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#tvm.tir.transform.ThreadSync" title="tvm.tir.transform.ThreadSync"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ThreadSync</span></code></a>(storage_scope)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#tvm.tir.transform.ThreadSync" title="tvm.tir.transform.ThreadSync"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ThreadSync</span></code></a>(storage_scope)</p></td>
 <td><p>Insert sync between parallel read/write of shared buffers.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#tvm.tir.transform.UnifyThreadBinding" title="tvm.tir.transform.UnifyThreadBinding"><code class="xref py py-obj docutils literal notranslate"><span class="pre">UnifyThreadBinding</span></code></a>()</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#tvm.tir.transform.UnifyThreadBinding" title="tvm.tir.transform.UnifyThreadBinding"><code class="xref py py-obj docutils literal notranslate"><span class="pre">UnifyThreadBinding</span></code></a>()</p></td>
 <td><p>Unify all the thread bindings for &quot;blockIdx.x/y/z&quot;, &quot;threadIdx.x/y/z&quot;, and &quot;vthread.x/y/z&quot;.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#tvm.tir.transform.UnrollLoop" title="tvm.tir.transform.UnrollLoop"><code class="xref py py-obj docutils literal notranslate"><span class="pre">UnrollLoop</span></code></a>()</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#tvm.tir.transform.UnrollLoop" title="tvm.tir.transform.UnrollLoop"><code class="xref py py-obj docutils literal notranslate"><span class="pre">UnrollLoop</span></code></a>()</p></td>
 <td><p>Unroll the constant loop marked by unroll.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#tvm.tir.transform.VectorizeLoop" title="tvm.tir.transform.VectorizeLoop"><code class="xref py py-obj docutils literal notranslate"><span class="pre">VectorizeLoop</span></code></a>([enable_vectorize])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#tvm.tir.transform.VectorizeLoop" title="tvm.tir.transform.VectorizeLoop"><code class="xref py py-obj docutils literal notranslate"><span class="pre">VectorizeLoop</span></code></a>([enable_vectorize])</p></td>
 <td><p>Lower vectorization loops.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#tvm.tir.transform.VerifyMemory" title="tvm.tir.transform.VerifyMemory"><code class="xref py py-obj docutils literal notranslate"><span class="pre">VerifyMemory</span></code></a>()</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#tvm.tir.transform.VerifyMemory" title="tvm.tir.transform.VerifyMemory"><code class="xref py py-obj docutils literal notranslate"><span class="pre">VerifyMemory</span></code></a>()</p></td>
 <td><p>Verify if func contains illegal host side direct memory access.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#tvm.tir.transform.VerifyVTCMLimit" title="tvm.tir.transform.VerifyVTCMLimit"><code class="xref py py-obj docutils literal notranslate"><span class="pre">VerifyVTCMLimit</span></code></a>(limit)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#tvm.tir.transform.VerifyVTCMLimit" title="tvm.tir.transform.VerifyVTCMLimit"><code class="xref py py-obj docutils literal notranslate"><span class="pre">VerifyVTCMLimit</span></code></a>(limit)</p></td>
 <td><p>Verify if the size of the allocated vtcm memory satisfies the limit.</p></td>
 </tr>
 </tbody>
@@ -9133,21 +9089,6 @@ hoisted to the outermost loop possible.</p>
 <dt class="sig sig-object py" id="tvm.tir.transform.InjectVirtualThread">
 <span class="sig-prename descclassname"><span class="pre">tvm.tir.transform.</span></span><span class="sig-name descname"><span class="pre">InjectVirtualThread</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tvm.tir.transform.InjectVirtualThread" title="Permalink to this definition">¶</a></dt>
 <dd><p>Inject virtual thread loops.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p><strong>fpass</strong> – The result pass</p>
-</dd>
-<dt class="field-even">Return type</dt>
-<dd class="field-even"><p>tvm.transform.Pass</p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="tvm.tir.transform.InstallDebugSpans">
-<span class="sig-prename descclassname"><span class="pre">tvm.tir.transform.</span></span><span class="sig-name descname"><span class="pre">InstallDebugSpans</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tvm.tir.transform.InstallDebugSpans" title="Permalink to this definition">¶</a></dt>
-<dd><p>Add line information from the TIR printer as spans on each statement and
-expression.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p><strong>fpass</strong> – The result pass</p>
@@ -10133,12 +10074,6 @@ can be vector type which have lanes that is multiple of Buffer.dtype</p></li>
 <tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">from_expr</span></code>(expr[, functions, type_defs])</p></td>
 <td><p>Construct a module from a standalone expression.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">script</span></code>([tir_prefix, show_meta])</p></td>
-<td><p>Print IRModule into TVMScript</p></td>
-</tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">show</span></code>([style, black_format])</p></td>
-<td><p>A sugar for print highlighted TVM script.</p></td>
-</tr>
 <tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_attr</span></code>(attr_key)</p></td>
 <td><p>Get the IRModule attribute.</p></td>
 </tr>
@@ -10295,41 +10230,6 @@ where expr is set as the entry point
 
 <dl class="py method">
 <dt class="sig sig-object py">
-<span class="sig-name descname"><span class="pre">script</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tir_prefix</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><span class="pre">str</span></a></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">'T'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">show_meta</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><span class="pre">bool</span></a></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><span class="pre">str</span></a></span></span></dt>
-<dd><p>Print IRModule into TVMScript</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>tir_prefix</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a>) – The tir namespace prefix</p></li>
-<li><p><strong>show_meta</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><em>bool</em></a>) – Whether to show meta information</p></li>
-</ul>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><p><strong>script</strong> – The TVM Script of the IRModule</p>
-</dd>
-<dt class="field-odd">Return type</dt>
-<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)">str</a></p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py">
-<span class="sig-name descname"><span class="pre">show</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">style</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">black_format</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><span class="pre">bool</span></a></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.11)"><span class="pre">None</span></a></span></span></dt>
-<dd><p>A sugar for print highlighted TVM script.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>style</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>, </em><em>optional</em>) – Pygmentize printing style, auto-detected if None.  See
-<cite>tvm.script.highlight.cprint</cite> for more details.</p></li>
-<li><p><strong>black_format</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><em>bool</em></a>) – If true (default), use the formatter Black to format the TVMScript</p></li>
-</ul>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py">
 <span class="sig-name descname"><span class="pre">get_attr</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">attr_key</span></span></em><span class="sig-paren">)</span></dt>
 <dd><p>Get the IRModule attribute.</p>
 <dl class="field-list simple">
@@ -10361,7 +10261,7 @@ where expr is set as the entry point
 
 <dl class="py method">
 <dt class="sig sig-object py">
-<span class="sig-name descname"><span class="pre">with_attr</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">attr_key</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">attr_value</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="ir.html#tvm.ir.IRModule" title="tvm.ir.module.IRModule"><span class="pre">tvm.ir.module.IRModule</span></a></span></span></dt>
+<span class="sig-name descname"><span class="pre">with_attr</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">attr_key</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">attr_value</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">IRModule</span></span></span></dt>
 <dd><p>Copy the IRModule and add an attribute to it.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -10381,7 +10281,7 @@ where expr is set as the entry point
 
 <dl class="py method">
 <dt class="sig sig-object py">
-<span class="sig-name descname"><span class="pre">without_attr</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">attr_key</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="ir.html#tvm.ir.IRModule" title="tvm.ir.module.IRModule"><span class="pre">tvm.ir.module.IRModule</span></a></span></span></dt>
+<span class="sig-name descname"><span class="pre">without_attr</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">attr_key</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">IRModule</span></span></span></dt>
 <dd><p>Copy the IRModule and remove an attribute key and its associated value.
 :param attr_key: The attribute key.
 :type attr_key: str</p>
@@ -10397,7 +10297,7 @@ where expr is set as the entry point
 
 <dl class="py method">
 <dt class="sig sig-object py">
-<span class="sig-name descname"><span class="pre">with_attrs</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">attr_map</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="ir.html#tvm.ir.DictAttrs" title="tvm.ir.attrs.DictAttrs"><span class="pre">tvm.ir.attrs.DictAttrs</span></a><span class="p"><span class="pre">,</span> </span><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span> </span><a class="reference internal" href="runtime.html#tvm.runtime.Object" title="tvm.runtime.object.Object"><span class="pre">tvm.runtime.object.Object</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="ir.html#tvm.ir.IRModule" title="tvm.ir.module.IRModule"><span class="pre">tvm.ir.module.IRModule</span></a></span></span></dt>
+<span class="sig-name descname"><span class="pre">with_attrs</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">attr_map</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="ir.html#tvm.ir.DictAttrs" title="tvm.ir.attrs.DictAttrs"><span class="pre">tvm.ir.attrs.DictAttrs</span></a><span class="p"><span class="pre">,</span> </span><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span> </span><a class="reference internal" href="runtime.html#tvm.runtime.Object" title="tvm.runtime.object.Object"><span class="pre">tvm.runtime.object.Object</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">IRModule</span></span></span></dt>
 <dd><p>Copy the IRModule and add the given attribute map to it.
 :param attr_map: The attribute map
 :type attr_map: Union[DictAttrs, Dict[str, Object]]</p>
@@ -10470,12 +10370,6 @@ optimizations and integer analysis.</p>
 <tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">specialize</span></code>(param_map)</p></td>
 <td><p>Specialize parameters of PrimFunc</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">script</span></code>([tir_prefix, show_meta])</p></td>
-<td><p>Print IRModule into TVMScript</p></td>
-</tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">show</span></code>([style, black_format])</p></td>
-<td><p>A sugar for print highlighted TVM script.</p></td>
-</tr>
 </tbody>
 </table>
 <dl class="py method">
@@ -10545,41 +10439,6 @@ optimizations and integer analysis.</p>
 </dd>
 <dt class="field-even">Return type</dt>
 <dd class="field-even"><p><a class="reference internal" href="#tvm.tir.PrimFunc" title="tvm.tir.PrimFunc">PrimFunc</a></p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py">
-<span class="sig-name descname"><span class="pre">script</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tir_prefix</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><span class="pre">str</span></a></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">'T'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">show_meta</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><span class="pre">bool</span></a></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><span class="pre">str</span></a></span></span></dt>
-<dd><p>Print IRModule into TVMScript</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>tir_prefix</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a>) – The tir namespace prefix</p></li>
-<li><p><strong>show_meta</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><em>bool</em></a>) – Whether to show meta information</p></li>
-</ul>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><p><strong>script</strong> – The TVM Script of the PrimFunc</p>
-</dd>
-<dt class="field-odd">Return type</dt>
-<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)">str</a></p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py">
-<span class="sig-name descname"><span class="pre">show</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">style</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">black_format</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><span class="pre">bool</span></a></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.11)"><span class="pre">None</span></a></span></span></dt>
-<dd><p>A sugar for print highlighted TVM script.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>style</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>, </em><em>optional</em>) – Pygmentize printing style, auto-detected if None.  See
-<cite>tvm.script.highlight.cprint</cite> for more details.</p></li>
-<li><p><strong>black_format</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><em>bool</em></a>) – If true (default), use the formatter Black to format the TVMScript</p></li>
-</ul>
 </dd>
 </dl>
 </dd></dl>

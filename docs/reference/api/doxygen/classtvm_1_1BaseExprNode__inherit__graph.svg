@@ -29,14 +29,16 @@
 <g id="node3" class="node">
 <title>Node2</title>
 <g id="a_node3"><a xlink:href="classtvm_1_1PrimExprNode.html" target="_top" xlink:title="Base node of all primitive expressions. ">
-<polygon fill="#ffffff" stroke="#000000" points="4199,-254 4199,-333 4406,-333 4406,-254 4199,-254"/>
-<text text-anchor="middle" x="4302.5" y="-321" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">tvm::PrimExprNode</text>
-<polyline fill="none" stroke="#000000" points="4199,-314 4406,-314 "/>
-<text text-anchor="start" x="4207" y="-302" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">+ dtype</text>
-<text text-anchor="start" x="4207" y="-291" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">+ _type_key</text>
-<text text-anchor="start" x="4207" y="-280" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">+ _type_child_slots</text>
-<polyline fill="none" stroke="#000000" points="4199,-273 4406,-273 "/>
-<text text-anchor="start" x="4207" y="-261" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">+ TVM_DECLARE_BASE_OBJECT_INFO()</text>
+<polygon fill="#ffffff" stroke="#000000" points="4199,-243 4199,-344 4406,-344 4406,-243 4199,-243"/>
+<text text-anchor="middle" x="4302.5" y="-332" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">tvm::PrimExprNode</text>
+<polyline fill="none" stroke="#000000" points="4199,-325 4406,-325 "/>
+<text text-anchor="start" x="4207" y="-313" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">+ dtype</text>
+<text text-anchor="start" x="4207" y="-302" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">+ _type_key</text>
+<text text-anchor="start" x="4207" y="-291" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">+ _type_child_slots</text>
+<polyline fill="none" stroke="#000000" points="4199,-284 4406,-284 "/>
+<text text-anchor="start" x="4207" y="-272" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">+ TVM_OBJECT_ENABLE_SCRIPT</text>
+<text text-anchor="start" x="4207" y="-261" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_PRINTER()</text>
+<text text-anchor="start" x="4207" y="-250" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">+ TVM_DECLARE_BASE_OBJECT_INFO()</text>
 </a>
 </g>
 </g>
@@ -546,8 +548,8 @@
 <!-- Node2&#45;&gt;Node37 -->
 <g id="edge20" class="edge">
 <title>Node2&#45;&gt;Node37</title>
-<path fill="none" stroke="#191970" d="M4190.2764,-249.8311C4152.35,-233.1951 4110.5166,-212.7114 4074.5,-190 4054.1213,-177.1495 4033.4728,-160.9276 4015.5002,-145.5427"/>
-<polygon fill="none" stroke="#191970" points="4189.2619,-253.2061 4199.8287,-253.9767 4192.0487,-246.7848 4189.2619,-253.2061"/>
+<path fill="none" stroke="#191970" d="M4189.4727,-249.4782C4151.7597,-232.9059 4110.2624,-212.5511 4074.5,-190 4054.1213,-177.1495 4033.4728,-160.9276 4015.5002,-145.5427"/>
+<polygon fill="none" stroke="#191970" points="4188.4072,-252.8314 4198.9734,-253.6091 4191.1984,-246.4119 4188.4072,-252.8314"/>
 </g>
 <!-- Node38 -->
 <g id="node22" class="node">
@@ -570,8 +572,8 @@
 <!-- Node2&#45;&gt;Node38 -->
 <g id="edge21" class="edge">
 <title>Node2&#45;&gt;Node38</title>
-<path fill="none" stroke="#191970" d="M4274.5831,-244.8902C4258.3109,-216.5567 4237.7193,-180.7021 4220.7559,-151.1648"/>
-<polygon fill="none" stroke="#191970" points="4271.6891,-246.8791 4279.7044,-253.8076 4277.7592,-243.3929 4271.6891,-246.8791"/>
+<path fill="none" stroke="#191970" d="M4268.4193,-234.1578C4253.3061,-207.8422 4235.6137,-177.0357 4220.7226,-151.1069"/>
+<polygon fill="none" stroke="#191970" points="4265.4227,-235.9679 4273.438,-242.8965 4271.4929,-232.4817 4265.4227,-235.9679"/>
 </g>
 <!-- Node39 -->
 <g id="node23" class="node">
@@ -594,8 +596,8 @@
 <!-- Node2&#45;&gt;Node39 -->
 <g id="edge22" class="edge">
 <title>Node2&#45;&gt;Node39</title>
-<path fill="none" stroke="#191970" d="M4330.1721,-244.8902C4346.3015,-216.5567 4366.7124,-180.7021 4383.5271,-151.1648"/>
-<polygon fill="none" stroke="#191970" points="4327.0013,-243.3856 4325.0956,-253.8076 4333.0846,-246.8487 4327.0013,-243.3856"/>
+<path fill="none" stroke="#191970" d="M4336.2817,-234.1578C4351.2624,-207.8422 4368.7996,-177.0357 4383.5601,-151.1069"/>
+<polygon fill="none" stroke="#191970" points="4333.2127,-232.4744 4331.3071,-242.8965 4339.296,-235.9375 4333.2127,-232.4744"/>
 </g>
 <!-- Node40 -->
 <g id="node24" class="node">
@@ -617,8 +619,8 @@
 <!-- Node2&#45;&gt;Node40 -->
 <g id="edge23" class="edge">
 <title>Node2&#45;&gt;Node40</title>
-<path fill="none" stroke="#191970" d="M4413.3989,-249.7392C4451.0567,-233.0652 4492.6496,-212.5813 4528.5,-190 4548.8821,-177.1618 4569.5829,-161.0289 4587.6507,-145.7205"/>
-<polygon fill="none" stroke="#191970" points="4411.6698,-246.6755 4403.9156,-253.8952 4414.4795,-253.0869 4411.6698,-246.6755"/>
+<path fill="none" stroke="#191970" d="M4415.5246,-248.7958C4452.6168,-232.2951 4493.3229,-212.1572 4528.5,-190 4548.8821,-177.1618 4569.5829,-161.0289 4587.6507,-145.7205"/>
+<polygon fill="none" stroke="#191970" points="4413.9193,-245.6783 4406.1778,-252.9115 4416.7403,-252.0847 4413.9193,-245.6783"/>
 </g>
 <!-- Node41 -->
 <g id="node25" class="node">

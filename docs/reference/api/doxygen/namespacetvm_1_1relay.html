@@ -192,6 +192,9 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtvm_1_1relay_1_1ClipAttrs.html">ClipAttrs</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attributes for Clip operator.  <a href="structtvm_1_1relay_1_1ClipAttrs.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtvm_1_1relay_1_1CompileError.html">CompileError</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Custom Error class to be thrown during compilation.  <a href="classtvm_1_1relay_1_1CompileError.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtvm_1_1relay_1_1CompilerAttrs.html">CompilerAttrs</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Options for the operators used to annotate a compiler.  <a href="structtvm_1_1relay_1_1CompilerAttrs.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -312,6 +315,12 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtvm_1_1relay_1_1EinsumAttrs.html">EinsumAttrs</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attributes used in einsum operator.  <a href="structtvm_1_1relay_1_1EinsumAttrs.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtvm_1_1relay_1_1ErrorBuilder.html">ErrorBuilder</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A wrapper around std::stringstream to build error. <a class="el" href="ir_2type_8h.html" title="IR/AST nodes for the unified type system in TVM. ">include/tvm/ir/type.h</a> Can be consumed by <a class="el" href="classtvm_1_1relay_1_1CompileError.html" title="Custom Error class to be thrown during compilation. ">CompileError</a> to construct an error.  <a href="structtvm_1_1relay_1_1ErrorBuilder.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtvm_1_1relay_1_1ErrorReporter.html">ErrorReporter</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An abstraction around how errors are stored and reported. Designed to be opaque to users, so we can support a robust and simpler error reporting mode, as well as a more complex mode.  <a href="classtvm_1_1relay_1_1ErrorReporter.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtvm_1_1relay_1_1Executor.html">Executor</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Managed reference class to <a class="el" href="classtvm_1_1relay_1_1ExecutorNode.html" title="Executor information. ">ExecutorNode</a>.  <a href="classtvm_1_1relay_1_1Executor.html#details">More...</a><br /></td></tr>
@@ -854,6 +863,8 @@ Typedefs</h2></td></tr>
 <tr class="separator:a4d64348ae2b75977e167109fb4af4409"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afeda9240bb23d0092992928c6d141729"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetvm_1_1relay.html#afeda9240bb23d0092992928c6d141729">FShapeFunc</a> = <a class="el" href="classtvm_1_1runtime_1_1TypedPackedFunc.html">runtime::TypedPackedFunc</a>&lt; <a class="el" href="classtvm_1_1runtime_1_1Array.html">Array</a>&lt; <a class="el" href="classtvm_1_1te_1_1Tensor.html">te::Tensor</a> &gt;(const <a class="el" href="classtvm_1_1Attrs.html">Attrs</a> &amp;attrs, const <a class="el" href="classtvm_1_1runtime_1_1Array.html">Array</a>&lt; <a class="el" href="classtvm_1_1te_1_1Tensor.html">te::Tensor</a> &gt; &amp;inputs, const <a class="el" href="classtvm_1_1runtime_1_1Array.html">Array</a>&lt; <a class="el" href="namespacetvm_1_1relay.html#ae153a27d81399fd266b8d598227764c4">IndexExpr</a> &gt; &amp;out_ndims)&gt;</td></tr>
 <tr class="separator:afeda9240bb23d0092992928c6d141729"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23cab32132a66c095532a7afa1da89e3"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetvm_1_1relay.html#a23cab32132a66c095532a7afa1da89e3">MetaTable</a> = <a class="el" href="classtvm_1_1runtime_1_1Map.html">Map</a>&lt; <a class="el" href="classtvm_1_1runtime_1_1String.html">String</a>, <a class="el" href="classtvm_1_1runtime_1_1Array.html">Array</a>&lt; <a class="el" href="classtvm_1_1runtime_1_1ObjectRef.html">ObjectRef</a> &gt; &gt;</td></tr>
+<tr class="separator:a23cab32132a66c095532a7afa1da89e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a63c360628faf2eeb9de326634bc6e80e"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetvm_1_1relay.html#a63c360628faf2eeb9de326634bc6e80e">AnyNode</a> = <a class="el" href="classtvm_1_1tir_1_1AnyNode.html">tvm::tir::AnyNode</a></td></tr>
 <tr class="separator:a63c360628faf2eeb9de326634bc6e80e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe473e7f103d7aa63b7b09fee09df932"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetvm_1_1relay.html#abe473e7f103d7aa63b7b09fee09df932">Any</a> = <a class="el" href="classtvm_1_1tir_1_1Any.html">tvm::tir::Any</a></td></tr>
@@ -1025,6 +1036,12 @@ Functions</h2></td></tr>
 <tr class="separator:aef91b70db1053b9672eafe401abb7304"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6757a008816e31cce4109e8dfc2bc16"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacetvm_1_1relay.html#a5b84e3790f89bb3fad5c7911eeb99531">Expr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetvm_1_1relay.html#ae6757a008816e31cce4109e8dfc2bc16">ToTupleType</a> (const <a class="el" href="namespacetvm_1_1relay.html#a661d95f170bca230773914caeef3fe52">Type</a> &amp;t, const std::vector&lt; <a class="el" href="namespacetvm_1_1relay.html#a5b84e3790f89bb3fad5c7911eeb99531">Expr</a> &gt; &amp;exprs)</td></tr>
 <tr class="separator:ae6757a008816e31cce4109e8dfc2bc16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b98dc5e89534ce68b4be3b9c7ceafaf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtvm_1_1runtime_1_1String.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetvm_1_1relay.html#a3b98dc5e89534ce68b4be3b9c7ceafaf">PrettyPrint</a> (const <a class="el" href="classtvm_1_1runtime_1_1ObjectRef.html">ObjectRef</a> &amp;node)</td></tr>
+<tr class="memdesc:a3b98dc5e89534ce68b4be3b9c7ceafaf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pretty print a node for debug purposes.  <a href="#a3b98dc5e89534ce68b4be3b9c7ceafaf">More...</a><br /></td></tr>
+<tr class="separator:a3b98dc5e89534ce68b4be3b9c7ceafaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5e8510cb09c799e688ca72a19f5e5db"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtvm_1_1runtime_1_1String.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetvm_1_1relay.html#af5e8510cb09c799e688ca72a19f5e5db">AsText</a> (const <a class="el" href="classtvm_1_1runtime_1_1ObjectRef.html">ObjectRef</a> &amp;node, bool show_meta_data=true, <a class="el" href="classtvm_1_1runtime_1_1TypedPackedFunc.html">runtime::TypedPackedFunc</a>&lt; <a class="el" href="classtvm_1_1runtime_1_1String.html">String</a>(<a class="el" href="classtvm_1_1runtime_1_1ObjectRef.html">ObjectRef</a>)&gt; annotate=nullptr)</td></tr>
+<tr class="memdesc:af5e8510cb09c799e688ca72a19f5e5db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Render the node as a string in the text format.  <a href="#af5e8510cb09c799e688ca72a19f5e5db">More...</a><br /></td></tr>
+<tr class="separator:af5e8510cb09c799e688ca72a19f5e5db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8e5c12794d464d6e4543b9e5c68d8707"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetvm_1_1relay.html#a8e5c12794d464d6e4543b9e5c68d8707">MatchPattern</a> (<a class="el" href="classtvm_1_1relay_1_1DFPattern.html">DFPattern</a> pattern, <a class="el" href="namespacetvm_1_1relay.html#a5b84e3790f89bb3fad5c7911eeb99531">Expr</a> expr)</td></tr>
 <tr class="memdesc:a8e5c12794d464d6e4543b9e5c68d8707"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine if a pattern matches an expression.  <a href="#a8e5c12794d464d6e4543b9e5c68d8707">More...</a><br /></td></tr>
 <tr class="separator:a8e5c12794d464d6e4543b9e5c68d8707"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1065,7 +1082,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:a50696db72ff82971c6849a67c3465559"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns <code>tuple</code> with the given properties. A null property denotes 'no change'. Returns <code>tuple</code> if all properties are unchanged. Otherwise, returns a copy with the new fields.  <a href="#a50696db72ff82971c6849a67c3465559">More...</a><br /></td></tr>
 <tr class="separator:a50696db72ff82971c6849a67c3465559"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf3bb67945ee37070acbf4b3ef84d826"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtvm_1_1relay_1_1Var.html">Var</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetvm_1_1relay.html#aaf3bb67945ee37070acbf4b3ef84d826">WithFields</a> (<a class="el" href="classtvm_1_1relay_1_1Var.html">Var</a> var, <a class="el" href="classtvm_1_1runtime_1_1Optional.html">Optional</a>&lt; <a class="el" href="classtvm_1_1relay_1_1Id.html">Id</a> &gt; opt_vid=<a class="el" href="classtvm_1_1runtime_1_1Optional.html">Optional</a>&lt; <a class="el" href="classtvm_1_1relay_1_1Id.html">Id</a> &gt;(), <a class="el" href="classtvm_1_1runtime_1_1Optional.html">Optional</a>&lt; <a class="el" href="namespacetvm_1_1relay.html#a661d95f170bca230773914caeef3fe52">Type</a> &gt; opt_type_annotation=<a class="el" href="classtvm_1_1runtime_1_1Optional.html">Optional</a>&lt; <a class="el" href="namespacetvm_1_1relay.html#a661d95f170bca230773914caeef3fe52">Type</a> &gt;(), <a class="el" href="classtvm_1_1runtime_1_1Optional.html">Optional</a>&lt; <a class="el" href="classtvm_1_1VirtualDevice.html">VirtualDevice</a> &gt; opt_virtual_device=<a class="el" href="classtvm_1_1runtime_1_1Optional.html">Optional</a>&lt; <a class="el" href="classtvm_1_1VirtualDevice.html">VirtualDevice</a> &gt;(), <a class="el" href="classtvm_1_1runtime_1_1Optional.html">Optional</a>&lt; <a class="el" href="namespacetvm_1_1relay.html#af40ca6124bc2e88f2323eeb79d326cc0">Span</a> &gt; opt_span=<a class="el" href="classtvm_1_1runtime_1_1Optional.html">Optional</a>&lt; <a class="el" href="namespacetvm_1_1relay.html#af40ca6124bc2e88f2323eeb79d326cc0">Span</a> &gt;())</td></tr>
-<tr class="memdesc:aaf3bb67945ee37070acbf4b3ef84d826"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns <code>vor</code> with the given properties. A null property denotes 'no change'. Returns <code>var</code> if all properties are unchanged. Otherwise, returns a copy with the new fields.  <a href="#aaf3bb67945ee37070acbf4b3ef84d826">More...</a><br /></td></tr>
+<tr class="memdesc:aaf3bb67945ee37070acbf4b3ef84d826"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns <code>var</code> with the given properties. A null property denotes 'no change'. Returns <code>var</code> if all properties are unchanged. Otherwise, returns a copy with the new fields.  <a href="#aaf3bb67945ee37070acbf4b3ef84d826">More...</a><br /></td></tr>
 <tr class="separator:aaf3bb67945ee37070acbf4b3ef84d826"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74232e829efcbb5edc54319441417753"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtvm_1_1relay_1_1Call.html">Call</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetvm_1_1relay.html#a74232e829efcbb5edc54319441417753">WithFields</a> (<a class="el" href="classtvm_1_1relay_1_1Call.html">Call</a> call, <a class="el" href="classtvm_1_1runtime_1_1Optional.html">Optional</a>&lt; <a class="el" href="namespacetvm_1_1relay.html#a5b84e3790f89bb3fad5c7911eeb99531">Expr</a> &gt; opt_op=<a class="el" href="classtvm_1_1runtime_1_1Optional.html">Optional</a>&lt; <a class="el" href="namespacetvm_1_1relay.html#a5b84e3790f89bb3fad5c7911eeb99531">Expr</a> &gt;(), <a class="el" href="classtvm_1_1runtime_1_1Optional.html">Optional</a>&lt; <a class="el" href="classtvm_1_1runtime_1_1Array.html">Array</a>&lt; <a class="el" href="namespacetvm_1_1relay.html#a5b84e3790f89bb3fad5c7911eeb99531">Expr</a> &gt;&gt; opt_args=<a class="el" href="classtvm_1_1runtime_1_1Optional.html">Optional</a>&lt; <a class="el" href="classtvm_1_1runtime_1_1Array.html">Array</a>&lt; <a class="el" href="namespacetvm_1_1relay.html#a5b84e3790f89bb3fad5c7911eeb99531">Expr</a> &gt;&gt;(), <a class="el" href="classtvm_1_1runtime_1_1Optional.html">Optional</a>&lt; <a class="el" href="classtvm_1_1Attrs.html">Attrs</a> &gt; opt_attrs=<a class="el" href="classtvm_1_1runtime_1_1Optional.html">Optional</a>&lt; <a class="el" href="classtvm_1_1Attrs.html">Attrs</a> &gt;(), <a class="el" href="classtvm_1_1runtime_1_1Optional.html">Optional</a>&lt; <a class="el" href="classtvm_1_1runtime_1_1Array.html">Array</a>&lt; <a class="el" href="namespacetvm_1_1relay.html#a661d95f170bca230773914caeef3fe52">Type</a> &gt;&gt; opt_type_args=<a class="el" href="classtvm_1_1runtime_1_1Optional.html">Optional</a>&lt; <a class="el" href="classtvm_1_1runtime_1_1Array.html">Array</a>&lt; <a class="el" href="namespacetvm_1_1relay.html#a661d95f170bca230773914caeef3fe52">Type</a> &gt;&gt;(), <a class="el" href="classtvm_1_1runtime_1_1Optional.html">Optional</a>&lt; <a class="el" href="classtvm_1_1VirtualDevice.html">VirtualDevice</a> &gt; opt_virtual_device=<a class="el" href="classtvm_1_1runtime_1_1Optional.html">Optional</a>&lt; <a class="el" href="classtvm_1_1VirtualDevice.html">VirtualDevice</a> &gt;(), <a class="el" href="classtvm_1_1runtime_1_1Optional.html">Optional</a>&lt; <a class="el" href="namespacetvm_1_1relay.html#af40ca6124bc2e88f2323eeb79d326cc0">Span</a> &gt; opt_span=<a class="el" href="classtvm_1_1runtime_1_1Optional.html">Optional</a>&lt; <a class="el" href="namespacetvm_1_1relay.html#af40ca6124bc2e88f2323eeb79d326cc0">Span</a> &gt;())</td></tr>
 <tr class="memdesc:a74232e829efcbb5edc54319441417753"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns <code>call</code> with the given properties. A null property denotes 'no change'. Returns <code>call</code> if all properties are unchanged. Otherwise, returns a copy with the new fields.  <a href="#a74232e829efcbb5edc54319441417753">More...</a><br /></td></tr>
@@ -1132,6 +1149,11 @@ Functions</h2></td></tr>
 <tr class="memitem:ae87c7a3eb9be1113b92a7102806ab627"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtvm_1_1runtime_1_1ObjectRef.html">ObjectRef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetvm_1_1relay.html#ae87c7a3eb9be1113b92a7102806ab627">Eval</a> (<a class="el" href="namespacetvm_1_1relay.html#a5b84e3790f89bb3fad5c7911eeb99531">Expr</a> expr, <a class="el" href="classtvm_1_1runtime_1_1Map.html">Map</a>&lt; <a class="el" href="namespacetvm_1_1relay.html#a2235e350f9cd1eac3aa0177034976043">GlobalTypeVar</a>, <a class="el" href="namespacetvm_1_1relay.html#a6e725a1cb4c83346e261eac7dc7292a8">TypeData</a> &gt; type_definitions, std::unordered_set&lt; <a class="el" href="classtvm_1_1runtime_1_1String.html">String</a> &gt; import_set, <a class="el" href="namespacetvm.html#a7c2095aed90b2129ba631b90103313a2">Device</a> device, <a class="el" href="classtvm_1_1Target.html">Target</a> target, <a class="el" href="classtvm_1_1runtime_1_1Map.html">Map</a>&lt; <a class="el" href="classtvm_1_1runtime_1_1String.html">String</a>, <a class="el" href="classtvm_1_1runtime_1_1ObjectRef.html">ObjectRef</a> &gt; attrs={})</td></tr>
 <tr class="memdesc:ae87c7a3eb9be1113b92a7102806ab627"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluates <code>expr</code> and returns its result.  <a href="#ae87c7a3eb9be1113b92a7102806ab627">More...</a><br /></td></tr>
 <tr class="separator:ae87c7a3eb9be1113b92a7102806ab627"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0b61f2cb4c1b03b204b216615647b6d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtvm_1_1IRModule.html">IRModule</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetvm_1_1relay.html#ac0b61f2cb4c1b03b204b216615647b6d">ParseModule</a> (const std::string &amp;file_name, const std::string &amp;file_content, const <a class="el" href="classtvm_1_1runtime_1_1Optional.html">Optional</a>&lt; <a class="el" href="classtvm_1_1IRModule.html">IRModule</a> &gt; &amp;init_module=<a class="el" href="classtvm_1_1runtime_1_1Optional.html">Optional</a>&lt; <a class="el" href="classtvm_1_1IRModule.html">IRModule</a> &gt;(), const <a class="el" href="namespacetvm_1_1relay.html#a23cab32132a66c095532a7afa1da89e3">MetaTable</a> &amp;init_meta_table=<a class="el" href="namespacetvm_1_1relay.html#a23cab32132a66c095532a7afa1da89e3">MetaTable</a>())</td></tr>
+<tr class="separator:ac0b61f2cb4c1b03b204b216615647b6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac18ea805b3366f3261b0c2a2287c612f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtvm_1_1transform_1_1Pass.html">tvm::transform::Pass</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetvm_1_1relay.html#ac18ea805b3366f3261b0c2a2287c612f">AnnotateSpans</a> ()</td></tr>
+<tr class="memdesc:ac18ea805b3366f3261b0c2a2287c612f"><td class="mdescLeft">&#160;</td><td class="mdescRight">This pass pretty-prints mod then parses it back so as to establish spans and sources for all Relay sub-expressions. This improves error and debugging diagnostics downstream for modules constructed programaticaly rather than textually.  <a href="#ac18ea805b3366f3261b0c2a2287c612f">More...</a><br /></td></tr>
+<tr class="separator:ac18ea805b3366f3261b0c2a2287c612f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad7cfa0b6a4537989b886d47767526726"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacetvm_1_1relay.html#a5b84e3790f89bb3fad5c7911eeb99531">Expr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetvm_1_1relay.html#ad7cfa0b6a4537989b886d47767526726">Bind</a> (const <a class="el" href="namespacetvm_1_1relay.html#a5b84e3790f89bb3fad5c7911eeb99531">Expr</a> &amp;expr, const <a class="el" href="classtvm_1_1runtime_1_1Map.html">tvm::Map</a>&lt; <a class="el" href="classtvm_1_1relay_1_1Var.html">Var</a>, <a class="el" href="namespacetvm_1_1relay.html#a5b84e3790f89bb3fad5c7911eeb99531">Expr</a> &gt; &amp;binds)</td></tr>
 <tr class="memdesc:ad7cfa0b6a4537989b886d47767526726"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bind the free variables to a Relay expression. This is a helper function usually called by other pass functions to help optimizations. <a class="el" href="classtvm_1_1relay_1_1If.html">If</a> any free variables are introduced into a function, those are added to the functoin parameters. Additionally this may change the order of parameters if you map a variable to a variable.  <a href="#ad7cfa0b6a4537989b886d47767526726">More...</a><br /></td></tr>
 <tr class="separator:ad7cfa0b6a4537989b886d47767526726"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1651,6 +1673,20 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">using <a class="el" href="namespacetvm.html#acd267f8d7f55da6ac681239831963279">tvm::relay::Kind</a> = typedef <a class="el" href="namespacetvm.html#acd267f8d7f55da6ac681239831963279">TypeKind</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a23cab32132a66c095532a7afa1da89e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23cab32132a66c095532a7afa1da89e3">&#9670;&nbsp;</a></span>MetaTable</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespacetvm_1_1relay.html#a23cab32132a66c095532a7afa1da89e3">tvm::relay::MetaTable</a> = typedef <a class="el" href="classtvm_1_1runtime_1_1Map.html">Map</a>&lt;<a class="el" href="classtvm_1_1runtime_1_1String.html">String</a>, <a class="el" href="classtvm_1_1runtime_1_1Array.html">Array</a>&lt;<a class="el" href="classtvm_1_1runtime_1_1ObjectRef.html">ObjectRef</a>&gt; &gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2305,6 +2341,25 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="ac18ea805b3366f3261b0c2a2287c612f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac18ea805b3366f3261b0c2a2287c612f">&#9670;&nbsp;</a></span>AnnotateSpans()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classtvm_1_1transform_1_1Pass.html">tvm::transform::Pass</a> tvm::relay::AnnotateSpans </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This pass pretty-prints mod then parses it back so as to establish spans and sources for all Relay sub-expressions. This improves error and debugging diagnostics downstream for modules constructed programaticaly rather than textually. </p>
+
+</div>
+</div>
 <a id="a7d286e9f10a08e644c9f047816d0f625"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7d286e9f10a08e644c9f047816d0f625">&#9670;&nbsp;</a></span>AsOptimizableFunctionNode()</h2>
 
@@ -2320,6 +2375,53 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="af5e8510cb09c799e688ca72a19f5e5db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5e8510cb09c799e688ca72a19f5e5db">&#9670;&nbsp;</a></span>AsText()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classtvm_1_1runtime_1_1String.html">String</a> tvm::relay::AsText </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classtvm_1_1runtime_1_1ObjectRef.html">ObjectRef</a> &amp;&#160;</td>
+          <td class="paramname"><em>node</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>show_meta_data</em> = <code>true</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classtvm_1_1runtime_1_1TypedPackedFunc.html">runtime::TypedPackedFunc</a>&lt; <a class="el" href="classtvm_1_1runtime_1_1String.html">String</a>(<a class="el" href="classtvm_1_1runtime_1_1ObjectRef.html">ObjectRef</a>)&gt;&#160;</td>
+          <td class="paramname"><em>annotate</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Render the node as a string in the text format. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">node</td><td>The node to be rendered. </td></tr>
+    <tr><td class="paramname">show_meta_data</td><td>Whether to print meta data section. </td></tr>
+    <tr><td class="paramname">annotate</td><td>An optional callback function for attaching additional comment block to an expr.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>We support a limited set of IR nodes that are part of relay IR and</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespacetvm_1_1relay.html#a3b98dc5e89534ce68b4be3b9c7ceafaf" title="Pretty print a node for debug purposes. ">PrettyPrint</a>. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The text representation. </dd></dl>
 
 </div>
 </div>
@@ -3642,6 +3744,46 @@ template&lt;typename FCheckVisited , typename FVisitLeaf &gt; </div>
 
 </div>
 </div>
+<a id="ac0b61f2cb4c1b03b204b216615647b6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0b61f2cb4c1b03b204b216615647b6d">&#9670;&nbsp;</a></span>ParseModule()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classtvm_1_1IRModule.html">IRModule</a> tvm::relay::ParseModule </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>file_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>file_content</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classtvm_1_1runtime_1_1Optional.html">Optional</a>&lt; <a class="el" href="classtvm_1_1IRModule.html">IRModule</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>init_module</em> = <code><a class="el" href="classtvm_1_1runtime_1_1Optional.html">Optional</a>&lt;&#160;<a class="el" href="classtvm_1_1IRModule.html">IRModule</a>&#160;&gt;()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespacetvm_1_1relay.html#a23cab32132a66c095532a7afa1da89e3">MetaTable</a> &amp;&#160;</td>
+          <td class="paramname"><em>init_meta_table</em> = <code><a class="el" href="namespacetvm_1_1relay.html#a23cab32132a66c095532a7afa1da89e3">MetaTable</a>()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a48108863604dc310eb3184b13b42a92a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a48108863604dc310eb3184b13b42a92a">&#9670;&nbsp;</a></span>PartitionPattern()</h2>
 
@@ -3759,6 +3901,35 @@ template&lt;typename FCheckVisited , typename FVisitLeaf &gt; </div>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a3b98dc5e89534ce68b4be3b9c7ceafaf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b98dc5e89534ce68b4be3b9c7ceafaf">&#9670;&nbsp;</a></span>PrettyPrint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classtvm_1_1runtime_1_1String.html">String</a> tvm::relay::PrettyPrint </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classtvm_1_1runtime_1_1ObjectRef.html">ObjectRef</a> &amp;&#160;</td>
+          <td class="paramname"><em>node</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pretty print a node for debug purposes. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">node</td><td>The node to be printed. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The text reperesentation. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This function does not show version or meta-data. Use AsText if you want to store the text. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespacetvm_1_1relay.html#af5e8510cb09c799e688ca72a19f5e5db" title="Render the node as a string in the text format. ">AsText</a>. </dd></dl>
 
 </div>
 </div>
@@ -4208,44 +4379,8 @@ template&lt;typename FCheckVisited , typename FVisitLeaf &gt; </div>
 
 </div>
 </div>
-<a id="acd80501d29e4d951be6746c79934a70c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acd80501d29e4d951be6746c79934a70c">&#9670;&nbsp;</a></span>WithFields() <span class="overload">[4/13]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classtvm_1_1relay_1_1Clause.html">Clause</a> tvm::relay::WithFields </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classtvm_1_1relay_1_1Clause.html">Clause</a>&#160;</td>
-          <td class="paramname"><em>clause</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classtvm_1_1runtime_1_1Optional.html">Optional</a>&lt; <a class="el" href="classtvm_1_1relay_1_1Pattern.html">Pattern</a> &gt;&#160;</td>
-          <td class="paramname"><em>opt_lhs</em> = <code><a class="el" href="classtvm_1_1runtime_1_1Optional.html">Optional</a>&lt;&#160;<a class="el" href="classtvm_1_1relay_1_1Pattern.html">Pattern</a>&#160;&gt;()</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classtvm_1_1runtime_1_1Optional.html">Optional</a>&lt; <a class="el" href="namespacetvm_1_1relay.html#a5b84e3790f89bb3fad5c7911eeb99531">Expr</a> &gt;&#160;</td>
-          <td class="paramname"><em>opt_rhs</em> = <code><a class="el" href="classtvm_1_1runtime_1_1Optional.html">Optional</a>&lt;&#160;<a class="el" href="namespacetvm_1_1relay.html#a5b84e3790f89bb3fad5c7911eeb99531">Expr</a>&#160;&gt;()</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Returns <code>clause</code> with the given properties. A null property denotes 'no change'. Returns <code>clause</code> if all properties are unchanged. Otherwise, returns a copy with the new fields. </p>
-
-</div>
-</div>
 <a id="aaf3bb67945ee37070acbf4b3ef84d826"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaf3bb67945ee37070acbf4b3ef84d826">&#9670;&nbsp;</a></span>WithFields() <span class="overload">[5/13]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf3bb67945ee37070acbf4b3ef84d826">&#9670;&nbsp;</a></span>WithFields() <span class="overload">[4/13]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4288,7 +4423,43 @@ template&lt;typename FCheckVisited , typename FVisitLeaf &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Returns <code>vor</code> with the given properties. A null property denotes 'no change'. Returns <code>var</code> if all properties are unchanged. Otherwise, returns a copy with the new fields. </p>
+<p>Returns <code>var</code> with the given properties. A null property denotes 'no change'. Returns <code>var</code> if all properties are unchanged. Otherwise, returns a copy with the new fields. </p>
+
+</div>
+</div>
+<a id="acd80501d29e4d951be6746c79934a70c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd80501d29e4d951be6746c79934a70c">&#9670;&nbsp;</a></span>WithFields() <span class="overload">[5/13]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classtvm_1_1relay_1_1Clause.html">Clause</a> tvm::relay::WithFields </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classtvm_1_1relay_1_1Clause.html">Clause</a>&#160;</td>
+          <td class="paramname"><em>clause</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classtvm_1_1runtime_1_1Optional.html">Optional</a>&lt; <a class="el" href="classtvm_1_1relay_1_1Pattern.html">Pattern</a> &gt;&#160;</td>
+          <td class="paramname"><em>opt_lhs</em> = <code><a class="el" href="classtvm_1_1runtime_1_1Optional.html">Optional</a>&lt;&#160;<a class="el" href="classtvm_1_1relay_1_1Pattern.html">Pattern</a>&#160;&gt;()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classtvm_1_1runtime_1_1Optional.html">Optional</a>&lt; <a class="el" href="namespacetvm_1_1relay.html#a5b84e3790f89bb3fad5c7911eeb99531">Expr</a> &gt;&#160;</td>
+          <td class="paramname"><em>opt_rhs</em> = <code><a class="el" href="classtvm_1_1runtime_1_1Optional.html">Optional</a>&lt;&#160;<a class="el" href="namespacetvm_1_1relay.html#a5b84e3790f89bb3fad5c7911eeb99531">Expr</a>&#160;&gt;()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns <code>clause</code> with the given properties. A null property denotes 'no change'. Returns <code>clause</code> if all properties are unchanged. Otherwise, returns a copy with the new fields. </p>
 
 </div>
 </div>

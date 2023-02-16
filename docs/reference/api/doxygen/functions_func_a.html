@@ -72,9 +72,9 @@ $(function() {
 </li>
 <li>Add()
 : <a class="el" href="classtvm_1_1IRModuleNode.html#ab0ece193de49f17b3de1a75b9739162d">tvm::IRModuleNode</a>
-, <a class="el" href="classtvm_1_1parser_1_1SourceMap.html#a7ec534d0558cb49d4296374ceaed94de">tvm::parser::SourceMap</a>
 , <a class="el" href="classtvm_1_1relax_1_1DataflowBlockRewriteNode.html#a9ade090eb39b47ebf70b59cf4a50f7dc">tvm::relax::DataflowBlockRewriteNode</a>
 , <a class="el" href="classtvm_1_1relax_1_1TraceNode.html#a1b3e8ba8e919bfd01b0b273b1c4af3b2">tvm::relax::TraceNode</a>
+, <a class="el" href="classtvm_1_1SourceMap.html#a357f24719da6903f271a6efb1534a9c4">tvm::SourceMap</a>
 , <a class="el" href="classtvm_1_1tir_1_1Add.html#adbeb706f1b0c12dbdfe152a143e5b31f">tvm::tir::Add</a>
 </li>
 <li>add_argument()
@@ -106,6 +106,9 @@ $(function() {
 <li>AddImplementation()
 : <a class="el" href="classtvm_1_1relay_1_1OpSpecialization.html#ac76d48fb032a2e732a4309dc0ce7a636">tvm::relay::OpSpecialization</a>
 , <a class="el" href="classtvm_1_1relay_1_1OpStrategy.html#a3d389c44571d9b3e5a6135f22b8a7bf3">tvm::relay::OpStrategy</a>
+</li>
+<li>AddMetadata()
+: <a class="el" href="classtvm_1_1script_1_1printer_1_1IRDocsifierNode.html#a6caf3ae8ad6e900c10e4c198a3bfa1e9">tvm::script::printer::IRDocsifierNode</a>
 </li>
 <li>AddressOf()
 : <a class="el" href="classtvm_1_1runtime_1_1InplaceArrayBase.html#a2a0235e3e9b03abffc3839d14e1b7342">tvm::runtime::InplaceArrayBase&lt; ArrayType, ElemType &gt;</a>
@@ -195,13 +198,13 @@ $(function() {
 : <a class="el" href="classtvm_1_1tir_1_1ScheduleNode.html#aa57e90d92de36571a7d3b1c3677e6367">tvm::tir::ScheduleNode</a>
 </li>
 <li>AnnotationStep()
-: <a class="el" href="classtvm_1_1auto__scheduler_1_1AnnotationStep.html#a1a6366d63eb64424a1995dc7b8f40a3b">tvm::auto_scheduler::AnnotationStep</a>
+: <a class="el" href="classtvm_1_1auto__scheduler_1_1AnnotationStep.html#af7ca625164b2721bb6fdd9db78f5a9c7">tvm::auto_scheduler::AnnotationStep</a>
 </li>
 <li>Any()
 : <a class="el" href="classtvm_1_1tir_1_1Any.html#afdb8854b3952dbfa4b02f151ead3bdfd">tvm::tir::Any</a>
 </li>
 <li>AnyErrors()
-: <a class="el" href="classtvm_1_1ErrorReporter.html#a7ec11efb5e9680cfd57e05d573fc0927">tvm::ErrorReporter</a>
+: <a class="el" href="classtvm_1_1relay_1_1ErrorReporter.html#a90e1eea8f10d4e164d3a9fb76cefa6ac">tvm::relay::ErrorReporter</a>
 </li>
 <li>Append()
 : <a class="el" href="classtvm_1_1tir_1_1TraceNode.html#afaa0e3d25cf54e8a33bf4af4ded99006">tvm::tir::TraceNode</a>
@@ -272,7 +275,7 @@ $(function() {
 : <a class="el" href="classtvm_1_1meta__schedule_1_1ArgInfo.html#af2be498a4c11d470e2cd1f1474cc4839">tvm::meta_schedule::ArgInfo</a>
 </li>
 <li>Array()
-: <a class="el" href="classtvm_1_1runtime_1_1Array.html#a478af2e3338db97bf9dd3411de6d9a8a">tvm::runtime::Array&lt; T, typename &gt;</a>
+: <a class="el" href="classtvm_1_1runtime_1_1Array.html#aacdeb14d66a7f85e94ee843c459f7959">tvm::runtime::Array&lt; T, typename &gt;</a>
 </li>
 <li>ArrayAccessor()
 : <a class="el" href="classtvm_1_1runtime_1_1metadata_1_1ArrayAccessor.html#aa66d3f34e83f90c133bc1df9b0c3acd2">tvm::runtime::metadata::ArrayAccessor&lt; C, Ref &gt;</a>
@@ -338,7 +341,7 @@ $(function() {
 : <a class="el" href="classtvm_1_1script_1_1printer_1_1AssignDoc.html#a250077cb78124dc66d59548bdfbc60ad">tvm::script::printer::AssignDoc</a>
 </li>
 <li>AssignTypedLambda()
-: <a class="el" href="classtvm_1_1runtime_1_1TypedPackedFunc_3_01R_07Args_8_8_8_08_4.html#a617bb54ee3fbe9704131229efd0d903c">tvm::runtime::TypedPackedFunc&lt; R(Args...)&gt;</a>
+: <a class="el" href="classtvm_1_1runtime_1_1TypedPackedFunc_3_01R_07Args_8_8_8_08_4.html#a11985d7fdcf9ac60ff34faef89382284">tvm::runtime::TypedPackedFunc&lt; R(Args...)&gt;</a>
 </li>
 <li>AsTable()
 : <a class="el" href="classtvm_1_1runtime_1_1profiling_1_1ReportNode.html#a0e4562c552d973853fb01d7bc501d591">tvm::runtime::profiling::ReportNode</a>
@@ -356,7 +359,7 @@ $(function() {
 , <a class="el" href="classtvm_1_1runtime_1_1String.html#aaeda6a88310d41a22ce884fb1570b0d2">tvm::runtime::String</a>
 </li>
 <li>Attr()
-: <a class="el" href="classtvm_1_1ObjectPathNode.html#a864ef4d99517c67c5d01808a87fd71c0">tvm::ObjectPathNode</a>
+: <a class="el" href="classtvm_1_1ObjectPathNode.html#ab5305b19af7b775cb314cdfc6437094f">tvm::ObjectPathNode</a>
 , <a class="el" href="classtvm_1_1script_1_1printer_1_1ExprDocNode.html#a75c36d0fa67be2007fc5c2e114b15349">tvm::script::printer::ExprDocNode</a>
 </li>
 <li>AttrAccessDoc()
@@ -372,7 +375,7 @@ $(function() {
 : <a class="el" href="classtvm_1_1AttributeAccessPathNode.html#a8f1bf5db4a1495e454b196856fd5cf21">tvm::AttributeAccessPathNode</a>
 </li>
 <li>AttrInitEntry()
-: <a class="el" href="structtvm_1_1detail_1_1AttrInitEntry.html#ad68ac350b0d49e97caab8443cc8fb08b">tvm::detail::AttrInitEntry&lt; T &gt;</a>
+: <a class="el" href="structtvm_1_1detail_1_1AttrInitEntry.html#af07c4a3a8f4663ac03ae238ab7b9d791">tvm::detail::AttrInitEntry&lt; T &gt;</a>
 </li>
 <li>AttrInitVisitor()
 : <a class="el" href="classtvm_1_1detail_1_1AttrInitVisitor.html#ac3c800c9249fee195db2a5fa473fe960">tvm::detail::AttrInitVisitor&lt; FFind &gt;</a>

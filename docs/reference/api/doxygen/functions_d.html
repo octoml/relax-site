@@ -138,7 +138,7 @@ $(function() {
 <li>DataType()
 : <a class="el" href="classtvm_1_1runtime_1_1DataType.html#a6db427a47b8d503b10cd2aee6a39d3a9">tvm::runtime::DataType</a>
 , <a class="el" href="classtvm_1_1runtime_1_1NDArray.html#a87d9cadd0c232324c101f7ed231aa193">tvm::runtime::NDArray</a>
-, <a class="el" href="classtvm_1_1script_1_1printer_1_1LiteralDoc.html#a157fb6ccc8acfcdd964482a502521ebd">tvm::script::printer::LiteralDoc</a>
+, <a class="el" href="classtvm_1_1script_1_1printer_1_1LiteralDoc.html#adf4d8759e01746a0da3b03146b7baf00">tvm::script::printer::LiteralDoc</a>
 </li>
 <li>datatype_fields
 : <a class="el" href="structtvm_1_1runtime_1_1vm_1_1Instruction.html#a25adb383014a74a9c4ac805beefe86b6">tvm::runtime::vm::Instruction</a>
@@ -199,6 +199,9 @@ $(function() {
 <li>default_primitive_virtual_device
 : <a class="el" href="classtvm_1_1CompilationConfigNode.html#abe4569cf32c57b710be99b50e7118876">tvm::CompilationConfigNode</a>
 </li>
+<li>DefaultCPUTensorization()
+: <a class="el" href="classtvm_1_1meta__schedule_1_1Postproc.html#a4fe2775d916e99f27815aac6df46fd0c">tvm::meta_schedule::Postproc</a>
+</li>
 <li>DefaultCUDA()
 : <a class="el" href="classtvm_1_1meta__schedule_1_1Mutator.html#a6eb9b1298865cdeb5a8247a4e14454e3">tvm::meta_schedule::Mutator</a>
 , <a class="el" href="classtvm_1_1meta__schedule_1_1Postproc.html#a799e989283bbfa92471829ab23179df5">tvm::meta_schedule::Postproc</a>
@@ -227,10 +230,8 @@ $(function() {
 , <a class="el" href="classtvm_1_1meta__schedule_1_1Postproc.html#a83c92e6d1f474a65115e7c4a1216e631">tvm::meta_schedule::Postproc</a>
 , <a class="el" href="classtvm_1_1meta__schedule_1_1ScheduleRule.html#ad181358bf6ca1951f0038f0691308bee">tvm::meta_schedule::ScheduleRule</a>
 </li>
-<li>DefaultVNNI()
-: <a class="el" href="classtvm_1_1meta__schedule_1_1Mutator.html#a8473324dbcbe078f021a58219a2cb687">tvm::meta_schedule::Mutator</a>
-, <a class="el" href="classtvm_1_1meta__schedule_1_1Postproc.html#ad8e2da27bbe3f41d69742d87a3232c4d">tvm::meta_schedule::Postproc</a>
-, <a class="el" href="classtvm_1_1meta__schedule_1_1ScheduleRule.html#ab4b54d01446fee31cbcb1235bf8926cf">tvm::meta_schedule::ScheduleRule</a>
+<li>DefaultX86()
+: <a class="el" href="classtvm_1_1meta__schedule_1_1ScheduleRule.html#a5342931a76e2269970f132d0921e2f45">tvm::meta_schedule::ScheduleRule</a>
 </li>
 <li>DefEqual()
 : <a class="el" href="classtvm_1_1SEqualReducer.html#a62ba4c55928d4886853f9c33f4147340">tvm::SEqualReducer</a>
@@ -363,7 +364,7 @@ $(function() {
 : <a class="el" href="classtvm_1_1DiagnosticContext.html#a95a504685fb72779a8b63abb3e2923ea">tvm::DiagnosticContext</a>
 </li>
 <li>DiagnosticRenderer()
-: <a class="el" href="classtvm_1_1DiagnosticRenderer.html#aee223ebb9e5a875795e6536503e155ad">tvm::DiagnosticRenderer</a>
+: <a class="el" href="classtvm_1_1DiagnosticRenderer.html#a118215b25d3747423a3fa6af989b32df">tvm::DiagnosticRenderer</a>
 </li>
 <li>diagnostics
 : <a class="el" href="classtvm_1_1DiagnosticContextNode.html#ada207669f235f6aa8dbf310583a92339">tvm::DiagnosticContextNode</a>
@@ -375,7 +376,7 @@ $(function() {
 : <a class="el" href="classtvm_1_1DictAttrs.html#a3999d7e2b942c8f9993f6d51cb8f3ded">tvm::DictAttrs</a>
 </li>
 <li>DictDoc()
-: <a class="el" href="classtvm_1_1script_1_1printer_1_1DictDoc.html#a8cedc24d34db6c6a185912bb41df562d">tvm::script::printer::DictDoc</a>
+: <a class="el" href="classtvm_1_1script_1_1printer_1_1DictDoc.html#a60961545e317ab265c56f2c905db88b9">tvm::script::printer::DictDoc</a>
 </li>
 <li>difference_type
 : <a class="el" href="classtvm_1_1runtime_1_1IterAdapter.html#aa4c2c9d77272b79dad3c3a4ff392d186">tvm::runtime::IterAdapter&lt; Converter, TIter &gt;</a>
@@ -460,6 +461,9 @@ $(function() {
 <li>DocCreator
 : <a class="el" href="classtvm_1_1script_1_1printer_1_1IRDocsifierNode.html#a0b3746ae1e3dec33534003c8fbb5553f">tvm::script::printer::IRDocsifierNode</a>
 </li>
+<li>DocStringDoc()
+: <a class="el" href="classtvm_1_1script_1_1printer_1_1DocStringDoc.html#a034b2f37658f58baae251ca12b8673e3">tvm::script::printer::DocStringDoc</a>
+</li>
 <li>dom
 : <a class="el" href="classtvm_1_1tir_1_1IterVarNode.html#acd6ca5f580e556a2d022e47900f9fe71">tvm::tir::IterVarNode</a>
 </li>
@@ -510,17 +514,12 @@ $(function() {
 , <a class="el" href="classtvm_1_1PrimExpr.html#a18a8a0fef87b74b18fc254f49465cc56">tvm::PrimExpr</a>
 , <a class="el" href="classtvm_1_1PrimExprNode.html#a95af9234514ec5f11355db41524be7f9">tvm::PrimExprNode</a>
 , <a class="el" href="classtvm_1_1PrimTypeNode.html#a3095121c58f824e258f2ac2f345ae7d1">tvm::PrimTypeNode</a>
-, <a class="el" href="structtvm_1_1relax_1_1AllocTensorAttrs.html#a431591fa6196730a58c8f587a91dd3a2">tvm::relax::AllocTensorAttrs</a>
 , <a class="el" href="structtvm_1_1relax_1_1AstypeAttrs.html#a7bfd23ac1c02e8ecbddeaa5d41df158b">tvm::relax::AstypeAttrs</a>
 , <a class="el" href="classtvm_1_1relax_1_1DataTypePatternNode.html#a4b4fe2fc9ffb9f224331e0ccf0a8ccf3">tvm::relax::DataTypePatternNode</a>
 , <a class="el" href="classtvm_1_1relax_1_1DynTensorTypeNode.html#a55f59531fd1886ea519d919fb6d077f7">tvm::relax::DynTensorTypeNode</a>
 , <a class="el" href="structtvm_1_1relax_1_1InitAttrs.html#a8ae89c18900d1b690403fcf41677c95c">tvm::relax::InitAttrs</a>
-, <a class="el" href="structtvm_1_1relax_1_1MemAllocStorageAttrs.html#a737f2056bb2c8b8106259927404bac0d">tvm::relax::MemAllocStorageAttrs</a>
-, <a class="el" href="structtvm_1_1relax_1_1MemAllocTensorAttrs.html#a542d71e92938d9f80cd3656413b13acd">tvm::relax::MemAllocTensorAttrs</a>
 , <a class="el" href="classtvm_1_1relax_1_1PrimStructInfoNode.html#a85106bb3bc856813055cc312149dd1fa">tvm::relax::PrimStructInfoNode</a>
 , <a class="el" href="classtvm_1_1relax_1_1TensorStructInfoNode.html#a82915ee846837aac496e46024c9dfdb4">tvm::relax::TensorStructInfoNode</a>
-, <a class="el" href="structtvm_1_1relax_1_1VMAllocStorageAttrs.html#aef51e1c22cc40b4cf99a6502882aa53e">tvm::relax::VMAllocStorageAttrs</a>
-, <a class="el" href="structtvm_1_1relax_1_1VMAllocTensorAttrs.html#ad151e926b76667ac8cb8e9bfb9f70287">tvm::relax::VMAllocTensorAttrs</a>
 , <a class="el" href="structtvm_1_1relay_1_1AllocStorageAttrs.html#a8dc7038ce944d4ce9d8442824d8f6af6">tvm::relay::AllocStorageAttrs</a>
 , <a class="el" href="structtvm_1_1relay_1_1AllocTensorAttrs.html#a9fd9cdd454c3b0d3d2bf232d22222744">tvm::relay::AllocTensorAttrs</a>
 , <a class="el" href="structtvm_1_1relay_1_1ArangeAttrs.html#a405dbeb1c77da2690c40606c980f388d">tvm::relay::ArangeAttrs</a>

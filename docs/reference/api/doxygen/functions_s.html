@@ -182,6 +182,9 @@ $(function() {
 <li>score_threshold
 : <a class="el" href="structtvm_1_1relay_1_1GetValidCountsAttrs.html#ad9cb7822369b93d0be7b2eeb01e2bcd5">tvm::relay::GetValidCountsAttrs</a>
 </li>
+<li>Script()
+: <a class="el" href="classtvm_1_1TVMScriptPrinter.html#a703e7ac95c8a0672506323f6a0ea09f4">tvm::TVMScriptPrinter</a>
+</li>
 <li>Search()
 : <a class="el" href="classtvm_1_1auto__scheduler_1_1SearchPolicyNode.html#aa118c6b76b8b70ef2ee614553532a49c">tvm::auto_scheduler::SearchPolicyNode</a>
 </li>
@@ -235,7 +238,7 @@ $(function() {
 : <a class="el" href="classtvm_1_1tir_1_1SeqStmt.html#afe971b51fb6990008a118d4aa16c0920">tvm::tir::SeqStmt</a>
 </li>
 <li>SEqualHandlerDefault()
-: <a class="el" href="classtvm_1_1SEqualHandlerDefault.html#ac730a1a7785ee29e231eca8815826127">tvm::SEqualHandlerDefault</a>
+: <a class="el" href="classtvm_1_1SEqualHandlerDefault.html#a843bd92c063e719d7459228594fc9237">tvm::SEqualHandlerDefault</a>
 </li>
 <li>SEqualReduce()
 : <a class="el" href="classtvm_1_1arith_1_1ConstIntBoundNode.html#ad7be026c2fbdd9c6fb439d6959300541">tvm::arith::ConstIntBoundNode</a>
@@ -268,7 +271,6 @@ $(function() {
 , <a class="el" href="classtvm_1_1IRModuleNode.html#a46a1619c7c566e4fb99262a25cd2c5cc">tvm::IRModuleNode</a>
 , <a class="el" href="structtvm_1_1NDArrayContainerTrait.html#af29b3105d45251f1cca6b8731a9e003e">tvm::NDArrayContainerTrait</a>
 , <a class="el" href="classtvm_1_1OpNode.html#afa40f80872fa5e5b2bf862b375fdc748">tvm::OpNode</a>
-, <a class="el" href="classtvm_1_1parser_1_1SourceMapNode.html#a1a1627bd581c934a6eb6eae1aa6c0505">tvm::parser::SourceMapNode</a>
 , <a class="el" href="classtvm_1_1PointerTypeNode.html#a6ebf93cad9d56332ee2d90ad21aee08c">tvm::PointerTypeNode</a>
 , <a class="el" href="structtvm_1_1PoolInfoNode.html#afbac7d6a6c6a212828ddec63b273e9d9">tvm::PoolInfoNode</a>
 , <a class="el" href="structtvm_1_1PoolInfoPropertiesNode.html#abaac364a48951696cfb984429c8d326f">tvm::PoolInfoPropertiesNode</a>
@@ -326,6 +328,7 @@ $(function() {
 , <a class="el" href="classtvm_1_1RelayRefTypeNode.html#a8f8317beeb00e591ae580ad461ef0b30">tvm::RelayRefTypeNode</a>
 , <a class="el" href="classtvm_1_1SEqualHandlerDefault.html#ab45b0ee6948947a06571986ded36d8b2">tvm::SEqualHandlerDefault</a>
 , <a class="el" href="classtvm_1_1SEqualReducer_1_1Handler.html#a02c09a956fe790e5acf20e29a50b2722">tvm::SEqualReducer::Handler</a>
+, <a class="el" href="classtvm_1_1SourceMapNode.html#a3c06e7a42ddf9c9c5d9263be1cce433d">tvm::SourceMapNode</a>
 , <a class="el" href="classtvm_1_1SourceNameNode.html#af937a23080114be50bd47157994dc758">tvm::SourceNameNode</a>
 , <a class="el" href="classtvm_1_1SpanNode.html#ae565623309b42d50c60b8be14d6e6d47">tvm::SpanNode</a>
 , <a class="el" href="classtvm_1_1TargetNode.html#acedf257c039c25a6a16bf36b664d35c6">tvm::TargetNode</a>
@@ -438,7 +441,7 @@ $(function() {
 : <a class="el" href="classtvm_1_1runtime_1_1Registry.html#aed802ed365a13a9cef9de4e9f601b62a">tvm::runtime::Registry</a>
 </li>
 <li>set_body_method()
-: <a class="el" href="classtvm_1_1runtime_1_1Registry.html#a106607f2535dc7c838646aabd029aa60">tvm::runtime::Registry</a>
+: <a class="el" href="classtvm_1_1runtime_1_1Registry.html#ae5fcbc18ff9a33ad700592dc8e46bd90">tvm::runtime::Registry</a>
 </li>
 <li>set_body_typed()
 : <a class="el" href="classtvm_1_1runtime_1_1Registry.html#a607848df01d8c33d7e2cf40e7dae42b1">tvm::runtime::Registry</a>
@@ -803,17 +806,19 @@ $(function() {
 , <a class="el" href="classtvm_1_1SHashReducer_1_1Handler.html#a1bb22d4bb3983b4c3ca87b0daef7f93b">tvm::SHashReducer::Handler</a>
 </li>
 <li>SHashReducer()
-: <a class="el" href="classtvm_1_1SHashReducer.html#af7eb7ccc3e5863fe580f1b8dceac5d88">tvm::SHashReducer</a>
+: <a class="el" href="classtvm_1_1SHashReducer.html#acb4d90cb74f617620d0027649adf8f17">tvm::SHashReducer</a>
 </li>
 <li>shift
 : <a class="el" href="structtvm_1_1relay_1_1FixedPointMultiplyAttrs.html#ac5095656867b0bad8cd53d0f957a1d9d">tvm::relay::FixedPointMultiplyAttrs</a>
 </li>
 <li>ShouldLinkParameters()
-: <a class="el" href="classtvm_1_1IRModuleNode.html#a6bb288d971d067764448a2c715702a8c">tvm::IRModuleNode</a>
-, <a class="el" href="classtvm_1_1relay_1_1ExecutorNode.html#a8e3cabcfef4e40924bd4182c613a71f9">tvm::relay::ExecutorNode</a>
+: <a class="el" href="classtvm_1_1relay_1_1ExecutorNode.html#a8e3cabcfef4e40924bd4182c613a71f9">tvm::relay::ExecutorNode</a>
 </li>
 <li>ShouldRun()
 : <a class="el" href="classtvm_1_1instrument_1_1PassInstrumentNode.html#a2b21cac2b6f389c98b359a9a0d640de5">tvm::instrument::PassInstrumentNode</a>
+</li>
+<li>show_meta
+: <a class="el" href="classtvm_1_1PrinterConfigNode.html#aa11acd5d0e720eda7619ae1c7baa8c2c">tvm::PrinterConfigNode</a>
 </li>
 <li>Shuffle()
 : <a class="el" href="classtvm_1_1tir_1_1Shuffle.html#a2d37f2f8afe5357f1a6ffc4c2b147ac4">tvm::tir::Shuffle</a>
@@ -919,27 +924,27 @@ $(function() {
 , <a class="el" href="classtvm_1_1arith_1_1IterSplitExprNode.html#a7a129dc9b432359a07c1a1e286c3c66f">tvm::arith::IterSplitExprNode</a>
 </li>
 <li>Source()
-: <a class="el" href="classtvm_1_1parser_1_1Source.html#a0ef9f726abcc6c4c9e81b3a257055df8">tvm::parser::Source</a>
+: <a class="el" href="classtvm_1_1Source.html#a794f5989e4e89cb39b638a5cd837eaa9">tvm::Source</a>
 </li>
 <li>source
-: <a class="el" href="classtvm_1_1parser_1_1SourceNode.html#a51cc3c98e4cdacf0ffdc643c848e09af">tvm::parser::SourceNode</a>
+: <a class="el" href="classtvm_1_1SourceNode.html#a6a31f8a2bf412edf7a529c5931185529">tvm::SourceNode</a>
 , <a class="el" href="classtvm_1_1tir_1_1MatchBufferRegionNode.html#ae5093b92baee42fdd853f6f5f287ac31">tvm::tir::MatchBufferRegionNode</a>
 , <a class="el" href="classtvm_1_1tir_1_1ReduceNode.html#ab1b5e256aabba3307ccfeb291bb58771">tvm::tir::ReduceNode</a>
 </li>
 <li>source_map
-: <a class="el" href="classtvm_1_1IRModuleNode.html#a49470c0bfb4b85d9eda7576a837b7031">tvm::IRModuleNode</a>
-, <a class="el" href="classtvm_1_1parser_1_1SourceMapNode.html#ae22bc1181b066f17f8938868ef22610a">tvm::parser::SourceMapNode</a>
+: <a class="el" href="classtvm_1_1IRModuleNode.html#abc7bd8d734f093ecb6abe8969d6dbcba">tvm::IRModuleNode</a>
+, <a class="el" href="classtvm_1_1SourceMapNode.html#abd44bcd7252397ade5584c0387845342">tvm::SourceMapNode</a>
 </li>
 <li>source_name
 : <a class="el" href="classtvm_1_1DiagnosticBuilder.html#a92d320e1ede24fe5ff47862365002691">tvm::DiagnosticBuilder</a>
-, <a class="el" href="classtvm_1_1parser_1_1SourceNode.html#a8d4c50a18eb3e99b14d73d7db2a52af3">tvm::parser::SourceNode</a>
+, <a class="el" href="classtvm_1_1SourceNode.html#ad4002d5ddb822b7340fd16c460a1ec6f">tvm::SourceNode</a>
 , <a class="el" href="classtvm_1_1SpanNode.html#ad573167f93facbfbee19983b08bbba3d">tvm::SpanNode</a>
 </li>
 <li>source_paths
 : <a class="el" href="classtvm_1_1script_1_1printer_1_1DocNode.html#a29e21c8f39639d1d30697971267847a8">tvm::script::printer::DocNode</a>
 </li>
 <li>SourceMap()
-: <a class="el" href="classtvm_1_1parser_1_1SourceMap.html#a43518e78ad2060e9400d893078c48008">tvm::parser::SourceMap</a>
+: <a class="el" href="classtvm_1_1SourceMap.html#ad4517cedaea581d34c28cb9903205eeb">tvm::SourceMap</a>
 </li>
 <li>space_generator
 : <a class="el" href="classtvm_1_1meta__schedule_1_1TuneContextNode.html#a7bdfdd48530bfe380c5f6c143158a07f">tvm::meta_schedule::TuneContextNode</a>
@@ -953,13 +958,13 @@ $(function() {
 <li>span
 : <a class="el" href="classtvm_1_1AffineTypeNode.html#aa45c91e3c8ebcff609d10f6a921f3fa2">tvm::AffineTypeNode</a>
 , <a class="el" href="classtvm_1_1BaseExprNode.html#ae3a0760a9f8b1379bc86f13e8bb3a22e">tvm::BaseExprNode</a>
-, <a class="el" href="classtvm_1_1CompileError.html#ae6f85acdf6cea9b673f89ac2d7a7bf9e">tvm::CompileError</a>
 , <a class="el" href="classtvm_1_1DiagnosticBuilder.html#a52d9cc3cb33e655c5d82af47daa74c66">tvm::DiagnosticBuilder</a>
 , <a class="el" href="classtvm_1_1DiagnosticNode.html#af5469f228f87711ad8bd3f4f78f3bb54">tvm::DiagnosticNode</a>
 , <a class="el" href="classtvm_1_1RangeNode.html#aee167e954efc66eec2b2fecfcfc7e3d5">tvm::RangeNode</a>
 , <a class="el" href="classtvm_1_1relax_1_1BindingBlockNode.html#a7839305dc9e21635cb27a98a681cbd07">tvm::relax::BindingBlockNode</a>
 , <a class="el" href="classtvm_1_1relax_1_1BindingNode.html#a753a435981df98a5247656887c327fec">tvm::relax::BindingNode</a>
 , <a class="el" href="classtvm_1_1relax_1_1StructInfoNode.html#a205e48c6631e5e0d52020a046407720d">tvm::relax::StructInfoNode</a>
+, <a class="el" href="classtvm_1_1relay_1_1CompileError.html#a69a0920ddd8a7586bf072f8d2f1db1c6">tvm::relay::CompileError</a>
 , <a class="el" href="classtvm_1_1relay_1_1RelayNode.html#aa071442f5359c04aef5692334ce784c7">tvm::relay::RelayNode</a>
 </li>
 <li>Span()
@@ -1006,7 +1011,7 @@ $(function() {
 : <a class="el" href="classtvm_1_1te_1_1Stage.html#a51432f38d9ec4792a2525023179ae604">tvm::te::Stage</a>
 </li>
 <li>SplitStep()
-: <a class="el" href="classtvm_1_1auto__scheduler_1_1SplitStep.html#a184575a8029d77f7a3bee23d81141df5">tvm::auto_scheduler::SplitStep</a>
+: <a class="el" href="classtvm_1_1auto__scheduler_1_1SplitStep.html#a64ed86582a56a2645b3e4eb44ecb31af">tvm::auto_scheduler::SplitStep</a>
 </li>
 <li>src
 : <a class="el" href="classtvm_1_1arith_1_1IntConstraintsTransformNode.html#a8ce159fc6db748e5092fa937de3fde53">tvm::arith::IntConstraintsTransformNode</a>
@@ -1038,7 +1043,7 @@ $(function() {
 </li>
 <li>Stage()
 : <a class="el" href="classtvm_1_1auto__scheduler_1_1Stage.html#af0643fe8c1298451c9a322f915c48843">tvm::auto_scheduler::Stage</a>
-, <a class="el" href="classtvm_1_1te_1_1Stage.html#a1ecdc9a000be62c9cc26a96d4c33e36e">tvm::te::Stage</a>
+, <a class="el" href="classtvm_1_1te_1_1Stage.html#afec82602b9321c489b88632a005335f8">tvm::te::Stage</a>
 </li>
 <li>stage_id
 : <a class="el" href="classtvm_1_1auto__scheduler_1_1StepNode.html#afcc7aaf263348f66139307affbfcee09">tvm::auto_scheduler::StepNode</a>
@@ -1173,7 +1178,6 @@ $(function() {
 </li>
 <li>storage_scope
 : <a class="el" href="classtvm_1_1PointerTypeNode.html#aef547d49d4f3cb208b6248745f56750a">tvm::PointerTypeNode</a>
-, <a class="el" href="structtvm_1_1relax_1_1MemAllocStorageAttrs.html#afd5f2e62e345f77e057e931eecfea11e">tvm::relax::MemAllocStorageAttrs</a>
 , <a class="el" href="classtvm_1_1script_1_1ir__builder_1_1tir_1_1AllocateFrameNode.html#ac2fae69fd4b4923c2997d0e48e6820bd">tvm::script::ir_builder::tir::AllocateFrameNode</a>
 , <a class="el" href="classtvm_1_1script_1_1ir__builder_1_1tir_1_1RealizeFrameNode.html#aa810ba44c76ee91982ff64996ffa0933">tvm::script::ir_builder::tir::RealizeFrameNode</a>
 , <a class="el" href="classtvm_1_1tir_1_1ProducerRealizeNode.html#aa988378ae670dc85a0c0a6ffd782968d">tvm::tir::ProducerRealizeNode</a>
@@ -1195,10 +1199,13 @@ $(function() {
 : <a class="el" href="classtvm_1_1te_1_1StageNode.html#a8f4ba7f2931b3541c12734af511600a7">tvm::te::StageNode</a>
 </li>
 <li>Str()
-: <a class="el" href="classtvm_1_1script_1_1printer_1_1LiteralDoc.html#a789d7d73bd4d94612fa2a84c16b26b89">tvm::script::printer::LiteralDoc</a>
+: <a class="el" href="classtvm_1_1script_1_1printer_1_1LiteralDoc.html#a8423a0ede5a29b24f6db5d9f6574a200">tvm::script::printer::LiteralDoc</a>
 </li>
 <li>str()
 : <a class="el" href="classtvm_1_1TargetNode.html#a30cd67db46a9c4b098a8ba38fff22e26">tvm::TargetNode</a>
+</li>
+<li>Stream()
+: <a class="el" href="classtvm_1_1ReprLegacyPrinter.html#a8234b759c989ddac7fb24253d2e1e83d">tvm::ReprLegacyPrinter</a>
 </li>
 <li>stream
 : <a class="el" href="classtvm_1_1ReprPrinter.html#a036409dcdcf6f0ac5c6d7d27ec60ed94">tvm::ReprPrinter</a>
@@ -1289,6 +1296,9 @@ $(function() {
 </li>
 <li>SyncStreamFromTo()
 : <a class="el" href="classtvm_1_1runtime_1_1DeviceAPI.html#a3e455879adb262d3d66945cbe4a5a118">tvm::runtime::DeviceAPI</a>
+</li>
+<li>syntax_sugar
+: <a class="el" href="classtvm_1_1PrinterConfigNode.html#a518824def075339074d4451a79e3dd9b">tvm::PrinterConfigNode</a>
 </li>
 </ul>
 </div><!-- contents -->

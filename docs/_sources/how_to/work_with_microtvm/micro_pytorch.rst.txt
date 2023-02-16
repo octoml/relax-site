@@ -22,10 +22,10 @@
 .. _sphx_glr_how_to_work_with_microtvm_micro_pytorch.py:
 
 
-.. _tutorial-micro-Pytorch:
+.. _tutorial-micro-pytorch:
 
-microTVM PyTorch Tutorial
-===========================
+4. microTVM PyTorch Tutorial
+============================
 **Authors**:
 `Mehrdad Hessar <https://github.com/mehrdadh>`_
 
@@ -40,7 +40,7 @@ since the model would not fit on our current supported Zephyr boards.
 .. include:: ../../../../gallery/how_to/work_with_microtvm/install_dependencies.rst
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 36-50
+.. GENERATED FROM PYTHON SOURCE LINES 36-51
 
 .. code-block:: default
 
@@ -57,9 +57,10 @@ since the model would not fit on our current supported Zephyr boards.
     from tvm import relay
     from tvm.contrib.download import download_testdata
     from tvm.relay.backend import Executor
+    import tvm.micro.testing
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 51-57
+.. GENERATED FROM PYTHON SOURCE LINES 52-58
 
 Load a pre-trained PyTorch model
 --------------------------------
@@ -68,7 +69,7 @@ To begin with, load pre-trained MobileNetV2 from torchvision. Then,
 download a cat image and preprocess it to use as the model input.
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 57-85
+.. GENERATED FROM PYTHON SOURCE LINES 58-86
 
 .. code-block:: default
 
@@ -101,7 +102,7 @@ download a cat image and preprocess it to use as the model input.
     relay_mod, params = relay.frontend.from_pytorch(scripted_model, shape_list)
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 86-95
+.. GENERATED FROM PYTHON SOURCE LINES 87-101
 
 Define Target, Runtime and Executor
 -----------------------------------
@@ -111,18 +112,19 @@ for an emulated embedded environment on an x86 machine we use C runtime (CRT)
 and we use `host` micro target. Using this setup, TVM compiles the model
 for C runtime which can run on a x86 CPU machine with the same flow that
 would run on a physical microcontroller.
+CRT Uses the main() from `src/runtime/crt/host/main.cc`
+To use physical hardware, replace `board` with another physical micro target, e.g. `nrf5340dk_nrf5340_cpuapp`
+or `mps2_an521` and change the platform type to Zephyr.
+See more target examples in :ref:`Training Vision Models for microTVM on Arduino <tutorial-micro-train-arduino>`
+and :ref:`microTVM TFLite Tutorial<tutorial_micro_tflite>`.
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 95-108
+.. GENERATED FROM PYTHON SOURCE LINES 101-110
 
 .. code-block:: default
 
 
-
-    # Simulate a microcontroller on the host machine. Uses the main() from `src/runtime/crt/host/main.cc`
-    # To use physical hardware, replace "host" with another physical micro target, e.g. `nrf52840`
-    # or `mps2_an521`. See more more target examples in micro_train.py and micro_tflite.py tutorials.
-    target = tvm.target.target.micro("host")
+    target = tvm.micro.testing.get_target(platform="crt", board=None)
 
     # Use the C runtime (crt) and enable static linking by setting system-lib to True
     runtime = tvm.relay.backend.Runtime("crt", {"system-lib": True})
@@ -131,7 +133,7 @@ would run on a physical microcontroller.
     executor = Executor("aot")
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 109-114
+.. GENERATED FROM PYTHON SOURCE LINES 111-116
 
 Compile the model
 ------------------
@@ -139,7 +141,7 @@ Compile the model
 Now, we compile the model for the target:
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 114-123
+.. GENERATED FROM PYTHON SOURCE LINES 116-125
 
 .. code-block:: default
 
@@ -153,7 +155,7 @@ Now, we compile the model for the target:
         )
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 124-130
+.. GENERATED FROM PYTHON SOURCE LINES 126-132
 
 Create a microTVM project
 -------------------------
@@ -162,7 +164,7 @@ Now that we have the compiled model as an IRModule, we need to create a firmware
 to use the compiled model with microTVM. To do this, we use Project API.
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 130-142
+.. GENERATED FROM PYTHON SOURCE LINES 132-144
 
 .. code-block:: default
 
@@ -179,7 +181,7 @@ to use the compiled model with microTVM. To do this, we use Project API.
     )
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 143-149
+.. GENERATED FROM PYTHON SOURCE LINES 145-151
 
 Build, flash and execute the model
 ----------------------------------
@@ -188,7 +190,7 @@ physical microcontroller and it is skipped if it is simulating a microcontroller
 via the host `main.cc`` or if a Zephyr emulated board is selected as the target.
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 149-160
+.. GENERATED FROM PYTHON SOURCE LINES 151-162
 
 .. code-block:: default
 
@@ -204,14 +206,14 @@ via the host `main.cc`` or if a Zephyr emulated board is selected as the target.
         result = aot_executor.get_output(0).numpy()
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 161-165
+.. GENERATED FROM PYTHON SOURCE LINES 163-167
 
 Look up synset name
 -------------------
 Look up prediction top 1 index in 1000 class synset.
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 165-206
+.. GENERATED FROM PYTHON SOURCE LINES 167-208
 
 .. code-block:: default
 

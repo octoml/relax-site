@@ -92,8 +92,6 @@ Namespaces</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespacetvm_1_1meta__schedule"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetvm_1_1meta__schedule.html">meta_schedule</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespacetvm_1_1parser"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetvm_1_1parser.html">parser</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespacetvm_1_1relax"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetvm_1_1relax.html">relax</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespacetvm_1_1relay"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetvm_1_1relay.html">relay</a></td></tr>
@@ -193,9 +191,6 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtvm_1_1CompilationConfigNode.html">CompilationConfigNode</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gathers the <code>Targets</code> and distinguished <code>VirtualDevices</code> in canonical form needed to compile a Relay module for execution over possibly heterogeneous devices. Centralizes the validation and canonicalization logic needed to transition from targets supplied by the Python APIs to a single internal representation. Also holds a cache of canonical <code>VirtualDevices</code> so that structural equal virtual devices have pointer equal canonical virtual devices.  <a href="classtvm_1_1CompilationConfigNode.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtvm_1_1CompileError.html">CompileError</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Custom Error class to be thrown during compilation.  <a href="classtvm_1_1CompileError.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtvm_1_1ConstantInfo.html">ConstantInfo</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtvm_1_1ConstantInfoNode.html">ConstantInfoNode</a></td></tr>
@@ -242,12 +237,6 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtvm_1_1EnvFuncNode.html">EnvFuncNode</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A serializable function backed by TVM's global environment.  <a href="classtvm_1_1EnvFuncNode.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtvm_1_1ErrorBuilder.html">ErrorBuilder</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A wrapper around std::stringstream to build error.  <a href="structtvm_1_1ErrorBuilder.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtvm_1_1ErrorReporter.html">ErrorReporter</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An abstraction around how errors are stored and reported. Designed to be opaque to users, so we can support a robust and simpler error reporting mode, as well as a more complex mode.  <a href="classtvm_1_1ErrorReporter.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtvm_1_1FloatImm.html">FloatImm</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Managed reference class to <a class="el" href="classtvm_1_1FloatImmNode.html" title="Constant floating point literals in the program. ">FloatImmNode</a>.  <a href="classtvm_1_1FloatImm.html#details">More...</a><br /></td></tr>
@@ -386,6 +375,10 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtvm_1_1PrimTypeNode.html">PrimTypeNode</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Primitive data types used in the low-level IR.  <a href="classtvm_1_1PrimTypeNode.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtvm_1_1PrinterConfig.html">PrinterConfig</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtvm_1_1PrinterConfigNode.html">PrinterConfigNode</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtvm_1_1Range.html">Range</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classtvm_1_1Range.html" title="Range constainer. ">Range</a> constainer.  <a href="classtvm_1_1Range.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -407,6 +400,9 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtvm_1_1RelayRefTypeNode.html">RelayRefTypeNode</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reference <a class="el" href="classtvm_1_1Type.html" title="Managed reference to TypeNode. ">Type</a> High-level Relay IR.  <a href="classtvm_1_1RelayRefTypeNode.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtvm_1_1ReprLegacyPrinter.html">ReprLegacyPrinter</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Legacy behavior of <a class="el" href="classtvm_1_1ReprPrinter.html" title="A printer class to print the AST/IR nodes. ">ReprPrinter</a>.  <a href="classtvm_1_1ReprLegacyPrinter.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtvm_1_1ReprPrinter.html">ReprPrinter</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A printer class to print the AST/IR nodes.  <a href="classtvm_1_1ReprPrinter.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -426,11 +422,20 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtvm_1_1SHashReducer.html">SHashReducer</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A Reducer class to reduce the structural hash value.  <a href="classtvm_1_1SHashReducer.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtvm_1_1Source.html">Source</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtvm_1_1SourceMap.html">SourceMap</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtvm_1_1SourceMapNode.html">SourceMapNode</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores locations in frontend source that generated a node.  <a href="classtvm_1_1SourceMapNode.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtvm_1_1SourceName.html">SourceName</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The source name of a file span.  <a href="classtvm_1_1SourceName.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtvm_1_1SourceNameNode.html">SourceNameNode</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The name of a source fragment.  <a href="classtvm_1_1SourceNameNode.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtvm_1_1SourceNode.html">SourceNode</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtvm_1_1Span.html">Span</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -492,6 +497,9 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtvm_1_1TupleTypeNode.html">TupleTypeNode</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The type of tuple values.  <a href="classtvm_1_1TupleTypeNode.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtvm_1_1TVMScriptPrinter.html">TVMScriptPrinter</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Legacy behavior of <a class="el" href="classtvm_1_1ReprPrinter.html" title="A printer class to print the AST/IR nodes. ">ReprPrinter</a>.  <a href="classtvm_1_1TVMScriptPrinter.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtvm_1_1Type.html">Type</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Managed reference to <a class="el" href="classtvm_1_1TypeNode.html" title="Type is the base type of all types. ">TypeNode</a>.  <a href="classtvm_1_1Type.html#details">More...</a><br /></td></tr>
@@ -777,15 +785,12 @@ Functions</h2></td></tr>
 <tr class="separator:a04a0a3acfb061ec692ba8fc24e9eacba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4368d3ec623c65b3626af11a1a7446ca"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetvm.html#a4368d3ec623c65b3626af11a1a7446ca">operator==</a> (const <a class="el" href="classtvm_1_1Bool.html">Bool</a> &amp;a, const <a class="el" href="classtvm_1_1Bool.html">Bool</a> &amp;b)</td></tr>
 <tr class="separator:a4368d3ec623c65b3626af11a1a7446ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a60c4359254ce7ac364bb97a8bfc13803"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtvm_1_1runtime_1_1String.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetvm.html#a60c4359254ce7ac364bb97a8bfc13803">PrettyPrint</a> (const <a class="el" href="classtvm_1_1runtime_1_1ObjectRef.html">ObjectRef</a> &amp;node)</td></tr>
-<tr class="memdesc:a60c4359254ce7ac364bb97a8bfc13803"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pretty print a node for debug purposes.  <a href="#a60c4359254ce7ac364bb97a8bfc13803">More...</a><br /></td></tr>
-<tr class="separator:a60c4359254ce7ac364bb97a8bfc13803"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad0e4314dd85303aa5e10d452e4c9db54"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtvm_1_1runtime_1_1String.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetvm.html#ad0e4314dd85303aa5e10d452e4c9db54">AsText</a> (const <a class="el" href="classtvm_1_1runtime_1_1ObjectRef.html">ObjectRef</a> &amp;node, bool show_meta_data=true, <a class="el" href="classtvm_1_1runtime_1_1TypedPackedFunc.html">runtime::TypedPackedFunc</a>&lt; <a class="el" href="classtvm_1_1runtime_1_1String.html">String</a>(<a class="el" href="classtvm_1_1runtime_1_1ObjectRef.html">ObjectRef</a>)&gt; annotate=nullptr)</td></tr>
-<tr class="memdesc:ad0e4314dd85303aa5e10d452e4c9db54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Render the node as a string in the text format.  <a href="#ad0e4314dd85303aa5e10d452e4c9db54">More...</a><br /></td></tr>
-<tr class="separator:ad0e4314dd85303aa5e10d452e4c9db54"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8259e23409eda017c6bde908e050b670"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetvm.html#a8259e23409eda017c6bde908e050b670">IsPrimitiveOp</a> (const <a class="el" href="classtvm_1_1RelayExpr.html">RelayExpr</a> &amp;expr)</td></tr>
 <tr class="memdesc:a8259e23409eda017c6bde908e050b670"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check that an expression is a "primitive operator".  <a href="#a8259e23409eda017c6bde908e050b670">More...</a><br /></td></tr>
 <tr class="separator:a8259e23409eda017c6bde908e050b670"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab839d9f872e97b31e30c0059a3eb9a92"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtvm_1_1runtime_1_1String.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetvm.html#ab839d9f872e97b31e30c0059a3eb9a92">TypeKind2String</a> (<a class="el" href="namespacetvm.html#acd267f8d7f55da6ac681239831963279">TypeKind</a> kind)</td></tr>
+<tr class="memdesc:ab839d9f872e97b31e30c0059a3eb9a92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a TypeKind to a string.  <a href="#ab839d9f872e97b31e30c0059a3eb9a92">More...</a><br /></td></tr>
+<tr class="separator:ab839d9f872e97b31e30c0059a3eb9a92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a27df956aaa2e5e25005e0f9dc1638a08"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtvm_1_1Type.html">Type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetvm.html#a27df956aaa2e5e25005e0f9dc1638a08">VoidType</a> ()</td></tr>
 <tr class="separator:a27df956aaa2e5e25005e0f9dc1638a08"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a196edb73fc9f13d965b8de1c9287a2db"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetvm.html#a196edb73fc9f13d965b8de1c9287a2db">IsVoidType</a> (const <a class="el" href="classtvm_1_1Type.html">Type</a> &amp;type)</td></tr>
@@ -2203,53 +2208,6 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ad0e4314dd85303aa5e10d452e4c9db54"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad0e4314dd85303aa5e10d452e4c9db54">&#9670;&nbsp;</a></span>AsText()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classtvm_1_1runtime_1_1String.html">String</a> tvm::AsText </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classtvm_1_1runtime_1_1ObjectRef.html">ObjectRef</a> &amp;&#160;</td>
-          <td class="paramname"><em>node</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>show_meta_data</em> = <code>true</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classtvm_1_1runtime_1_1TypedPackedFunc.html">runtime::TypedPackedFunc</a>&lt; <a class="el" href="classtvm_1_1runtime_1_1String.html">String</a>(<a class="el" href="classtvm_1_1runtime_1_1ObjectRef.html">ObjectRef</a>)&gt;&#160;</td>
-          <td class="paramname"><em>annotate</em> = <code>nullptr</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Render the node as a string in the text format. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">node</td><td>The node to be rendered. </td></tr>
-    <tr><td class="paramname">show_meta_data</td><td>Whether to print meta data section. </td></tr>
-    <tr><td class="paramname">annotate</td><td>An optional callback function for attaching additional comment block to an expr.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section note"><dt>Note</dt><dd>We support a limited set of IR nodes that are part of relay IR and</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespacetvm.html#a60c4359254ce7ac364bb97a8bfc13803" title="Pretty print a node for debug purposes. ">PrettyPrint</a>. </dd></dl>
-<dl class="section return"><dt>Returns</dt><dd>The text representation. </dd></dl>
-
-</div>
-</div>
 <a id="a475b388b9a19d05dca849707d74636a7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a475b388b9a19d05dca849707d74636a7">&#9670;&nbsp;</a></span>atan()</h2>
 
@@ -2483,8 +2441,8 @@ template&lt;typename TAttrs &gt; </div>
 
 </div>
 </div>
-<a id="af0178d43fdb5e585638588f093beb0b2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af0178d43fdb5e585638588f093beb0b2">&#9670;&nbsp;</a></span>bitwise_and() <span class="overload">[2/3]</span></h2>
+<a id="a9855a927b1c694fd22b26c5f6471c4dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9855a927b1c694fd22b26c5f6471c4dc">&#9670;&nbsp;</a></span>bitwise_and() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2495,13 +2453,13 @@ template&lt;typename TAttrs &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> tvm::bitwise_and </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> &amp;&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>a</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">const <a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> &amp;&#160;</td>
           <td class="paramname"><em>b</em>, </td>
         </tr>
         <tr>
@@ -2525,8 +2483,8 @@ template&lt;typename TAttrs &gt; </div>
 
 </div>
 </div>
-<a id="a9855a927b1c694fd22b26c5f6471c4dc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9855a927b1c694fd22b26c5f6471c4dc">&#9670;&nbsp;</a></span>bitwise_and() <span class="overload">[3/3]</span></h2>
+<a id="af0178d43fdb5e585638588f093beb0b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0178d43fdb5e585638588f093beb0b2">&#9670;&nbsp;</a></span>bitwise_and() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2537,13 +2495,13 @@ template&lt;typename TAttrs &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> tvm::bitwise_and </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">const <a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> &amp;&#160;</td>
           <td class="paramname"><em>a</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> &amp;&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>b</em>, </td>
         </tr>
         <tr>
@@ -4000,8 +3958,8 @@ template&lt;typename TA &gt; </div>
 
 </div>
 </div>
-<a id="a87200564215339b900ca546678fc71a4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a87200564215339b900ca546678fc71a4">&#9670;&nbsp;</a></span>floordiv() <span class="overload">[2/3]</span></h2>
+<a id="a435a9df348bdb72e60bfe4ce410dcc58"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a435a9df348bdb72e60bfe4ce410dcc58">&#9670;&nbsp;</a></span>floordiv() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4012,13 +3970,13 @@ template&lt;typename TA &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> tvm::floordiv </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">const <a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> &amp;&#160;</td>
           <td class="paramname"><em>a</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> &amp;&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>b</em>, </td>
         </tr>
         <tr>
@@ -4042,8 +4000,8 @@ template&lt;typename TA &gt; </div>
 
 </div>
 </div>
-<a id="a435a9df348bdb72e60bfe4ce410dcc58"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a435a9df348bdb72e60bfe4ce410dcc58">&#9670;&nbsp;</a></span>floordiv() <span class="overload">[3/3]</span></h2>
+<a id="a87200564215339b900ca546678fc71a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87200564215339b900ca546678fc71a4">&#9670;&nbsp;</a></span>floordiv() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4054,13 +4012,13 @@ template&lt;typename TA &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> tvm::floordiv </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> &amp;&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>a</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">const <a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> &amp;&#160;</td>
           <td class="paramname"><em>b</em>, </td>
         </tr>
         <tr>
@@ -4130,8 +4088,8 @@ template&lt;typename TA &gt; </div>
 
 </div>
 </div>
-<a id="a93ac0e2663a2169194399b57ae39b003"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a93ac0e2663a2169194399b57ae39b003">&#9670;&nbsp;</a></span>floormod() <span class="overload">[2/3]</span></h2>
+<a id="a964496f2d1c20c65f758f46a544d9980"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a964496f2d1c20c65f758f46a544d9980">&#9670;&nbsp;</a></span>floormod() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4142,13 +4100,13 @@ template&lt;typename TA &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> tvm::floormod </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">const <a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> &amp;&#160;</td>
           <td class="paramname"><em>a</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> &amp;&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>b</em>, </td>
         </tr>
         <tr>
@@ -4172,8 +4130,8 @@ template&lt;typename TA &gt; </div>
 
 </div>
 </div>
-<a id="a964496f2d1c20c65f758f46a544d9980"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a964496f2d1c20c65f758f46a544d9980">&#9670;&nbsp;</a></span>floormod() <span class="overload">[3/3]</span></h2>
+<a id="a93ac0e2663a2169194399b57ae39b003"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93ac0e2663a2169194399b57ae39b003">&#9670;&nbsp;</a></span>floormod() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4184,13 +4142,13 @@ template&lt;typename TA &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> tvm::floormod </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> &amp;&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>a</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">const <a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> &amp;&#160;</td>
           <td class="paramname"><em>b</em>, </td>
         </tr>
         <tr>
@@ -5181,8 +5139,8 @@ template&lt;typename TA &gt; </div>
 
 </div>
 </div>
-<a id="a048a29e36fa055771713480f3f4ecdf4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a048a29e36fa055771713480f3f4ecdf4">&#9670;&nbsp;</a></span>indexmod() <span class="overload">[2/3]</span></h2>
+<a id="a78b6faac00e9a823e9bcf14e1e02f1f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78b6faac00e9a823e9bcf14e1e02f1f2">&#9670;&nbsp;</a></span>indexmod() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -5193,13 +5151,13 @@ template&lt;typename TA &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> tvm::indexmod </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">const <a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> &amp;&#160;</td>
           <td class="paramname"><em>a</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> &amp;&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>b</em>, </td>
         </tr>
         <tr>
@@ -5223,8 +5181,8 @@ template&lt;typename TA &gt; </div>
 
 </div>
 </div>
-<a id="a78b6faac00e9a823e9bcf14e1e02f1f2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a78b6faac00e9a823e9bcf14e1e02f1f2">&#9670;&nbsp;</a></span>indexmod() <span class="overload">[3/3]</span></h2>
+<a id="a048a29e36fa055771713480f3f4ecdf4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a048a29e36fa055771713480f3f4ecdf4">&#9670;&nbsp;</a></span>indexmod() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -5235,13 +5193,13 @@ template&lt;typename TA &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> tvm::indexmod </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> &amp;&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>a</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">const <a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> &amp;&#160;</td>
           <td class="paramname"><em>b</em>, </td>
         </tr>
         <tr>
@@ -5621,8 +5579,8 @@ template&lt;typename TA &gt; </div>
 
 </div>
 </div>
-<a id="a58fbf68a58a7f32935d6c4539d292a08"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a58fbf68a58a7f32935d6c4539d292a08">&#9670;&nbsp;</a></span>left_shift() <span class="overload">[2/3]</span></h2>
+<a id="a6bc108896d74f5f3b5cc3b98e9780e1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6bc108896d74f5f3b5cc3b98e9780e1c">&#9670;&nbsp;</a></span>left_shift() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -5633,13 +5591,13 @@ template&lt;typename TA &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> tvm::left_shift </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">const <a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> &amp;&#160;</td>
           <td class="paramname"><em>a</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> &amp;&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>b</em>, </td>
         </tr>
         <tr>
@@ -5663,8 +5621,8 @@ template&lt;typename TA &gt; </div>
 
 </div>
 </div>
-<a id="a6bc108896d74f5f3b5cc3b98e9780e1c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6bc108896d74f5f3b5cc3b98e9780e1c">&#9670;&nbsp;</a></span>left_shift() <span class="overload">[3/3]</span></h2>
+<a id="a58fbf68a58a7f32935d6c4539d292a08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58fbf68a58a7f32935d6c4539d292a08">&#9670;&nbsp;</a></span>left_shift() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -5675,13 +5633,13 @@ template&lt;typename TA &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> tvm::left_shift </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> &amp;&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>a</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">const <a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> &amp;&#160;</td>
           <td class="paramname"><em>b</em>, </td>
         </tr>
         <tr>
@@ -5751,8 +5709,8 @@ template&lt;typename TA &gt; </div>
 
 </div>
 </div>
-<a id="ab69bb15adb82d166504b9cbeef21a4dc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab69bb15adb82d166504b9cbeef21a4dc">&#9670;&nbsp;</a></span>less() <span class="overload">[2/6]</span></h2>
+<a id="a0d5dc442dde0e69657c40803d394ea73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d5dc442dde0e69657c40803d394ea73">&#9670;&nbsp;</a></span>less() <span class="overload">[2/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -5763,49 +5721,7 @@ template&lt;typename TA &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> tvm::less </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> &amp;&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>b</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classtvm_1_1Span.html">Span</a>&#160;</td>
-          <td class="paramname"><em>span</em> = <code><a class="el" href="classtvm_1_1Span.html">Span</a>()</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a042ab9c595a8a0f63c07dbbdf75ecf9c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a042ab9c595a8a0f63c07dbbdf75ecf9c">&#9670;&nbsp;</a></span>less() <span class="overload">[3/6]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> tvm::less </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>a</em>, </td>
         </tr>
         <tr>
@@ -5836,7 +5752,7 @@ template&lt;typename TA &gt; </div>
 </div>
 </div>
 <a id="a9bbb69dc3563e07d5f81c003a7ad9aed"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9bbb69dc3563e07d5f81c003a7ad9aed">&#9670;&nbsp;</a></span>less() <span class="overload">[4/6]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a9bbb69dc3563e07d5f81c003a7ad9aed">&#9670;&nbsp;</a></span>less() <span class="overload">[3/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -5878,7 +5794,7 @@ template&lt;typename TA &gt; </div>
 </div>
 </div>
 <a id="ae29f761564dc96582c113b69b3d93aaa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae29f761564dc96582c113b69b3d93aaa">&#9670;&nbsp;</a></span>less() <span class="overload">[5/6]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae29f761564dc96582c113b69b3d93aaa">&#9670;&nbsp;</a></span>less() <span class="overload">[4/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -5919,8 +5835,8 @@ template&lt;typename TA &gt; </div>
 
 </div>
 </div>
-<a id="a0d5dc442dde0e69657c40803d394ea73"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0d5dc442dde0e69657c40803d394ea73">&#9670;&nbsp;</a></span>less() <span class="overload">[6/6]</span></h2>
+<a id="a042ab9c595a8a0f63c07dbbdf75ecf9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a042ab9c595a8a0f63c07dbbdf75ecf9c">&#9670;&nbsp;</a></span>less() <span class="overload">[5/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -5931,13 +5847,55 @@ template&lt;typename TA &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> tvm::less </td>
           <td>(</td>
-          <td class="paramtype">float&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>a</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> &amp;&#160;</td>
+          <td class="paramname"><em>b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classtvm_1_1Span.html">Span</a>&#160;</td>
+          <td class="paramname"><em>span</em> = <code><a class="el" href="classtvm_1_1Span.html">Span</a>()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab69bb15adb82d166504b9cbeef21a4dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab69bb15adb82d166504b9cbeef21a4dc">&#9670;&nbsp;</a></span>less() <span class="overload">[6/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> tvm::less </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> &amp;&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
           <td class="paramname"><em>b</em>, </td>
         </tr>
         <tr>
@@ -6091,8 +6049,8 @@ template&lt;typename TA &gt; </div>
 
 </div>
 </div>
-<a id="ad4734f467b4107f0da21a510788479c1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad4734f467b4107f0da21a510788479c1">&#9670;&nbsp;</a></span>less_equal() <span class="overload">[4/6]</span></h2>
+<a id="aec0ac319177760ff01be833bae8b72bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec0ac319177760ff01be833bae8b72bf">&#9670;&nbsp;</a></span>less_equal() <span class="overload">[4/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -6103,13 +6061,13 @@ template&lt;typename TA &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> tvm::less_equal </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">const <a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> &amp;&#160;</td>
           <td class="paramname"><em>a</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> &amp;&#160;</td>
+          <td class="paramtype">float&#160;</td>
           <td class="paramname"><em>b</em>, </td>
         </tr>
         <tr>
@@ -6175,8 +6133,8 @@ template&lt;typename TA &gt; </div>
 
 </div>
 </div>
-<a id="aec0ac319177760ff01be833bae8b72bf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aec0ac319177760ff01be833bae8b72bf">&#9670;&nbsp;</a></span>less_equal() <span class="overload">[6/6]</span></h2>
+<a id="ad4734f467b4107f0da21a510788479c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4734f467b4107f0da21a510788479c1">&#9670;&nbsp;</a></span>less_equal() <span class="overload">[6/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -6187,13 +6145,13 @@ template&lt;typename TA &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> tvm::less_equal </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> &amp;&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>a</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">float&#160;</td>
+          <td class="paramtype">const <a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> &amp;&#160;</td>
           <td class="paramname"><em>b</em>, </td>
         </tr>
         <tr>
@@ -6641,8 +6599,8 @@ template&lt;typename TA &gt; </div>
 
 </div>
 </div>
-<a id="a75c5d58f8c58929103903a7352fbe5f1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a75c5d58f8c58929103903a7352fbe5f1">&#9670;&nbsp;</a></span>logical_or() <span class="overload">[2/3]</span></h2>
+<a id="a6e3893f3b9ed2c3b1135e0f085024767"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e3893f3b9ed2c3b1135e0f085024767">&#9670;&nbsp;</a></span>logical_or() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -6653,13 +6611,13 @@ template&lt;typename TA &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> tvm::logical_or </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> &amp;&#160;</td>
+          <td class="paramtype">bool&#160;</td>
           <td class="paramname"><em>a</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">bool&#160;</td>
+          <td class="paramtype">const <a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> &amp;&#160;</td>
           <td class="paramname"><em>b</em>, </td>
         </tr>
         <tr>
@@ -6683,8 +6641,8 @@ template&lt;typename TA &gt; </div>
 
 </div>
 </div>
-<a id="a6e3893f3b9ed2c3b1135e0f085024767"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6e3893f3b9ed2c3b1135e0f085024767">&#9670;&nbsp;</a></span>logical_or() <span class="overload">[3/3]</span></h2>
+<a id="a75c5d58f8c58929103903a7352fbe5f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75c5d58f8c58929103903a7352fbe5f1">&#9670;&nbsp;</a></span>logical_or() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -6695,13 +6653,13 @@ template&lt;typename TA &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> tvm::logical_or </td>
           <td>(</td>
-          <td class="paramtype">bool&#160;</td>
+          <td class="paramtype">const <a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> &amp;&#160;</td>
           <td class="paramname"><em>a</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> &amp;&#160;</td>
+          <td class="paramtype">bool&#160;</td>
           <td class="paramname"><em>b</em>, </td>
         </tr>
         <tr>
@@ -7122,50 +7080,8 @@ template&lt;typename TA &gt; </div>
 
 </div>
 </div>
-<a id="a49809e9c3d21f41ca8d939a30994bd42"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a49809e9c3d21f41ca8d939a30994bd42">&#9670;&nbsp;</a></span>max() <span class="overload">[5/7]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> tvm::max </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> &amp;&#160;</td>
-          <td class="paramname"><em>b</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classtvm_1_1Span.html">Span</a>&#160;</td>
-          <td class="paramname"><em>span</em> = <code><a class="el" href="classtvm_1_1Span.html">Span</a>()</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="aa1eb9772f6fbb245cda93c5bd9e53e7d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa1eb9772f6fbb245cda93c5bd9e53e7d">&#9670;&nbsp;</a></span>max() <span class="overload">[6/7]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1eb9772f6fbb245cda93c5bd9e53e7d">&#9670;&nbsp;</a></span>max() <span class="overload">[5/7]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -7207,7 +7123,7 @@ template&lt;typename TA &gt; </div>
 </div>
 </div>
 <a id="aa22a313c142a61845ded7fdf77af7046"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa22a313c142a61845ded7fdf77af7046">&#9670;&nbsp;</a></span>max() <span class="overload">[7/7]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa22a313c142a61845ded7fdf77af7046">&#9670;&nbsp;</a></span>max() <span class="overload">[6/7]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -7225,6 +7141,48 @@ template&lt;typename TA &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classtvm_1_1Span.html">Span</a>&#160;</td>
+          <td class="paramname"><em>span</em> = <code><a class="el" href="classtvm_1_1Span.html">Span</a>()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a49809e9c3d21f41ca8d939a30994bd42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49809e9c3d21f41ca8d939a30994bd42">&#9670;&nbsp;</a></span>max() <span class="overload">[7/7]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> tvm::max </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> &amp;&#160;</td>
           <td class="paramname"><em>b</em>, </td>
         </tr>
         <tr>
@@ -7382,8 +7340,8 @@ template&lt;typename TA &gt; </div>
 
 </div>
 </div>
-<a id="a9a10cd15c6ff847edef0cb3e6aea94f9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9a10cd15c6ff847edef0cb3e6aea94f9">&#9670;&nbsp;</a></span>min() <span class="overload">[3/7]</span></h2>
+<a id="a17cf44684890b213c54c64bc756fbc3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17cf44684890b213c54c64bc756fbc3c">&#9670;&nbsp;</a></span>min() <span class="overload">[3/7]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -7394,13 +7352,13 @@ template&lt;typename TA &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> tvm::min </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> &amp;&#160;</td>
+          <td class="paramtype">float&#160;</td>
           <td class="paramname"><em>a</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">float&#160;</td>
+          <td class="paramtype">const <a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> &amp;&#160;</td>
           <td class="paramname"><em>b</em>, </td>
         </tr>
         <tr>
@@ -7424,8 +7382,8 @@ template&lt;typename TA &gt; </div>
 
 </div>
 </div>
-<a id="a17cf44684890b213c54c64bc756fbc3c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a17cf44684890b213c54c64bc756fbc3c">&#9670;&nbsp;</a></span>min() <span class="overload">[4/7]</span></h2>
+<a id="a9a10cd15c6ff847edef0cb3e6aea94f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a10cd15c6ff847edef0cb3e6aea94f9">&#9670;&nbsp;</a></span>min() <span class="overload">[4/7]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -7436,13 +7394,13 @@ template&lt;typename TA &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> tvm::min </td>
           <td>(</td>
-          <td class="paramtype">float&#160;</td>
+          <td class="paramtype">const <a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> &amp;&#160;</td>
           <td class="paramname"><em>a</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> &amp;&#160;</td>
+          <td class="paramtype">float&#160;</td>
           <td class="paramname"><em>b</em>, </td>
         </tr>
         <tr>
@@ -7712,8 +7670,50 @@ template&lt;typename TA &gt; </div>
 
 </div>
 </div>
+<a id="a7a63f5958a0158fc2707f8888bcf13f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a63f5958a0158fc2707f8888bcf13f2">&#9670;&nbsp;</a></span>mul() <span class="overload">[2/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> tvm::mul </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> &amp;&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classtvm_1_1Span.html">Span</a>&#160;</td>
+          <td class="paramname"><em>span</em> = <code><a class="el" href="classtvm_1_1Span.html">Span</a>()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="af64e20cff6f9f74660c8068469f146b7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af64e20cff6f9f74660c8068469f146b7">&#9670;&nbsp;</a></span>mul() <span class="overload">[2/6]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af64e20cff6f9f74660c8068469f146b7">&#9670;&nbsp;</a></span>mul() <span class="overload">[3/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -7755,7 +7755,7 @@ template&lt;typename TA &gt; </div>
 </div>
 </div>
 <a id="a92b9c69c93190d9057dd6f73ff93797a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a92b9c69c93190d9057dd6f73ff93797a">&#9670;&nbsp;</a></span>mul() <span class="overload">[3/6]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a92b9c69c93190d9057dd6f73ff93797a">&#9670;&nbsp;</a></span>mul() <span class="overload">[4/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -7796,8 +7796,8 @@ template&lt;typename TA &gt; </div>
 
 </div>
 </div>
-<a id="a7a63f5958a0158fc2707f8888bcf13f2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7a63f5958a0158fc2707f8888bcf13f2">&#9670;&nbsp;</a></span>mul() <span class="overload">[4/6]</span></h2>
+<a id="add1522db4005299ee5d3ee0c7460466d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add1522db4005299ee5d3ee0c7460466d">&#9670;&nbsp;</a></span>mul() <span class="overload">[5/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -7814,7 +7814,7 @@ template&lt;typename TA &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">float&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>b</em>, </td>
         </tr>
         <tr>
@@ -7839,7 +7839,7 @@ template&lt;typename TA &gt; </div>
 </div>
 </div>
 <a id="a40c70817dccaa589da0562bc8f179008"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a40c70817dccaa589da0562bc8f179008">&#9670;&nbsp;</a></span>mul() <span class="overload">[5/6]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a40c70817dccaa589da0562bc8f179008">&#9670;&nbsp;</a></span>mul() <span class="overload">[6/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -7857,48 +7857,6 @@ template&lt;typename TA &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> &amp;&#160;</td>
-          <td class="paramname"><em>b</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classtvm_1_1Span.html">Span</a>&#160;</td>
-          <td class="paramname"><em>span</em> = <code><a class="el" href="classtvm_1_1Span.html">Span</a>()</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="add1522db4005299ee5d3ee0c7460466d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#add1522db4005299ee5d3ee0c7460466d">&#9670;&nbsp;</a></span>mul() <span class="overload">[6/6]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> tvm::mul </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> &amp;&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>b</em>, </td>
         </tr>
         <tr>
@@ -8408,8 +8366,8 @@ template&lt;&gt; </div>
 
 </div>
 </div>
-<a id="a1975d7ce2d2cbaef575fef1198550f43"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1975d7ce2d2cbaef575fef1198550f43">&#9670;&nbsp;</a></span>operator &&() <span class="overload">[5/6]</span></h2>
+<a id="a453fac64e53716a977f867cb9665fde9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a453fac64e53716a977f867cb9665fde9">&#9670;&nbsp;</a></span>operator &&() <span class="overload">[5/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -8420,13 +8378,13 @@ template&lt;&gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> tvm::operator&amp;&amp; </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> &amp;&#160;</td>
+          <td class="paramtype">bool&#160;</td>
           <td class="paramname"><em>a</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">bool&#160;</td>
+          <td class="paramtype">const <a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> &amp;&#160;</td>
           <td class="paramname"><em>b</em>&#160;</td>
         </tr>
         <tr>
@@ -8444,8 +8402,8 @@ template&lt;&gt; </div>
 
 </div>
 </div>
-<a id="a453fac64e53716a977f867cb9665fde9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a453fac64e53716a977f867cb9665fde9">&#9670;&nbsp;</a></span>operator &&() <span class="overload">[6/6]</span></h2>
+<a id="a1975d7ce2d2cbaef575fef1198550f43"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1975d7ce2d2cbaef575fef1198550f43">&#9670;&nbsp;</a></span>operator &&() <span class="overload">[6/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -8456,13 +8414,13 @@ template&lt;&gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> tvm::operator&amp;&amp; </td>
           <td>(</td>
-          <td class="paramtype">bool&#160;</td>
+          <td class="paramtype">const <a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> &amp;&#160;</td>
           <td class="paramname"><em>a</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> &amp;&#160;</td>
+          <td class="paramtype">bool&#160;</td>
           <td class="paramname"><em>b</em>&#160;</td>
         </tr>
         <tr>
@@ -8624,8 +8582,8 @@ template&lt;typename TB &gt; </div>
 
 </div>
 </div>
-<a id="a1815d8b152819885a5733554f374a9ca"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1815d8b152819885a5733554f374a9ca">&#9670;&nbsp;</a></span>operator*() <span class="overload">[2/6]</span></h2>
+<a id="ace5dbde3bde1ba48d14a3f9064a45aee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace5dbde3bde1ba48d14a3f9064a45aee">&#9670;&nbsp;</a></span>operator*() <span class="overload">[2/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -8636,13 +8594,13 @@ template&lt;typename TB &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> tvm::operator* </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> &amp;&#160;</td>
+          <td class="paramtype">float&#160;</td>
           <td class="paramname"><em>a</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double&#160;</td>
+          <td class="paramtype">const <a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> &amp;&#160;</td>
           <td class="paramname"><em>b</em>&#160;</td>
         </tr>
         <tr>
@@ -8696,44 +8654,8 @@ template&lt;typename TB &gt; </div>
 
 </div>
 </div>
-<a id="ace5dbde3bde1ba48d14a3f9064a45aee"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ace5dbde3bde1ba48d14a3f9064a45aee">&#9670;&nbsp;</a></span>operator*() <span class="overload">[4/6]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> tvm::operator* </td>
-          <td>(</td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> &amp;&#160;</td>
-          <td class="paramname"><em>b</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="aca621e1d2df8562819bc021c1410b741"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aca621e1d2df8562819bc021c1410b741">&#9670;&nbsp;</a></span>operator*() <span class="overload">[5/6]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aca621e1d2df8562819bc021c1410b741">&#9670;&nbsp;</a></span>operator*() <span class="overload">[4/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -8769,7 +8691,7 @@ template&lt;typename TB &gt; </div>
 </div>
 </div>
 <a id="a6823188ec16be854223bbffe349c975d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6823188ec16be854223bbffe349c975d">&#9670;&nbsp;</a></span>operator*() <span class="overload">[6/6]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a6823188ec16be854223bbffe349c975d">&#9670;&nbsp;</a></span>operator*() <span class="overload">[5/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -8787,6 +8709,42 @@ template&lt;typename TB &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1815d8b152819885a5733554f374a9ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1815d8b152819885a5733554f374a9ca">&#9670;&nbsp;</a></span>operator*() <span class="overload">[6/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> tvm::operator* </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> &amp;&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>b</em>&#160;</td>
         </tr>
         <tr>
@@ -8879,8 +8837,8 @@ template&lt;typename TB &gt; </div>
 
 </div>
 </div>
-<a id="ac86d7f61b9f0899a08685145f6bb5051"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac86d7f61b9f0899a08685145f6bb5051">&#9670;&nbsp;</a></span>operator+() <span class="overload">[2/6]</span></h2>
+<a id="a2725c044e8067299c3dccbd453ce614f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2725c044e8067299c3dccbd453ce614f">&#9670;&nbsp;</a></span>operator+() <span class="overload">[2/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -8891,13 +8849,13 @@ template&lt;typename TB &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> tvm::operator+ </td>
           <td>(</td>
-          <td class="paramtype">float&#160;</td>
+          <td class="paramtype">const <a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> &amp;&#160;</td>
           <td class="paramname"><em>a</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> &amp;&#160;</td>
+          <td class="paramtype">float&#160;</td>
           <td class="paramname"><em>b</em>&#160;</td>
         </tr>
         <tr>
@@ -9023,8 +8981,8 @@ template&lt;typename TB &gt; </div>
 
 </div>
 </div>
-<a id="a2725c044e8067299c3dccbd453ce614f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2725c044e8067299c3dccbd453ce614f">&#9670;&nbsp;</a></span>operator+() <span class="overload">[6/6]</span></h2>
+<a id="ac86d7f61b9f0899a08685145f6bb5051"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac86d7f61b9f0899a08685145f6bb5051">&#9670;&nbsp;</a></span>operator+() <span class="overload">[6/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -9035,13 +8993,13 @@ template&lt;typename TB &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> tvm::operator+ </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> &amp;&#160;</td>
+          <td class="paramtype">float&#160;</td>
           <td class="paramname"><em>a</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">float&#160;</td>
+          <td class="paramtype">const <a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> &amp;&#160;</td>
           <td class="paramname"><em>b</em>&#160;</td>
         </tr>
         <tr>
@@ -9162,8 +9120,8 @@ template&lt;typename TB &gt; </div>
 
 </div>
 </div>
-<a id="a4f40ad3340a853d58664bc864dc10d47"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4f40ad3340a853d58664bc864dc10d47">&#9670;&nbsp;</a></span>operator-() <span class="overload">[3/7]</span></h2>
+<a id="aef861fe5325bc0b415a905a24c42f10a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef861fe5325bc0b415a905a24c42f10a">&#9670;&nbsp;</a></span>operator-() <span class="overload">[3/7]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -9174,13 +9132,49 @@ template&lt;typename TB &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> tvm::operator- </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">float&#160;</td>
           <td class="paramname"><em>a</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> &amp;&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af7c46ff33a2727f48b10d7d563f4a746"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7c46ff33a2727f48b10d7d563f4a746">&#9670;&nbsp;</a></span>operator-() <span class="overload">[4/7]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> tvm::operator- </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> &amp;&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>b</em>&#160;</td>
         </tr>
         <tr>
@@ -9199,7 +9193,7 @@ template&lt;typename TB &gt; </div>
 </div>
 </div>
 <a id="a028ba217f99b6cb1592a6a56b2bc9ee5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a028ba217f99b6cb1592a6a56b2bc9ee5">&#9670;&nbsp;</a></span>operator-() <span class="overload">[4/7]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a028ba217f99b6cb1592a6a56b2bc9ee5">&#9670;&nbsp;</a></span>operator-() <span class="overload">[5/7]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -9217,42 +9211,6 @@ template&lt;typename TB &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>b</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aef861fe5325bc0b415a905a24c42f10a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aef861fe5325bc0b415a905a24c42f10a">&#9670;&nbsp;</a></span>operator-() <span class="overload">[5/7]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> tvm::operator- </td>
-          <td>(</td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> &amp;&#160;</td>
           <td class="paramname"><em>b</em>&#160;</td>
         </tr>
         <tr>
@@ -9306,8 +9264,8 @@ template&lt;typename TB &gt; </div>
 
 </div>
 </div>
-<a id="af7c46ff33a2727f48b10d7d563f4a746"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af7c46ff33a2727f48b10d7d563f4a746">&#9670;&nbsp;</a></span>operator-() <span class="overload">[7/7]</span></h2>
+<a id="a4f40ad3340a853d58664bc864dc10d47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f40ad3340a853d58664bc864dc10d47">&#9670;&nbsp;</a></span>operator-() <span class="overload">[7/7]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -9318,13 +9276,13 @@ template&lt;typename TB &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> tvm::operator- </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> &amp;&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>a</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">const <a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> &amp;&#160;</td>
           <td class="paramname"><em>b</em>&#160;</td>
         </tr>
         <tr>
@@ -9532,44 +9490,8 @@ template&lt;typename TB &gt; </div>
 
 </div>
 </div>
-<a id="a4c5092e248ab7daa5de5c22717670d8e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4c5092e248ab7daa5de5c22717670d8e">&#9670;&nbsp;</a></span>operator<() <span class="overload">[2/6]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> tvm::operator&lt; </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> &amp;&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>b</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="abc5d3aba4f3f15098d5ac2fb0c3dfd39"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abc5d3aba4f3f15098d5ac2fb0c3dfd39">&#9670;&nbsp;</a></span>operator<() <span class="overload">[3/6]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#abc5d3aba4f3f15098d5ac2fb0c3dfd39">&#9670;&nbsp;</a></span>operator<() <span class="overload">[2/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -9605,7 +9527,7 @@ template&lt;typename TB &gt; </div>
 </div>
 </div>
 <a id="a46877235265ab97544ec2e561f521b0f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a46877235265ab97544ec2e561f521b0f">&#9670;&nbsp;</a></span>operator<() <span class="overload">[4/6]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a46877235265ab97544ec2e561f521b0f">&#9670;&nbsp;</a></span>operator<() <span class="overload">[3/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -9623,42 +9545,6 @@ template&lt;typename TB &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> &amp;&#160;</td>
-          <td class="paramname"><em>b</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a0854363590c38f5479b1da5e70c4f002"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0854363590c38f5479b1da5e70c4f002">&#9670;&nbsp;</a></span>operator<() <span class="overload">[5/6]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> tvm::operator&lt; </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> &amp;&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>b</em>&#160;</td>
         </tr>
         <tr>
@@ -9677,7 +9563,7 @@ template&lt;typename TB &gt; </div>
 </div>
 </div>
 <a id="aa672271dbd566a0e7b9e4c87664bccb4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa672271dbd566a0e7b9e4c87664bccb4">&#9670;&nbsp;</a></span>operator<() <span class="overload">[6/6]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa672271dbd566a0e7b9e4c87664bccb4">&#9670;&nbsp;</a></span>operator<() <span class="overload">[4/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -9695,6 +9581,78 @@ template&lt;typename TB &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4c5092e248ab7daa5de5c22717670d8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c5092e248ab7daa5de5c22717670d8e">&#9670;&nbsp;</a></span>operator<() <span class="overload">[5/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> tvm::operator&lt; </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> &amp;&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0854363590c38f5479b1da5e70c4f002"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0854363590c38f5479b1da5e70c4f002">&#9670;&nbsp;</a></span>operator<() <span class="overload">[6/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> tvm::operator&lt; </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> &amp;&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>b</em>&#160;</td>
         </tr>
         <tr>
@@ -9862,80 +9820,8 @@ template&lt;typename TB &gt; </div>
 
 </div>
 </div>
-<a id="ad5dbec0c48b8644c5c6e9d773ddc106b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad5dbec0c48b8644c5c6e9d773ddc106b">&#9670;&nbsp;</a></span>operator<=() <span class="overload">[2/6]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> tvm::operator&lt;= </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> &amp;&#160;</td>
-          <td class="paramname"><em>b</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a872f50bd7175eccf440865311aa75232"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a872f50bd7175eccf440865311aa75232">&#9670;&nbsp;</a></span>operator<=() <span class="overload">[3/6]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> tvm::operator&lt;= </td>
-          <td>(</td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> &amp;&#160;</td>
-          <td class="paramname"><em>b</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="af94a56db543e741a23bbf2f51c49091a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af94a56db543e741a23bbf2f51c49091a">&#9670;&nbsp;</a></span>operator<=() <span class="overload">[4/6]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af94a56db543e741a23bbf2f51c49091a">&#9670;&nbsp;</a></span>operator<=() <span class="overload">[2/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -9971,7 +9857,7 @@ template&lt;typename TB &gt; </div>
 </div>
 </div>
 <a id="a06d97bd5ee2c12e8547be0cc42f6b300"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a06d97bd5ee2c12e8547be0cc42f6b300">&#9670;&nbsp;</a></span>operator<=() <span class="overload">[5/6]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a06d97bd5ee2c12e8547be0cc42f6b300">&#9670;&nbsp;</a></span>operator<=() <span class="overload">[3/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -10006,8 +9892,44 @@ template&lt;typename TB &gt; </div>
 
 </div>
 </div>
+<a id="ad5dbec0c48b8644c5c6e9d773ddc106b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5dbec0c48b8644c5c6e9d773ddc106b">&#9670;&nbsp;</a></span>operator<=() <span class="overload">[4/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> tvm::operator&lt;= </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> &amp;&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a6eea8276bcc178425bc14f3d878970ff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6eea8276bcc178425bc14f3d878970ff">&#9670;&nbsp;</a></span>operator<=() <span class="overload">[6/6]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a6eea8276bcc178425bc14f3d878970ff">&#9670;&nbsp;</a></span>operator<=() <span class="overload">[5/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -10025,6 +9947,42 @@ template&lt;typename TB &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a872f50bd7175eccf440865311aa75232"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a872f50bd7175eccf440865311aa75232">&#9670;&nbsp;</a></span>operator<=() <span class="overload">[6/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> tvm::operator&lt;= </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> &amp;&#160;</td>
           <td class="paramname"><em>b</em>&#160;</td>
         </tr>
         <tr>
@@ -10300,8 +10258,44 @@ template&lt;typename TB &gt; </div>
 
 </div>
 </div>
+<a id="acc92dcd3d81981e983ddf05347bc9371"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc92dcd3d81981e983ddf05347bc9371">&#9670;&nbsp;</a></span>operator>() <span class="overload">[4/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> tvm::operator&gt; </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> &amp;&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a7e2181bca182f90533ec35537714d09d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7e2181bca182f90533ec35537714d09d">&#9670;&nbsp;</a></span>operator>() <span class="overload">[4/6]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e2181bca182f90533ec35537714d09d">&#9670;&nbsp;</a></span>operator>() <span class="overload">[5/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -10337,7 +10331,7 @@ template&lt;typename TB &gt; </div>
 </div>
 </div>
 <a id="a6aeb6ed068c5de8ab908ff234337aeeb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6aeb6ed068c5de8ab908ff234337aeeb">&#9670;&nbsp;</a></span>operator>() <span class="overload">[5/6]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a6aeb6ed068c5de8ab908ff234337aeeb">&#9670;&nbsp;</a></span>operator>() <span class="overload">[6/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -10355,42 +10349,6 @@ template&lt;typename TB &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> &amp;&#160;</td>
-          <td class="paramname"><em>b</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="acc92dcd3d81981e983ddf05347bc9371"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acc92dcd3d81981e983ddf05347bc9371">&#9670;&nbsp;</a></span>operator>() <span class="overload">[6/6]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> tvm::operator&gt; </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> &amp;&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>b</em>&#160;</td>
         </tr>
         <tr>
@@ -10447,44 +10405,8 @@ template&lt;typename TB &gt; </div>
 
 </div>
 </div>
-<a id="a7a94a354cd62137652e09fa887a96100"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7a94a354cd62137652e09fa887a96100">&#9670;&nbsp;</a></span>operator>=() <span class="overload">[2/6]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> tvm::operator&gt;= </td>
-          <td>(</td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> &amp;&#160;</td>
-          <td class="paramname"><em>b</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="aae1dcfef78728c5490d3c107b4abac5a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aae1dcfef78728c5490d3c107b4abac5a">&#9670;&nbsp;</a></span>operator>=() <span class="overload">[3/6]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aae1dcfef78728c5490d3c107b4abac5a">&#9670;&nbsp;</a></span>operator>=() <span class="overload">[2/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -10502,6 +10424,42 @@ template&lt;typename TB &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a35961a6074b72fae0dfc48ee395e0673"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35961a6074b72fae0dfc48ee395e0673">&#9670;&nbsp;</a></span>operator>=() <span class="overload">[3/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> tvm::operator&gt;= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> &amp;&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
           <td class="paramname"><em>b</em>&#160;</td>
         </tr>
         <tr>
@@ -10591,8 +10549,8 @@ template&lt;typename TB &gt; </div>
 
 </div>
 </div>
-<a id="a35961a6074b72fae0dfc48ee395e0673"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a35961a6074b72fae0dfc48ee395e0673">&#9670;&nbsp;</a></span>operator>=() <span class="overload">[6/6]</span></h2>
+<a id="a7a94a354cd62137652e09fa887a96100"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a94a354cd62137652e09fa887a96100">&#9670;&nbsp;</a></span>operator>=() <span class="overload">[6/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -10603,13 +10561,13 @@ template&lt;typename TB &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> tvm::operator&gt;= </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> &amp;&#160;</td>
+          <td class="paramtype">float&#160;</td>
           <td class="paramname"><em>a</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">float&#160;</td>
+          <td class="paramtype">const <a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> &amp;&#160;</td>
           <td class="paramname"><em>b</em>&#160;</td>
         </tr>
         <tr>
@@ -10666,8 +10624,8 @@ template&lt;typename TB &gt; </div>
 
 </div>
 </div>
-<a id="a550c2a251b2a6fd2a72172fe3db75d40"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a550c2a251b2a6fd2a72172fe3db75d40">&#9670;&nbsp;</a></span>operator>>() <span class="overload">[2/3]</span></h2>
+<a id="abccc3d3e96ee608022b148ffa05034eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abccc3d3e96ee608022b148ffa05034eb">&#9670;&nbsp;</a></span>operator>>() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -10678,13 +10636,13 @@ template&lt;typename TB &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> tvm::operator&gt;&gt; </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">const <a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> &amp;&#160;</td>
           <td class="paramname"><em>a</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> &amp;&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>b</em>&#160;</td>
         </tr>
         <tr>
@@ -10702,8 +10660,8 @@ template&lt;typename TB &gt; </div>
 
 </div>
 </div>
-<a id="abccc3d3e96ee608022b148ffa05034eb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abccc3d3e96ee608022b148ffa05034eb">&#9670;&nbsp;</a></span>operator>>() <span class="overload">[3/3]</span></h2>
+<a id="a550c2a251b2a6fd2a72172fe3db75d40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a550c2a251b2a6fd2a72172fe3db75d40">&#9670;&nbsp;</a></span>operator>>() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -10714,13 +10672,13 @@ template&lt;typename TB &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> tvm::operator&gt;&gt; </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> &amp;&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>a</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">const <a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> &amp;&#160;</td>
           <td class="paramname"><em>b</em>&#160;</td>
         </tr>
         <tr>
@@ -10777,8 +10735,8 @@ template&lt;typename TB &gt; </div>
 
 </div>
 </div>
-<a id="a82dc2fe21e7a64be5a1b11c2a8775d31"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a82dc2fe21e7a64be5a1b11c2a8775d31">&#9670;&nbsp;</a></span>operator^() <span class="overload">[2/3]</span></h2>
+<a id="a6f638564e5e4d1023096523800f2579e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f638564e5e4d1023096523800f2579e">&#9670;&nbsp;</a></span>operator^() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -10789,13 +10747,13 @@ template&lt;typename TB &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> tvm::operator^ </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> &amp;&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>a</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">const <a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> &amp;&#160;</td>
           <td class="paramname"><em>b</em>&#160;</td>
         </tr>
         <tr>
@@ -10813,8 +10771,8 @@ template&lt;typename TB &gt; </div>
 
 </div>
 </div>
-<a id="a6f638564e5e4d1023096523800f2579e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6f638564e5e4d1023096523800f2579e">&#9670;&nbsp;</a></span>operator^() <span class="overload">[3/3]</span></h2>
+<a id="a82dc2fe21e7a64be5a1b11c2a8775d31"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82dc2fe21e7a64be5a1b11c2a8775d31">&#9670;&nbsp;</a></span>operator^() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -10825,13 +10783,13 @@ template&lt;typename TB &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> tvm::operator^ </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">const <a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> &amp;&#160;</td>
           <td class="paramname"><em>a</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> &amp;&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>b</em>&#160;</td>
         </tr>
         <tr>
@@ -10888,8 +10846,8 @@ template&lt;typename TB &gt; </div>
 
 </div>
 </div>
-<a id="a7c7fc3c45e6f6b52b2a1064deabd0797"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7c7fc3c45e6f6b52b2a1064deabd0797">&#9670;&nbsp;</a></span>operator|() <span class="overload">[2/3]</span></h2>
+<a id="ad5ba71021b167b0a6ca2138b2c8bbace"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5ba71021b167b0a6ca2138b2c8bbace">&#9670;&nbsp;</a></span>operator|() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -10900,13 +10858,13 @@ template&lt;typename TB &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> tvm::operator| </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> &amp;&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>a</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">const <a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> &amp;&#160;</td>
           <td class="paramname"><em>b</em>&#160;</td>
         </tr>
         <tr>
@@ -10924,8 +10882,8 @@ template&lt;typename TB &gt; </div>
 
 </div>
 </div>
-<a id="ad5ba71021b167b0a6ca2138b2c8bbace"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad5ba71021b167b0a6ca2138b2c8bbace">&#9670;&nbsp;</a></span>operator|() <span class="overload">[3/3]</span></h2>
+<a id="a7c7fc3c45e6f6b52b2a1064deabd0797"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c7fc3c45e6f6b52b2a1064deabd0797">&#9670;&nbsp;</a></span>operator|() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -10936,13 +10894,13 @@ template&lt;typename TB &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> tvm::operator| </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">const <a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> &amp;&#160;</td>
           <td class="paramname"><em>a</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> &amp;&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>b</em>&#160;</td>
         </tr>
         <tr>
@@ -11287,35 +11245,6 @@ template&lt;typename TB &gt; </div>
 
 </div>
 </div>
-<a id="a60c4359254ce7ac364bb97a8bfc13803"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a60c4359254ce7ac364bb97a8bfc13803">&#9670;&nbsp;</a></span>PrettyPrint()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classtvm_1_1runtime_1_1String.html">String</a> tvm::PrettyPrint </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classtvm_1_1runtime_1_1ObjectRef.html">ObjectRef</a> &amp;&#160;</td>
-          <td class="paramname"><em>node</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Pretty print a node for debug purposes. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">node</td><td>The node to be printed. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The text reperesentation. </dd></dl>
-<dl class="section note"><dt>Note</dt><dd>This function does not show version or meta-data. Use AsText if you want to store the text. </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespacetvm.html#ad0e4314dd85303aa5e10d452e4c9db54" title="Render the node as a string in the text format. ">AsText</a>. </dd></dl>
-
-</div>
-</div>
 <a id="a32a87ae9eacafb2b5b71b28bcc9ef35e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a32a87ae9eacafb2b5b71b28bcc9ef35e">&#9670;&nbsp;</a></span>prod()</h2>
 
@@ -11560,8 +11489,8 @@ template&lt;typename TB &gt; </div>
 
 </div>
 </div>
-<a id="a98ff4361d0a24570f8dc32d03cde972a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a98ff4361d0a24570f8dc32d03cde972a">&#9670;&nbsp;</a></span>right_shift() <span class="overload">[2/3]</span></h2>
+<a id="af49dde9dfdeea62e8ad3a6d8db53de0b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af49dde9dfdeea62e8ad3a6d8db53de0b">&#9670;&nbsp;</a></span>right_shift() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -11572,13 +11501,13 @@ template&lt;typename TB &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> tvm::right_shift </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">const <a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> &amp;&#160;</td>
           <td class="paramname"><em>a</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> &amp;&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>b</em>, </td>
         </tr>
         <tr>
@@ -11602,8 +11531,8 @@ template&lt;typename TB &gt; </div>
 
 </div>
 </div>
-<a id="af49dde9dfdeea62e8ad3a6d8db53de0b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af49dde9dfdeea62e8ad3a6d8db53de0b">&#9670;&nbsp;</a></span>right_shift() <span class="overload">[3/3]</span></h2>
+<a id="a98ff4361d0a24570f8dc32d03cde972a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98ff4361d0a24570f8dc32d03cde972a">&#9670;&nbsp;</a></span>right_shift() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -11614,13 +11543,13 @@ template&lt;typename TB &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> tvm::right_shift </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> &amp;&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>a</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">const <a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> &amp;&#160;</td>
           <td class="paramname"><em>b</em>, </td>
         </tr>
         <tr>
@@ -12036,8 +11965,8 @@ template&lt;typename TB &gt; </div>
 
 </div>
 </div>
-<a id="a7470d45dafa0a91b6c62b25cdd61514e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7470d45dafa0a91b6c62b25cdd61514e">&#9670;&nbsp;</a></span>sub() <span class="overload">[2/6]</span></h2>
+<a id="a269b014ef11118b07bae6efb0300ba6f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a269b014ef11118b07bae6efb0300ba6f">&#9670;&nbsp;</a></span>sub() <span class="overload">[2/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -12048,13 +11977,55 @@ template&lt;typename TB &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> tvm::sub </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> &amp;&#160;</td>
+          <td class="paramtype">float&#160;</td>
           <td class="paramname"><em>a</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const <a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> &amp;&#160;</td>
+          <td class="paramname"><em>b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classtvm_1_1Span.html">Span</a>&#160;</td>
+          <td class="paramname"><em>span</em> = <code><a class="el" href="classtvm_1_1Span.html">Span</a>()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9cbbc9769fffddd99dfb4ab3f69dafb3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9cbbc9769fffddd99dfb4ab3f69dafb3">&#9670;&nbsp;</a></span>sub() <span class="overload">[3/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> tvm::sub </td>
+          <td>(</td>
           <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> &amp;&#160;</td>
           <td class="paramname"><em>b</em>, </td>
         </tr>
         <tr>
@@ -12079,7 +12050,7 @@ template&lt;typename TB &gt; </div>
 </div>
 </div>
 <a id="af2d75a528d344c6cfcf8b726a6abb7cc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af2d75a528d344c6cfcf8b726a6abb7cc">&#9670;&nbsp;</a></span>sub() <span class="overload">[3/6]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af2d75a528d344c6cfcf8b726a6abb7cc">&#9670;&nbsp;</a></span>sub() <span class="overload">[4/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -12097,48 +12068,6 @@ template&lt;typename TB &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>b</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classtvm_1_1Span.html">Span</a>&#160;</td>
-          <td class="paramname"><em>span</em> = <code><a class="el" href="classtvm_1_1Span.html">Span</a>()</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a269b014ef11118b07bae6efb0300ba6f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a269b014ef11118b07bae6efb0300ba6f">&#9670;&nbsp;</a></span>sub() <span class="overload">[4/6]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> tvm::sub </td>
-          <td>(</td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> &amp;&#160;</td>
           <td class="paramname"><em>b</em>, </td>
         </tr>
         <tr>
@@ -12204,8 +12133,8 @@ template&lt;typename TB &gt; </div>
 
 </div>
 </div>
-<a id="a9cbbc9769fffddd99dfb4ab3f69dafb3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9cbbc9769fffddd99dfb4ab3f69dafb3">&#9670;&nbsp;</a></span>sub() <span class="overload">[6/6]</span></h2>
+<a id="a7470d45dafa0a91b6c62b25cdd61514e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7470d45dafa0a91b6c62b25cdd61514e">&#9670;&nbsp;</a></span>sub() <span class="overload">[6/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -12216,13 +12145,13 @@ template&lt;typename TB &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> tvm::sub </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">const <a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> &amp;&#160;</td>
           <td class="paramname"><em>a</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> &amp;&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>b</em>, </td>
         </tr>
         <tr>
@@ -12604,50 +12533,8 @@ template&lt;typename TB &gt; </div>
 
 </div>
 </div>
-<a id="aa7e06644ed017169c5ce6829445ab754"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa7e06644ed017169c5ce6829445ab754">&#9670;&nbsp;</a></span>truncmod() <span class="overload">[2/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> tvm::truncmod </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> &amp;&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>b</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classtvm_1_1Span.html">Span</a>&#160;</td>
-          <td class="paramname"><em>span</em> = <code><a class="el" href="classtvm_1_1Span.html">Span</a>()</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="aa388c5d23548438d00d64d0084e82391"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa388c5d23548438d00d64d0084e82391">&#9670;&nbsp;</a></span>truncmod() <span class="overload">[3/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa388c5d23548438d00d64d0084e82391">&#9670;&nbsp;</a></span>truncmod() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -12685,6 +12572,76 @@ template&lt;typename TB &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa7e06644ed017169c5ce6829445ab754"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7e06644ed017169c5ce6829445ab754">&#9670;&nbsp;</a></span>truncmod() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> tvm::truncmod </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classtvm_1_1PrimExpr.html">PrimExpr</a> &amp;&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classtvm_1_1Span.html">Span</a>&#160;</td>
+          <td class="paramname"><em>span</em> = <code><a class="el" href="classtvm_1_1Span.html">Span</a>()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab839d9f872e97b31e30c0059a3eb9a92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab839d9f872e97b31e30c0059a3eb9a92">&#9670;&nbsp;</a></span>TypeKind2String()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classtvm_1_1runtime_1_1String.html">String</a> tvm::TypeKind2String </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacetvm.html#acd267f8d7f55da6ac681239831963279">TypeKind</a>&#160;</td>
+          <td class="paramname"><em>kind</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Converts a TypeKind to a string. </p>
 
 </div>
 </div>

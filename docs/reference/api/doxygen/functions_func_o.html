@@ -315,7 +315,6 @@ $(function() {
 , <a class="el" href="classtvm_1_1EnvFunc.html#a6ec8fadc46d57fd71931c3ace463fc23">tvm::EnvFunc</a>
 , <a class="el" href="classtvm_1_1GenericFunc.html#a4a04307dffa174f71cdfb08d1903dec2">tvm::GenericFunc</a>
 , <a class="el" href="classtvm_1_1IRModule.html#a2ea8b99b923647503f8213f22a0f6d7e">tvm::IRModule</a>
-, <a class="el" href="classtvm_1_1parser_1_1SourceMap.html#a7c8e86338eb19b26514fea83754b99a2">tvm::parser::SourceMap</a>
 , <a class="el" href="classtvm_1_1relax_1_1Binding.html#a024d77f6015a00a5a00d9f0c5aa873ea">tvm::relax::Binding</a>
 , <a class="el" href="classtvm_1_1relax_1_1DataflowBlockRewrite.html#ae3fcaaa9b52ae31bfce13dab56d57d4a">tvm::relax::DataflowBlockRewrite</a>
 , <a class="el" href="classtvm_1_1relax_1_1PatternContext.html#aa8c0eb5b08f296c6ea6a01277e546d5f">tvm::relax::PatternContext</a>
@@ -328,6 +327,7 @@ $(function() {
 , <a class="el" href="classtvm_1_1runtime_1_1ObjectRef.html#a3deeeac5827a88f375b8c6ae1039c219">tvm::runtime::ObjectRef</a>
 , <a class="el" href="classtvm_1_1SEqualReducer.html#af5d3b2a3d0a59a2f029f68157f917446">tvm::SEqualReducer</a>
 , <a class="el" href="classtvm_1_1SHashReducer.html#a4b9bf11c86bed1360d92d0e60bfd1f28">tvm::SHashReducer</a>
+, <a class="el" href="classtvm_1_1SourceMap.html#ad14e102ba934fcaae1c7acdca43a4e00">tvm::SourceMap</a>
 , <a class="el" href="classtvm_1_1te_1_1IterVarAttr.html#aa1ef7fd178e47fd8165bb8fded785a28">tvm::te::IterVarAttr</a>
 , <a class="el" href="classtvm_1_1te_1_1IterVarRelation.html#aa6a6afa23fa3c3a81b3778f2869b3455">tvm::te::IterVarRelation</a>
 , <a class="el" href="classtvm_1_1te_1_1Operation.html#a133e5d2639c0c657131b53c0877cdd79">tvm::te::Operation</a>
@@ -350,7 +350,7 @@ $(function() {
 </li>
 <li>operator&lt;&lt;()
 : <a class="el" href="classtvm_1_1DiagnosticBuilder.html#aa92a3f9039d464fbefaed90b0e255e84">tvm::DiagnosticBuilder</a>
-, <a class="el" href="structtvm_1_1ErrorBuilder.html#ad40b754d2d8992b65d0bc5b116bd3f71">tvm::ErrorBuilder</a>
+, <a class="el" href="structtvm_1_1relay_1_1ErrorBuilder.html#a307702e08d4a11a8f7294a2d6e5d698a">tvm::relay::ErrorBuilder</a>
 </li>
 <li>operator=()
 : <a class="el" href="classtvm_1_1arith_1_1Analyzer.html#a9dccc7d98b8b9465390e10436d3a9178">tvm::arith::Analyzer</a>
@@ -364,11 +364,11 @@ $(function() {
 , <a class="el" href="classtvm_1_1runtime_1_1ObjectPtr.html#afda3c65f41e83e1c87145a216f8c846d">tvm::runtime::ObjectPtr&lt; T &gt;</a>
 , <a class="el" href="classtvm_1_1runtime_1_1Optional.html#af840ea1549dbe89d1680025c803e02e1">tvm::runtime::Optional&lt; T &gt;</a>
 , <a class="el" href="classtvm_1_1runtime_1_1String.html#a3b3c8614af05adc454f47132e04552ed">tvm::runtime::String</a>
-, <a class="el" href="classtvm_1_1runtime_1_1TVMRetValue.html#a7c16ff5c118b1577a9188ca3f3509167">tvm::runtime::TVMRetValue</a>
+, <a class="el" href="classtvm_1_1runtime_1_1TVMRetValue.html#a5d251ed32af617354c8622689a6d6e48">tvm::runtime::TVMRetValue</a>
 , <a class="el" href="classtvm_1_1runtime_1_1TypedPackedFunc_3_01R_07Args_8_8_8_08_4.html#a8dd1fbae84cb9597c52977b0e8db64dc">tvm::runtime::TypedPackedFunc&lt; R(Args...)&gt;</a>
 , <a class="el" href="structtvm_1_1runtime_1_1vm_1_1Instruction.html#a69c12a9470f67ea26e53172f5c9220a1">tvm::runtime::vm::Instruction</a>
 , <a class="el" href="classtvm_1_1TypedEnvFunc_3_01R_07Args_8_8_8_08_4.html#aab332907b9f98876f441f6403b801187">tvm::TypedEnvFunc&lt; R(Args...)&gt;</a>
-, <a class="el" href="classtvm_1_1With.html#a58eb9398800f9889de022ddbb348921f">tvm::With&lt; ContextType &gt;</a>
+, <a class="el" href="classtvm_1_1With.html#a09cd315fd01e433ff9e5cf648d9bb948">tvm::With&lt; ContextType &gt;</a>
 </li>
 <li>operator==()
 : <a class="el" href="classtvm_1_1Integer.html#ad2291d037ff36f5371f6381478b3eeaf">tvm::Integer</a>
@@ -379,9 +379,9 @@ $(function() {
 , <a class="el" href="classtvm_1_1runtime_1_1Map_1_1iterator.html#ade3c126684dcdc6ed432f3bb7eb62099">tvm::runtime::Map&lt; K, V, typename, typename &gt;::iterator</a>
 , <a class="el" href="classtvm_1_1runtime_1_1MapNode_1_1iterator.html#a264c17028af85fe4619852f804e9464a">tvm::runtime::MapNode::iterator</a>
 , <a class="el" href="classtvm_1_1runtime_1_1metadata_1_1ArrayIterator.html#a6941bd0a5aa77acb1069e099e08455ed">tvm::runtime::metadata::ArrayIterator&lt; C, Ref &gt;</a>
-, <a class="el" href="classtvm_1_1runtime_1_1ObjectPtr.html#ab849841f9277ad9015515ed591bf79d3">tvm::runtime::ObjectPtr&lt; T &gt;</a>
+, <a class="el" href="classtvm_1_1runtime_1_1ObjectPtr.html#aeb6535554bf4a31d0e0bf80d5f23db29">tvm::runtime::ObjectPtr&lt; T &gt;</a>
 , <a class="el" href="classtvm_1_1runtime_1_1ObjectRef.html#affdf1b8cdb36e140de7b3ad7064e4617">tvm::runtime::ObjectRef</a>
-, <a class="el" href="classtvm_1_1runtime_1_1Optional.html#a2e5b8e5065518ef40c70d5575edf8806">tvm::runtime::Optional&lt; T &gt;</a>
+, <a class="el" href="classtvm_1_1runtime_1_1Optional.html#abb41934cee66ce6f25eba0f6de68ff1f">tvm::runtime::Optional&lt; T &gt;</a>
 , <a class="el" href="classtvm_1_1runtime_1_1PackedFunc.html#a5c4ed23ffcb6a1874bd6eceb87b40b25">tvm::runtime::PackedFunc</a>
 , <a class="el" href="classtvm_1_1runtime_1_1ReverseIterAdapter.html#ae71116873ea643de9f8ec1836cc116db">tvm::runtime::ReverseIterAdapter&lt; Converter, TIter &gt;</a>
 , <a class="el" href="classtvm_1_1runtime_1_1TypedPackedFunc_3_01R_07Args_8_8_8_08_4.html#a0e4a4d01d86eca79c5d9e1e90322c5cb">tvm::runtime::TypedPackedFunc&lt; R(Args...)&gt;</a>
@@ -427,7 +427,7 @@ $(function() {
 </li>
 <li>Optional()
 : <a class="el" href="classtvm_1_1relay_1_1DFPattern.html#aa573fa65bf9c4f0ba090225105233136">tvm::relay::DFPattern</a>
-, <a class="el" href="classtvm_1_1runtime_1_1Optional.html#af684522b40606c8b5e0907fbd103291e">tvm::runtime::Optional&lt; T &gt;</a>
+, <a class="el" href="classtvm_1_1runtime_1_1Optional.html#a4474559794818ad1257b70e681929938">tvm::runtime::Optional&lt; T &gt;</a>
 </li>
 <li>Or()
 : <a class="el" href="classtvm_1_1tir_1_1Or.html#ab0b68884ed84d03d3af7c95da2fcf81e">tvm::tir::Or</a>

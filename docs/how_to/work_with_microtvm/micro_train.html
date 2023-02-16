@@ -11,7 +11,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Training Vision Models for microTVM on Arduino &mdash; tvm 0.11.dev0 documentation</title>
+  <title>5. Training Vision Models for microTVM on Arduino &mdash; tvm 0.11.dev0 documentation</title>
   
 
   
@@ -48,8 +48,8 @@
     <script type="text/javascript" src="../../_static/js/tlcpack_theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Executing a Tiny Model with TVMC Micro" href="micro_tvmc.html" />
-    <link rel="prev" title="microTVM with TFLite Models" href="micro_tflite.html" /> 
+    <link rel="next" title="6. Model Tuning with microTVM" href="micro_autotune.html" />
+    <link rel="prev" title="4. microTVM PyTorch Tutorial" href="micro_pytorch.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -243,13 +243,11 @@
 <li class="toctree-l2"><a class="reference internal" href="../tune_with_autotvm/index.html">Auto-Tune with Templates and AutoTVM</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../tune_with_autoscheduler/index.html">Use AutoScheduler for Template-Free Scheduling</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="index.html">Work With microTVM</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="micro_aot.html">microTVM Host-Driven AoT</a></li>
-<li class="toctree-l3"><a class="reference internal" href="micro_autotune.html">Autotuning with microTVM</a></li>
-<li class="toctree-l3"><a class="reference internal" href="micro_ethosu.html">Running TVM on bare metal Arm(R) Cortex(R)-M55 CPU and Ethos(TM)-U55 NPU with CMSIS-NN</a></li>
-<li class="toctree-l3"><a class="reference internal" href="micro_pytorch.html">microTVM PyTorch Tutorial</a></li>
-<li class="toctree-l3"><a class="reference internal" href="micro_reference_vm.html">microTVM Reference Virtual Machines</a></li>
-<li class="toctree-l3"><a class="reference internal" href="micro_tflite.html">microTVM with TFLite Models</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">Training Vision Models for microTVM on Arduino</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="micro_tvmc.html">1. microTVM CLI Tool</a></li>
+<li class="toctree-l3"><a class="reference internal" href="micro_tflite.html">2. microTVM TFLite Tutorial</a></li>
+<li class="toctree-l3"><a class="reference internal" href="micro_aot.html">3. microTVM Ahead-of-Time (AOT) Compilation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="micro_pytorch.html">4. microTVM PyTorch Tutorial</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">5. Training Vision Models for microTVM on Arduino</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#motivation">Motivation</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#downloading-the-data">Downloading the Data</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#loading-the-data">Loading the Data</a></li>
@@ -262,7 +260,9 @@
 <li class="toctree-l4"><a class="reference internal" href="#summary">Summary</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="micro_tvmc.html">Executing a Tiny Model with TVMC Micro</a></li>
+<li class="toctree-l3"><a class="reference internal" href="micro_autotune.html">6. Model Tuning with microTVM</a></li>
+<li class="toctree-l3"><a class="reference internal" href="micro_ethosu.html">7. Running TVM on bare metal Arm(R) Cortex(R)-M55 CPU and Ethos(TM)-U55 NPU with CMSIS-NN</a></li>
+<li class="toctree-l3"><a class="reference internal" href="micro_mlperftiny.html">8. Creating Your MLPerfTiny Submission with microTVM</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../extend_tvm/index.html">Extend TVM</a></li>
@@ -353,7 +353,7 @@
         
           <li><a href="index.html">Work With microTVM</a> <span class="br-arrow">></span></li>
         
-      <li>Training Vision Models for microTVM on Arduino</li>
+      <li>5. Training Vision Models for microTVM on Arduino</li>
     
     
       
@@ -387,7 +387,7 @@
 <a class="reference external image-reference" href="https://colab.research.google.com/github/apache/tvm-site/blob/asf-site/docs/_downloads/a7c7ea4b5017ae70db1f51dd8e6dcd82/micro_train.ipynb"><img alt="https://raw.githubusercontent.com/tlc-pack/web-data/main/images/utilities/colab_button.svg" class="align-center" src="https://raw.githubusercontent.com/tlc-pack/web-data/main/images/utilities/colab_button.svg" width="300px" /></a>
 </div>
 <div class="sphx-glr-example-title section" id="training-vision-models-for-microtvm-on-arduino">
-<span id="microtvm-train-arduino"></span><span id="sphx-glr-how-to-work-with-microtvm-micro-train-py"></span><h1>Training Vision Models for microTVM on Arduino<a class="headerlink" href="#training-vision-models-for-microtvm-on-arduino" title="Permalink to this headline">¶</a></h1>
+<span id="tutorial-micro-train-arduino"></span><span id="sphx-glr-how-to-work-with-microtvm-micro-train-py"></span><h1>5. Training Vision Models for microTVM on Arduino<a class="headerlink" href="#training-vision-models-for-microtvm-on-arduino" title="Permalink to this headline">¶</a></h1>
 <p><strong>Author</strong>: <a class="reference external" href="https://github.com/guberti">Gavin Uberti</a></p>
 <p>This tutorial shows how MobileNetV1 models can be trained
 to fit on embedded devices, and how those models can be
@@ -767,20 +767,24 @@ vectorization with <code class="docutils literal notranslate"><span class="pre">
 Relay model into the MLF intermediate representation. From here, we just need to call
 <code class="docutils literal notranslate"><span class="pre">tvm.micro.generate_project</span></code> and pass in the Arduino template project to finish compilation.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">shutil</span>
-<span class="kn">import</span> <span class="nn">tflite</span>
 <span class="kn">import</span> <span class="nn">tvm</span>
+<span class="kn">import</span> <span class="nn">tvm.micro.testing</span>
 
 <span class="c1"># Method to load model is different in TFLite 1 vs 2</span>
 <span class="k">try</span><span class="p">:</span>  <span class="c1"># TFLite 2.1 and above</span>
+    <span class="kn">import</span> <span class="nn">tflite</span>
+
     <span class="n">tflite_model</span> <span class="o">=</span> <span class="n">tflite</span><span class="o">.</span><span class="n">Model</span><span class="o">.</span><span class="n">GetRootAsModel</span><span class="p">(</span><span class="n">quantized_model</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
 <span class="k">except</span> <span class="ne">AttributeError</span><span class="p">:</span>  <span class="c1"># Fall back to TFLite 1.14 method</span>
+    <span class="kn">import</span> <span class="nn">tflite.Model</span>
+
     <span class="n">tflite_model</span> <span class="o">=</span> <span class="n">tflite</span><span class="o">.</span><span class="n">Model</span><span class="o">.</span><span class="n">Model</span><span class="o">.</span><span class="n">GetRootAsModel</span><span class="p">(</span><span class="n">quantized_model</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
 
 <span class="c1"># Convert to the Relay intermediate representation</span>
 <span class="n">mod</span><span class="p">,</span> <span class="n">params</span> <span class="o">=</span> <a href="../../reference/api/python/relay/frontend.html#tvm.relay.frontend.from_tflite" title="tvm.relay.frontend.from_tflite" class="sphx-glr-backref-module-tvm-relay-frontend sphx-glr-backref-type-py-function"><span class="n">tvm</span><span class="o">.</span><span class="n">relay</span><span class="o">.</span><span class="n">frontend</span><span class="o">.</span><span class="n">from_tflite</span></a><span class="p">(</span><span class="n">tflite_model</span><span class="p">)</span>
 
 <span class="c1"># Set configuration flags to improve performance</span>
-<span class="n">target</span> <span class="o">=</span> <span class="n">tvm</span><span class="o">.</span><span class="n">target</span><span class="o">.</span><span class="n">target</span><span class="o">.</span><span class="n">micro</span><span class="p">(</span><span class="s2">&quot;nrf52840&quot;</span><span class="p">)</span>
+<span class="n">target</span> <span class="o">=</span> <span class="n">tvm</span><span class="o">.</span><span class="n">micro</span><span class="o">.</span><span class="n">testing</span><span class="o">.</span><span class="n">get_target</span><span class="p">(</span><span class="s2">&quot;zephyr&quot;</span><span class="p">,</span> <span class="s2">&quot;nrf5340dk_nrf5340_cpuapp&quot;</span><span class="p">)</span>
 <span class="n">runtime</span> <span class="o">=</span> <span class="n">tvm</span><span class="o">.</span><span class="n">relay</span><span class="o">.</span><span class="n">backend</span><span class="o">.</span><span class="n">Runtime</span><span class="p">(</span><span class="s2">&quot;crt&quot;</span><span class="p">)</span>
 <span class="n">executor</span> <span class="o">=</span> <span class="n">tvm</span><span class="o">.</span><span class="n">relay</span><span class="o">.</span><span class="n">backend</span><span class="o">.</span><span class="n">Executor</span><span class="p">(</span><span class="s2">&quot;aot&quot;</span><span class="p">,</span> <span class="p">{</span><span class="s2">&quot;unpacked-api&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">})</span>
 
@@ -954,10 +958,10 @@ Arduino tutorial for how to do that <a class="reference external" href="https://
 
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="micro_tvmc.html" class="btn btn-neutral float-right" title="Executing a Tiny Model with TVMC Micro" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="micro_autotune.html" class="btn btn-neutral float-right" title="6. Model Tuning with microTVM" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="micro_tflite.html" class="btn btn-neutral float-left" title="microTVM with TFLite Models" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="micro_pytorch.html" class="btn btn-neutral float-left" title="4. microTVM PyTorch Tutorial" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
 

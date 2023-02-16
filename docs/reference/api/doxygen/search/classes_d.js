@@ -52,6 +52,7 @@ var searchData=
   ['optional_3c_20tvm_3a_3aprimexpr_20_3e',['Optional&lt; tvm::PrimExpr &gt;',['../classtvm_1_1runtime_1_1Optional.html',1,'tvm::runtime']]],
   ['optional_3c_20tvm_3a_3arelax_3a_3adataflowblock_20_3e',['Optional&lt; tvm::relax::DataflowBlock &gt;',['../classtvm_1_1runtime_1_1Optional.html',1,'tvm::runtime']]],
   ['optional_3c_20tvm_3a_3arelax_3a_3afunction_20_3e',['Optional&lt; tvm::relax::Function &gt;',['../classtvm_1_1runtime_1_1Optional.html',1,'tvm::runtime']]],
+  ['optional_3c_20tvm_3a_3arelax_3a_3aprimvalue_20_3e',['Optional&lt; tvm::relax::PrimValue &gt;',['../classtvm_1_1runtime_1_1Optional.html',1,'tvm::runtime']]],
   ['optional_3c_20tvm_3a_3arelax_3a_3astructinfo_20_3e',['Optional&lt; tvm::relax::StructInfo &gt;',['../classtvm_1_1runtime_1_1Optional.html',1,'tvm::runtime']]],
   ['optional_3c_20tvm_3a_3arelayexpr_20_3e',['Optional&lt; tvm::RelayExpr &gt;',['../classtvm_1_1runtime_1_1Optional.html',1,'tvm::runtime']]],
   ['optional_3c_20tvm_3a_3aruntime_3a_3aarray_3c_20tvm_3a_3aauto_5fscheduler_3a_3ameasurecallback_20_3e_20_3e',['Optional&lt; tvm::runtime::Array&lt; tvm::auto_scheduler::MeasureCallback &gt; &gt;',['../classtvm_1_1runtime_1_1Optional.html',1,'tvm::runtime']]],

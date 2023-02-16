@@ -24,8 +24,8 @@
 
 .. _tutorial-micro-autotune:
 
-Autotuning with microTVM
-=========================
+6. Model Tuning with microTVM
+=============================
 **Authors**:
 `Andrew Reusch <https://github.com/areusch>`_,
 `Mehrdad Hessar <https://github.com/mehrdadh>`_
@@ -61,7 +61,7 @@ Import Python dependencies
 -------------------------------
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 52-59
+.. GENERATED FROM PYTHON SOURCE LINES 52-60
 
 .. code-block:: default
 
@@ -71,9 +71,10 @@ Import Python dependencies
 
     import tvm
     from tvm.relay.backend import Runtime
+    import tvm.micro.testing
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 60-66
+.. GENERATED FROM PYTHON SOURCE LINES 61-67
 
 Defining the model
 ###################
@@ -82,7 +83,7 @@ Defining the model
  fill parameters with random numbers.
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 66-91
+.. GENERATED FROM PYTHON SOURCE LINES 67-92
 
 .. code-block:: default
 
@@ -112,7 +113,7 @@ Defining the model
     params = {"weight": weight_sample}
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 92-103
+.. GENERATED FROM PYTHON SOURCE LINES 93-104
 
 Defining the target
 ######################
@@ -126,30 +127,26 @@ Defining the target
  this tutorial.
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 103-121
+.. GENERATED FROM PYTHON SOURCE LINES 104-118
 
 .. code-block:: default
 
 
     RUNTIME = Runtime("crt", {"system-lib": True})
-    TARGET = tvm.target.target.micro("host")
+    TARGET = tvm.micro.testing.get_target("crt")
 
     # Compiling for physical hardware
     # --------------------------------------------------------------------------
     #  When running on physical hardware, choose a TARGET and a BOARD that describe the hardware. The
     #  STM32L4R5ZI Nucleo target and board is chosen in the example below.
     if use_physical_hw:
-        boards_file = pathlib.Path(tvm.micro.get_microtvm_template_projects("zephyr")) / "boards.json"
-        with open(boards_file) as f:
-            boards = json.load(f)
-
         BOARD = os.getenv("TVM_MICRO_BOARD", default="nucleo_l4r5zi")
         SERIAL = os.getenv("TVM_MICRO_SERIAL", default=None)
-        TARGET = tvm.target.target.micro(boards[BOARD]["model"])
+        TARGET = tvm.micro.testing.get_target("zephyr", BOARD)
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 122-131
+.. GENERATED FROM PYTHON SOURCE LINES 119-128
 
 Extracting tuning tasks
 ########################
@@ -161,7 +158,7 @@ Extracting tuning tasks
  transformation passes; we'll apply the same configuration later on during autotuning.
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 131-137
+.. GENERATED FROM PYTHON SOURCE LINES 128-134
 
 .. code-block:: default
 
@@ -172,7 +169,7 @@ Extracting tuning tasks
     assert len(tasks) > 0
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 138-148
+.. GENERATED FROM PYTHON SOURCE LINES 135-145
 
 Configuring microTVM
 #####################
@@ -185,7 +182,7 @@ Configuring microTVM
  choose other options by choosing from `PLATFORM` list.
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 148-186
+.. GENERATED FROM PYTHON SOURCE LINES 145-183
 
 .. code-block:: default
 
@@ -228,14 +225,14 @@ Configuring microTVM
         measure_option = tvm.autotvm.measure_option(builder=builder, runner=runner)
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 187-191
+.. GENERATED FROM PYTHON SOURCE LINES 184-188
 
 Run Autotuning
 #########################
  Now we can run autotuning separately on each extracted task on microTVM device.
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 191-209
+.. GENERATED FROM PYTHON SOURCE LINES 188-206
 
 .. code-block:: default
 
@@ -258,7 +255,7 @@ Run Autotuning
         )
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 210-216
+.. GENERATED FROM PYTHON SOURCE LINES 207-213
 
 Timing the untuned program
 ###########################
@@ -267,7 +264,7 @@ Timing the untuned program
  the tuned operator.
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 216-255
+.. GENERATED FROM PYTHON SOURCE LINES 213-252
 
 .. code-block:: default
 
@@ -311,13 +308,13 @@ Timing the untuned program
         del debug_module
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 256-259
+.. GENERATED FROM PYTHON SOURCE LINES 253-256
 
 Timing the tuned program
 #########################
  Once autotuning completes, you can time execution of the entire program using the Debug Runtime:
 
-.. GENERATED FROM PYTHON SOURCE LINES 259-298
+.. GENERATED FROM PYTHON SOURCE LINES 256-295
 
 .. code-block:: default
 
