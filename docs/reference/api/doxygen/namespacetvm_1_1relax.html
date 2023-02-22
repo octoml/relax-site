@@ -788,9 +788,9 @@ Functions</h2></td></tr>
 <tr class="memitem:adcac3ba77506e977263f826fed22a593"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacetvm_1_1relax.html#a8f6ef3d9aaba0138f730a520d7ebbfb3">Expr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetvm_1_1relax.html#adcac3ba77506e977263f826fed22a593">Bind</a> (const <a class="el" href="namespacetvm_1_1relax.html#a8f6ef3d9aaba0138f730a520d7ebbfb3">Expr</a> &amp;expr, const <a class="el" href="classtvm_1_1runtime_1_1Map.html">tvm::Map</a>&lt; <a class="el" href="classtvm_1_1relax_1_1Var.html">Var</a>, <a class="el" href="namespacetvm_1_1relax.html#a8f6ef3d9aaba0138f730a520d7ebbfb3">Expr</a> &gt; &amp;binds)</td></tr>
 <tr class="memdesc:adcac3ba77506e977263f826fed22a593"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bind the variables to a Relax expression. This is a helper function usually called by other pass functions to help optimizations. <a class="el" href="classtvm_1_1relax_1_1If.html">If</a> any free variables are introduced into a function, those are added to the function parameters. Additionally this may change the order of parameters if you map a variable to a variable.  <a href="#adcac3ba77506e977263f826fed22a593">More...</a><br /></td></tr>
 <tr class="separator:adcac3ba77506e977263f826fed22a593"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad237fcb2301b470af00fb8b03d8392d7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetvm_1_1relax.html#ad237fcb2301b470af00fb8b03d8392d7">IsBoolScalarType</a> (const <a class="el" href="classtvm_1_1Type.html">Type</a> &amp;ty, bool permit_unknown_rank=true, bool permit_unknown_dtype=true)</td></tr>
-<tr class="memdesc:ad237fcb2301b470af00fb8b03d8392d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the given type is a boolean scalar type (tensor of rank 0 with a boolean dtype).  <a href="#ad237fcb2301b470af00fb8b03d8392d7">More...</a><br /></td></tr>
-<tr class="separator:ad237fcb2301b470af00fb8b03d8392d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4d949ba3b55902d53afd3c179f05287"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetvm_1_1relax.html#af4d949ba3b55902d53afd3c179f05287">IsBoolStructInfo</a> (const <a class="el" href="classtvm_1_1relax_1_1StructInfo.html">StructInfo</a> &amp;sinfo, bool permit_unknown_rank=true, bool permit_unknown_dtype=true)</td></tr>
+<tr class="memdesc:af4d949ba3b55902d53afd3c179f05287"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the given <a class="el" href="classtvm_1_1relax_1_1StructInfo.html" title="Managed reference to StructInfoNode. ">StructInfo</a> is for a boolean scalar (tensor of rank 0 with a boolean dtype).  <a href="#af4d949ba3b55902d53afd3c179f05287">More...</a><br /></td></tr>
+<tr class="separator:af4d949ba3b55902d53afd3c179f05287"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade67ebcba4b40c0e0c38c0ddd3279131"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetvm_1_1relax.html#ade67ebcba4b40c0e0c38c0ddd3279131">IsLeafOrTuple</a> (const <a class="el" href="namespacetvm_1_1relax.html#a8f6ef3d9aaba0138f730a520d7ebbfb3">Expr</a> &amp;expr)</td></tr>
 <tr class="memdesc:ade67ebcba4b40c0e0c38c0ddd3279131"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the given expression is a "leaf" node or tuple node for normalization purposes.  <a href="#ade67ebcba4b40c0e0c38c0ddd3279131">More...</a><br /></td></tr>
 <tr class="separator:ade67ebcba4b40c0e0c38c0ddd3279131"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2154,17 +2154,17 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="ad237fcb2301b470af00fb8b03d8392d7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad237fcb2301b470af00fb8b03d8392d7">&#9670;&nbsp;</a></span>IsBoolScalarType()</h2>
+<a id="af4d949ba3b55902d53afd3c179f05287"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4d949ba3b55902d53afd3c179f05287">&#9670;&nbsp;</a></span>IsBoolStructInfo()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool tvm::relax::IsBoolScalarType </td>
+          <td class="memname">bool tvm::relax::IsBoolStructInfo </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classtvm_1_1Type.html">Type</a> &amp;&#160;</td>
-          <td class="paramname"><em>ty</em>, </td>
+          <td class="paramtype">const <a class="el" href="classtvm_1_1relax_1_1StructInfo.html">StructInfo</a> &amp;&#160;</td>
+          <td class="paramname"><em>sinfo</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -2186,10 +2186,10 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Check if the given type is a boolean scalar type (tensor of rank 0 with a boolean dtype). </p>
+<p>Check if the given <a class="el" href="classtvm_1_1relax_1_1StructInfo.html" title="Managed reference to StructInfoNode. ">StructInfo</a> is for a boolean scalar (tensor of rank 0 with a boolean dtype). </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">ty</td><td>The input type. </td></tr>
+    <tr><td class="paramname">sinfo</td><td>The input <a class="el" href="classtvm_1_1relax_1_1StructInfo.html" title="Managed reference to StructInfoNode. ">StructInfo</a>. </td></tr>
     <tr><td class="paramname">permit_unknown_rank</td><td><a class="el" href="classtvm_1_1relax_1_1If.html">If</a> true, it will permit the input type to have unknown rank (ndim of -1), which will require a dynamic check. </td></tr>
     <tr><td class="paramname">permit_unknown_dtype</td><td><a class="el" href="classtvm_1_1relax_1_1If.html">If</a> true, it will permit the input type to have an unknown dtype (namely, void), which will require a dynamic check.</td></tr>
   </table>

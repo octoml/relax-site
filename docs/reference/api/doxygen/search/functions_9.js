@@ -134,7 +134,7 @@ var searchData=
   ['isaffineblockbinding',['IsAffineBlockBinding',['../classtvm_1_1tir_1_1ScheduleStateNode.html#a2e164c9d5115e29d038a8efdc7c98d1a',1,'tvm::tir::ScheduleStateNode']]],
   ['isapplycustomrule',['IsApplyCustomRule',['../classtvm_1_1meta__schedule_1_1ScheduleRule.html#abebbe9b3c71f3c7f0346641e0b7e96ad',1,'tvm::meta_schedule::ScheduleRule']]],
   ['isbaseof',['IsBaseOf',['../namespacetvm_1_1relax.html#ad86a717c05debf2815aee7bcbe7d61e4',1,'tvm::relax::IsBaseOf(const StructInfo &amp;base, const StructInfo &amp;derived, arith::Analyzer *ana=nullptr)'],['../namespacetvm_1_1relax.html#aa7ea7bae766b342d5e68696ae89cfdc5',1,'tvm::relax::IsBaseOf(const Type &amp;base, const Type &amp;derived)']]],
-  ['isboolscalartype',['IsBoolScalarType',['../namespacetvm_1_1relax.html#ad237fcb2301b470af00fb8b03d8392d7',1,'tvm::relax']]],
+  ['isboolstructinfo',['IsBoolStructInfo',['../namespacetvm_1_1relax.html#af4d949ba3b55902d53afd3c179f05287',1,'tvm::relax']]],
   ['iscalltir',['IsCallTIR',['../namespacetvm_1_1relax.html#a1718ee142e65df8ab080d339566e5c11',1,'tvm::relax::IsCallTIR(const String &amp;name, Optional&lt; TuplePattern &gt; args=NullOpt)'],['../namespacetvm_1_1relax.html#a5999d07fa03c8175e1268ce8bf99868c',1,'tvm::relax::IsCallTIR(const String &amp;name, TuplePattern var_args)']]],
   ['isconst',['IsConst',['../namespacetvm_1_1relax.html#ad2c52b340b0a2524bdcd85d3289a18ac',1,'tvm::relax']]],
   ['isconstant',['IsConstant',['../namespacetvm_1_1relay.html#a3d18041cd1c616c25de9c73a39c976c6',1,'tvm::relay']]],
